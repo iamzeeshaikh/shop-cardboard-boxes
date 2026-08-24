@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getSnapshot } from '../lib/snapshots';
 import type { Snapshot } from '../lib/snapshots';
+import products from '../data/products.json';
 
 const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const found = getSnapshot(pathname);
@@ -17,8 +18,15 @@ const snapshot: Snapshot = found || {
   jsonLd: [],
   contentHtml: '<div class="site-content"><div class="scb-not-found"><h1>Page not found</h1><p>The page you requested could not be found.</p><a class="button" href="/">Return to homepage</a></div></div>',
 };
+const productPrice = products.find((product) => product.path === snapshot.path)?.price;
+const contentHtml = productPrice
+  ? snapshot.contentHtml.replace(
+      /Starting From the \$0\.20 per piece\./g,
+      `Starting From the $${Number(productPrice).toFixed(2)} per piece.`,
+    )
+  : snapshot.contentHtml;
 ---
 
 <BaseLayout snapshot={snapshot} status={found ? 200 : 404}>
-  <Fragment set:html={snapshot.contentHtml} />
+  <Fragment set:html={contentHtml} />
 </BaseLayout>
