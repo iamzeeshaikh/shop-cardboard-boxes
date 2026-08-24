@@ -28,6 +28,7 @@ Astro.response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geol
     <Fragment set:html={snapshot.metaTags} />
     <Fragment set:html={snapshot.stylesHtml} />
     {snapshot.jsonLd.map((graph) => <script is:inline type="application/ld+json" set:html={graph}></script>)}
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" href="/wp-content/uploads/2024/09/cropped-Cardboard-Boxes-4-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/wp-content/uploads/2024/09/cropped-Cardboard-Boxes-4-192x192.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="/wp-content/uploads/2024/09/cropped-Cardboard-Boxes-4-180x180.png" />
