@@ -65,6 +65,16 @@
       event.preventDefault();
       if (!form.reportValidity()) return;
       const payload = new FormData(form);
+      const fieldLabels = {};
+      const labels = [...form.querySelectorAll('label[for]')];
+      [...form.elements].forEach((field) => {
+        if (!field.name || fieldLabels[field.name]) return;
+        const explicitLabel = field.id ? labels.find((label) => label.htmlFor === field.id)?.textContent?.trim() : '';
+        const fallbackLabel = field.getAttribute('aria-label') || field.getAttribute('placeholder') || '';
+        const label = explicitLabel || fallbackLabel;
+        if (label) fieldLabels[field.name] = label;
+      });
+      payload.set('__field_labels', JSON.stringify(fieldLabels));
       const files = [...payload.values()].filter((value) => value instanceof File && value.name).map((file) => ({ name: file.name, size: file.size, type: file.type }));
       form.querySelector('.scb-local-notice')?.remove();
       const notice = document.createElement('div'); notice.className = 'scb-local-notice'; notice.textContent = 'Sending…'; form.append(notice);

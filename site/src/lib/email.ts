@@ -40,17 +40,72 @@ const mailer = () => {
 const emailFromValues = (values: string[]) => values.find((value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value));
 const safeSubject = (value: string) => value.replace(/[\r\n]+/g, ' ').slice(0, 140);
 
+const fieldLabelAliases: Record<string, string> = {
+  name: 'Name',
+  full_name: 'Name',
+  email: 'Email',
+  phone: 'Phone',
+  telephone: 'Phone',
+  company: 'Company',
+  company_name: 'Company',
+  product: 'Product',
+  product_name: 'Product',
+  message: 'Message',
+  requirements: 'Packaging Requirements',
+  page_title: 'Page Title',
+  product_url: 'Product URL',
+  source_url: 'Source URL',
+};
+
+const hiddenSubmissionFields = new Set([
+  '__field_labels',
+  'website',
+  'post_id',
+  'form_id',
+  'queried_id',
+  'referer_title',
+]);
+
+const humanize = (value: string) => value
+  .replace(/^form_fields\[|\]$/g, '')
+  .replace(/^field_/, '')
+  .replace(/[_-]+/g, ' ')
+  .replace(/\b\w/g, (character) => character.toUpperCase());
+
+const parseFieldLabels = (form: FormData) => {
+  try {
+    const parsed = JSON.parse(text(form.get('__field_labels')) || '{}');
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return {} as Record<string, string>;
+    return Object.fromEntries(Object.entries(parsed).map(([name, label]) => [name, text(label).slice(0, 100)]));
+  } catch {
+    return {} as Record<string, string>;
+  }
+};
+
+const labelForField = (name: string, labels: Record<string, string>) => {
+  const innerName = name.match(/^form_fields\[([^\]]+)\]$/)?.[1] || name;
+  const supplied = labels[name];
+  if (supplied) return supplied;
+  return fieldLabelAliases[name] || fieldLabelAliases[innerName] || humanize(innerName);
+};
+
 export async function sendFormSubmission(form: FormData) {
   const config = smtpConfig();
   const rows: Array<[string, string]> = [];
   const values: string[] = [];
   const attachments: Array<{ filename: string; content: Buffer; contentType?: string }> = [];
+  const fieldLabels = parseFieldLabels(form);
+  const seenRows = new Set<string>();
 
   for (const [name, value] of form.entries()) {
     if (typeof value === 'string') {
       const clean = text(value);
-      if (!clean || name === 'website') continue;
-      rows.push([name, clean]);
+      if (!clean || hiddenSubmissionFields.has(name)) continue;
+      const label = labelForField(name, fieldLabels);
+      const rowKey = `${label.toLowerCase()}\u0000${clean}`;
+      if (seenRows.has(rowKey)) continue;
+      seenRows.add(rowKey);
+      rows.push([label, clean]);
       values.push(clean);
       continue;
     }
@@ -65,13 +120,14 @@ export async function sendFormSubmission(form: FormData) {
   const product = text(form.get('product_name')) || text(form.get('page_title')) || 'Website enquiry';
   const replyTo = emailFromValues(values);
   const htmlRows = rows.map(([name, value]) => `<tr><th style="padding:8px;text-align:left;vertical-align:top;border:1px solid #ddd">${escapeHtml(name)}</th><td style="padding:8px;border:1px solid #ddd;white-space:pre-wrap">${escapeHtml(value)}</td></tr>`).join('');
+  const attachmentSummary = attachments.length ? `<p style="margin:16px 0 0"><strong>Attachments:</strong> ${attachments.map((file) => escapeHtml(file.filename)).join(', ')}</p>` : '';
   await mailer().sendMail({
     from: { name: config.fromName, address: config.fromEmail },
     to: config.to,
     replyTo,
     subject: safeSubject(`New quote request — ${product}`),
     text: rows.map(([name, value]) => `${name}: ${value}`).join('\n\n'),
-    html: `<h2>New quote request</h2><table style="border-collapse:collapse;width:100%">${htmlRows}</table>`,
+    html: `<div style="font-family:Arial,sans-serif;color:#222;line-height:1.5"><h2 style="margin:0 0 16px">New quote request</h2><p style="margin:0 0 16px"><strong>Product:</strong> ${escapeHtml(product)}</p><table style="border-collapse:collapse;width:100%;max-width:760px">${htmlRows}</table>${attachmentSummary}</div>`,
     attachments,
   });
 }

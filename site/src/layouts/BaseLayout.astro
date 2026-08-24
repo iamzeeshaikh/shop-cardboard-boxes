@@ -3,12 +3,38 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import type { Snapshot } from '../lib/snapshots';
+import products from '../data/products.json';
 
 interface Props { snapshot: Snapshot; status?: number; }
 const { snapshot, status = 200 } = Astro.props;
 const productionHost = Astro.url.hostname === 'shopcardboardboxes.com';
 const previewRobots = productionHost ? snapshot.robots : 'noindex, nofollow';
 const trackingEnabled = productionHost && import.meta.env.PUBLIC_ENABLE_PRODUCTION_TRACKING === 'true';
+const productPrice = products.find((product) => product.path === snapshot.path)?.price;
+const jsonLdGraphs = snapshot.jsonLd.map((graph) => {
+  if (!productPrice) return graph;
+  try {
+    const parsed: unknown = JSON.parse(graph);
+    const updateOffers = (value: unknown): void => {
+      if (!value || typeof value !== 'object') return;
+      if (Array.isArray(value)) {
+        value.forEach(updateOffers);
+        return;
+      }
+      const record = value as Record<string, unknown>;
+      const types = Array.isArray(record['@type']) ? record['@type'] : [record['@type']];
+      if (types.includes('Offer') || types.includes('AggregateOffer')) {
+        if ('price' in record) record.price = productPrice;
+        if ('lowPrice' in record) record.lowPrice = productPrice;
+      }
+      Object.values(record).forEach(updateOffers);
+    };
+    updateOffers(parsed);
+    return JSON.stringify(parsed);
+  } catch {
+    return graph;
+  }
+});
 Astro.response.status = status;
 if (!productionHost) Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
 Astro.response.headers.set('X-Content-Type-Options', 'nosniff');
@@ -27,7 +53,7 @@ Astro.response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geol
     <meta name="robots" content={previewRobots || 'index, follow'} />
     <Fragment set:html={snapshot.metaTags} />
     <Fragment set:html={snapshot.stylesHtml} />
-    {snapshot.jsonLd.map((graph) => <script is:inline type="application/ld+json" set:html={graph}></script>)}
+    {jsonLdGraphs.map((graph) => <script is:inline type="application/ld+json" set:html={graph}></script>)}
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" href="/wp-content/uploads/2024/09/cropped-Cardboard-Boxes-4-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/wp-content/uploads/2024/09/cropped-Cardboard-Boxes-4-192x192.png" sizes="192x192" />
