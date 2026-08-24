@@ -1,0 +1,54 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+import type { Snapshot } from '../lib/snapshots';
+
+interface Props { snapshot: Snapshot; status?: number; }
+const { snapshot, status = 200 } = Astro.props;
+const productionHost = Astro.url.hostname === 'shopcardboardboxes.com';
+const previewRobots = productionHost ? snapshot.robots : 'noindex, nofollow';
+const trackingEnabled = productionHost && import.meta.env.PUBLIC_ENABLE_PRODUCTION_TRACKING === 'true';
+Astro.response.status = status;
+if (!productionHost) Astro.response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+Astro.response.headers.set('X-Content-Type-Options', 'nosniff');
+Astro.response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+Astro.response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{snapshot.title || 'Shop Cardboard Boxes'}</title>
+    {snapshot.description && <meta name="description" content={snapshot.description} />}
+    <link rel="canonical" href={snapshot.canonical || `https://shopcardboardboxes.com${snapshot.path}`} />
+    <meta name="robots" content={previewRobots || 'index, follow'} />
+    <Fragment set:html={snapshot.metaTags} />
+    <Fragment set:html={snapshot.stylesHtml} />
+    {snapshot.jsonLd.map((graph) => <script is:inline type="application/ld+json" set:html={graph}></script>)}
+    <link rel="icon" type="image/png" href="/wp-content/uploads/2024/09/cropped-Cardboard-Boxes-4-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/wp-content/uploads/2024/09/cropped-Cardboard-Boxes-4-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/wp-content/uploads/2024/09/cropped-Cardboard-Boxes-4-180x180.png" />
+    <meta name="scb-tracking-mode" content={trackingEnabled ? 'production' : 'local-debug'} />
+    {trackingEnabled && <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-TQY5FTRRCG"></script>}
+    {trackingEnabled && <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js', new Date());
+      gtag('config', 'G-TQY5FTRRCG');
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)})(window,document,'script','dataLayer','GTM-PHZL97TG');
+    </script>}
+  </head>
+  <body class={snapshot.bodyClass || ''} data-scb-path={snapshot.path} data-tracking-enabled={trackingEnabled ? 'true' : 'false'}>
+    <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+    <div id="main-container" class="site">
+      <Header />
+      <main id="primary"><slot /></main>
+      <Footer />
+    </div>
+    <a class="scb-whatsapp" href={`https://wa.me/15033580443?text=${encodeURIComponent(`Hi Shop Cardboard Boxes! I need more info about ${snapshot.title} ${snapshot.canonical}`)}`} aria-label="Open Chat"></a>
+    <script is:inline src="/scripts/site.js" defer></script>
+  </body>
+</html>

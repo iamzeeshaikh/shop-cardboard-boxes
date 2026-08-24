@@ -1,0 +1,18 @@
+---
+import recoveredHeader from '../data/header.html?raw';
+
+const nav = [
+  ['Home', '/'],
+  ['By Functionality', '/product-category/cardboard-boxes-by-functionality/'],
+  ['By Material Strength', '/product-category/cardboard-boxes-by-material-strength/'],
+  ['By Size and Shape', '/product-category/cardboard-boxes-by-size-and-shape/'],
+  ['Cosmetic and Gift', '/product-category/cosmetic-and-gift-cardboard-boxes/'],
+  ['Food Boxes', '/product-category/food-related-cardboard-boxes/'],
+];
+---
+
+<Fragment set:html={recoveredHeader} />
+<nav id="scb-mobile-menu" class="scb-mobile-menu" aria-label="Mobile navigation" hidden>
+  <button type="button" class="scb-mobile-close" aria-label="Close menu">×</button>
+  <ul>{nav.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul>
+</nav>

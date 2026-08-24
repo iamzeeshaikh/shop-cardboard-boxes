@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getSnapshot } from '../lib/snapshots';
+import type { Snapshot } from '../lib/snapshots';
+
+const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const found = getSnapshot(pathname);
+const snapshot: Snapshot = found || {
+  path: pathname,
+  title: 'Page not found - Shop Cardboard Boxes',
+  description: '',
+  canonical: `https://shopcardboardboxes.com${pathname}`,
+  robots: 'noindex, follow',
+  bodyClass: 'error404',
+  metaTags: '',
+  stylesHtml: '',
+  jsonLd: [],
+  contentHtml: '<div class="site-content"><div class="scb-not-found"><h1>Page not found</h1><p>The page you requested could not be found.</p><a class="button" href="/">Return to homepage</a></div></div>',
+};
+---
+
+<BaseLayout snapshot={snapshot} status={found ? 200 : 404}>
+  <Fragment set:html={snapshot.contentHtml} />
+</BaseLayout>

@@ -1,0 +1,31 @@
+# Dependencies and build output
+node_modules/
+site/node_modules/
+site/dist/
+site/.astro/
+
+# Environment and local state
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+
+# Untrusted/private recovery evidence — never commit or publish
+*.wpress
+*.sql
+*.sql.gz
+evidence/
+analysis/
+analysis/db/
+analysis/security-*
+**/wp-config.php
+**/.htaccess
+**/wc-logs/
+**/woocommerce_uploads/
+**/wpforms/cache/
+
+# Source exports and migration caches
+*.xlsx
+/merchant/
+/Merchant Products which are Not approved by google plz fix it. /

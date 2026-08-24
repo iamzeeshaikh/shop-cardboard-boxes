@@ -1,0 +1,3800 @@
+[
+  {
+    "key": "/robots.txt",
+    "file": "adada1317532a28bebf63fe6edbea3e43dc67d802d07c58395de71b3336a79a3.body",
+    "status": 200,
+    "contentType": "text/plain"
+  },
+  {
+    "key": "/sitemap_index.xml",
+    "file": "fe065763e1a8b19bfe9b799cbea7fcd538f170f1b558f55f96bbd03b563f12e8.body",
+    "status": 200,
+    "contentType": "text/xml; charset=UTF-8"
+  },
+  {
+    "key": "/feed/",
+    "file": "fc39fd6bcca9f87bfcc416d88cae49e321e1dc6ecf2a504e00d40898ab2a6851.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/comments/feed/",
+    "file": "e10dd9cc89341d57a5e6ae05abe4522fe4f8faa2b964f28bb753b1ca387e4f86.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/key-features-of-using-corrugated-cardboard-in-modern-packaging-design/feed/",
+    "file": "eda63843d448bbc537100e493732189b4811b8243ccec43e743f0c48f16e5f6a.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fkey-features-of-using-corrugated-cardboard-in-modern-packaging-design%2F",
+    "file": "c0f0ecaaf87f84085363aa4988c394281049fdd29565c8c4b12fddefa618bd8a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fkey-features-of-using-corrugated-cardboard-in-modern-packaging-design%2F&",
+    "file": "f9e3ca8dce51ca66326564e0459d812d088cdc38e03245718c9a399062c2da46.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/",
+    "file": "92d7f534a86e177ba53cf960e61bdd87f74afa6c8e26ee44873c43824f6a6a60.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/posts/3638",
+    "file": "39770a603f04e2b9dce0ca5b52a1d0d1b1db74fa2b9a9bc81cc8af338e7a6103.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/xmlrpc.php?rsd",
+    "file": "393ed8c820d597585ccc9f46d24d8589e131ccbfa204b40de5ad2ab395dc921f.body",
+    "status": 200,
+    "contentType": "text/xml; charset=UTF-8"
+  },
+  {
+    "key": "/xmlrpc.php",
+    "file": "6630075f067c5ce15db8b3132caf7038ed0de29329db58fa266de8c8c23bb429.body",
+    "status": 405,
+    "contentType": "text/plain;charset=UTF-8"
+  },
+  {
+    "key": "/why-small-cardboard-boxes-are-essential-for-e-commerce-success/feed/",
+    "file": "9836f80d375be9dbbd6e9b7339057c6116147c27d0dd270144ea7f59ea637380.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fwhy-small-cardboard-boxes-are-essential-for-e-commerce-success%2F",
+    "file": "3261eee771248b1beb7845a66a15f2b5a7b31b0c96e068408a7ff7d15d055fb9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fwhy-small-cardboard-boxes-are-essential-for-e-commerce-success%2F&",
+    "file": "90242921bcffab5a2519f283bf64eb401318f009f18955f43af520bc308cf405.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/posts/5017",
+    "file": "69b99e19dd95b64a3e4257ba68dc317e0e41a8650ddbf023345e89132801068c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/from-round-to-decorative-your-complete-guide-to-cardboard-box-options/feed/",
+    "file": "1a89c9808c338b97b98ad33c9d5d99f01196d876ac2171649a25b8bc6dbbd654.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Ffrom-round-to-decorative-your-complete-guide-to-cardboard-box-options%2F",
+    "file": "69e2ce8127b689c5ccc0824bdc742bf48e69c2602c550740bffed150a93ee2f8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Ffrom-round-to-decorative-your-complete-guide-to-cardboard-box-options%2F&",
+    "file": "5d941eeb4e2720c1e0fecfca4c68a0c12d10963ecd652b5a988d10b688311c1a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/posts/4056",
+    "file": "92108a53f08dd67338792ed192490b44a6d827a099d9ef5e73038c4b326ae68c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fabout-us%2F",
+    "file": "7c28bed5c24f5d334e324cad0a2379c70942862969a121dd801357d8fd90905e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fabout-us%2F&",
+    "file": "6ba12f01791706be42abcdc1298bd3e80016fae393950209dd4d4890b20d9347.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/pages/429",
+    "file": "37b306f46eb1f09a15703ef8e555eea7fcea7034485d386726bf2ef30a87ee7a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/products/feed/",
+    "file": "de33045def5f013e1111ceea3d106833ac576e50741abf0ddb345d4525a97493.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fprivacy-policy%2F",
+    "file": "6165f7d38540f11ae101e161e2888116dd23a08b6e97a2a1c2ad4b26541a99c9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fprivacy-policy%2F&",
+    "file": "2b755928a551ae5aa35e953afe70698a14db7178aaa33d62176aea028f882ea6.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/pages/426",
+    "file": "15539b2e35b8286e2af011a4ac778cef39f9e938615eff4f1827682fa1762aae.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2F",
+    "file": "dfee6a4e58f94a646a4a6512f4255df24bf51938423799cb1f1395184ab036bd.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2F&",
+    "file": "31f529066bed172607335a44cd9841a3e06652631cd57b570e03ab70431fa492.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/pages/41",
+    "file": "2818028adcafaf071abf33fcea5c7e58a6eb0d89090fb5ad830292991f06a2e9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fcart%2F",
+    "file": "fa9d118397094e339df9d884a1551fb8434ad19e20b129a24b690679e5927841.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fcart%2F&",
+    "file": "238e486d50c6c184241cd2f4b079d6bd77e9efde3b19e5d66362f81284a65630.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/pages/7",
+    "file": "0b7cbdf2392b35fa337b18b92a860f0772f102484fee028973be2474f0cca99a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fterms-conditions%2F",
+    "file": "52764915990b435b5fb45876f3bdaacc2bb76d397cc1c9a1235a92a9906c3821.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fterms-conditions%2F&",
+    "file": "9a847aa28df3462faf4cc1485de817b5d900e005b12a5c197408f4db0671c880.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/pages/424",
+    "file": "9466d0aa2be9960d0366f22eda1e246547a759a17a8e8e0aa6dfb786efeecad6.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fthank-you%2F",
+    "file": "eb4ac139506b87370c88c628723754a20b7fb471f3a1d3c8330352d76fcbf5f1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fthank-you%2F&",
+    "file": "91f2ba5f790857c3c56012a57af916c896025c20b706f8c60b09d6cef0293a40.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/pages/2781",
+    "file": "555cfc896d8469f67b8db70c05374b32000894af65bcff87d2f16d7efc5303c7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fcontact-us%2F",
+    "file": "cf8dc2b417e9aac80df92e1015731347654c27ef42135a8d21f05e5f402f842f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fcontact-us%2F&",
+    "file": "ec9bd33b63731ef6c4387c74c17632dda8da839232b7904f31a1445b934e9fc5.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/pages/431",
+    "file": "bf495009e0d02eb4f46cd18f38efa3d0d9dce6609959722d0d5ed87fe8df031d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fmy-account%2F",
+    "file": "f54bba41db53d4da2395a7ba680c456b694765d4345fb8f4df859b9dc0218fcf.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fmy-account%2F&",
+    "file": "49faa48210e265180b80e2ba52e4bc78cdbdd3ac8f73899e7fdb5a209b3e1f38.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/pages/9",
+    "file": "3f58c6f145f421292b262939751da0e5fe3a4974c6113c6f029d6f13744fbc0b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Frefund_returns%2F",
+    "file": "3233c1d656c0bb8519a9267939fc97e4fefee8358ca9bc1ead9657d9f2a50f37.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Frefund_returns%2F&",
+    "file": "aecd9fac6305716c9534671cd940b80ffbb6ff094946eef3888b86610db03b1e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/pages/10",
+    "file": "8ad47c95bb34016f1c7c2c28ec0c47b008f5405e52183ca01b1ed1d1eee6fad6.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fcardboard-boxes-new-york%2F",
+    "file": "4fdd677d58d19eef00afb09f907d45a8447db161be036000b8b3220e1e328fbc.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fcardboard-boxes-new-york%2F&",
+    "file": "11d2dc5aa24067928046abb64e0c9796dd029a6a5b3cccd1be8f8821ebc6a666.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/pages/6361",
+    "file": "e14eb2e6507fc15226a8aa06d8afb7c587a2c0eec1d66f9f3dec697bd8610654.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-shoe-boxes%2F",
+    "file": "0bb750058e027ece006c226e7d12496089397b07b69a8508862fd52ec78a4733.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-shoe-boxes%2F&",
+    "file": "c9d587d25543f0a51b2f5501f34fa9296e100f12d898fa944ae2ec2073b2d136.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2243",
+    "file": "b277a57a857c60c5f129cd7e976dde22e5e385a1b3301685de1abfe1955c78e2.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2F4x4-cardboard-boxes%2F",
+    "file": "b52d485b6fe98dd6ea6bdbb3d626c84a7e1599f66b2ab95151a49aedf20f1816.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2F4x4-cardboard-boxes%2F&",
+    "file": "59642471238fb7d71366522dae087d735be4db365f099af20f89232e6da88d4a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2225",
+    "file": "830f0c87b9bc6e2679888e0a2bc1c0c08808a8ee4bead399420c8581a07766fa.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fhexagon-cardboard-boxes%2F",
+    "file": "2a4a717666bbb164a9842e6f986f66b10685f1f38d269d14062daa9596ceaa1a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fhexagon-cardboard-boxes%2F&",
+    "file": "5a19fe64178a553426638547523c2c49b8f3b2295acae135aa34982fa3501b61.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2224",
+    "file": "016f80ec39c0256788b194ed5391276e06266e8adbc4a26682e9125e7cde96fc.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-box-inserts%2F",
+    "file": "c918e79e5c676f88acb24341452320ce195670a237fd3c4bb90102862cd0dc60.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-box-inserts%2F&",
+    "file": "59c9ace146e1f7d914463fd49365fe4b71eb7c97f45d6fab7617400376ca9f1d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2295",
+    "file": "2a6ca105692afbe0942b569c0a82795231885ce0b5d4a10de1379aaba053ad8a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pizza-boxes%2F",
+    "file": "0d130d874023d89dbccd79b6b8ba8801219cd7ece6aa8a547aa7a7f724f01051.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pizza-boxes%2F&",
+    "file": "b0ad26801bb2c95ccc3e199f609874826abd4b7393db9ccce9cb61c579aafba4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2316",
+    "file": "1fea5de02c5672af35f1d9a286d2c3ad5a65b2bc4dd2f4c84aef6df166092f4b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fround-cardboard-boxes%2F",
+    "file": "b8bcb1e84e6546da3b3689c34a83e22263f9735543032da59b4c3ea28440bf71.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fround-cardboard-boxes%2F&",
+    "file": "968317ca5a32a0d7a9de5fba423c1b5866c208762c04a0cbee97acdf28315fe1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2222",
+    "file": "06166bcc11f21d6f570211ebaae4478d934f977f9998f24bda2a82b0e59c3b4e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Ftiny-cardboard-boxes%2F",
+    "file": "125e4c9381171931b03a5b742bec193a4a1c7ad27e245cb5c7b0bceb8b5b8f00.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Ftiny-cardboard-boxes%2F&",
+    "file": "2a5c7474524eca761a469cb205eecc8d165964fb35cb3b3e43fd01a3c6a62b5a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2220",
+    "file": "e213088d92bdaa59aa69d69fdfbaa14e4b648af028e5088c7eb3da3d11df5664.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fsingle-cardboard-boxes%2F",
+    "file": "272810381e52de8cbf232cceb5af62282cdc5b9f924d6683fea167d36d6bf590.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fsingle-cardboard-boxes%2F&",
+    "file": "32eb6f82ad4b828ebce52fbaab8856c26e4ba4bbe11abee093f82289527818bd.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2226",
+    "file": "543f5be515a9966b22fd7aff55b9f8e91047ecbdc95840f6c16ce9cb8b3df0ea.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fdecorative-cardboard-boxes%2F",
+    "file": "37de30eefae0e73ad9939bc06a50be34526fb0c2e1082535e841a63427a3b1e2.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fdecorative-cardboard-boxes%2F&",
+    "file": "b59985dfd03f9d4b893fd08eba603460c5d0883c0f75abc0cbd8023d14cc1135.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2239",
+    "file": "d6d4618f8ca07b12903883d03e6125ea934ec6bb32d9b0c4204390cc28915190.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fpink-cardboard-boxes%2F",
+    "file": "c53bf853b1d96586378b0f36ed7a94cef7e3e30ba902e1dcbd37680b57f87449.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fpink-cardboard-boxes%2F&",
+    "file": "f77ab1a537daf66348dc457158b665e36d11b102c156f58a50de88eb89c10ddf.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2235",
+    "file": "9190ffec6e117fd59cfb7a780e46effbc56157861d4aa84d4387b5044c218dfd.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fblack-cardboard-boxes%2F",
+    "file": "01361e5f964dad54752e7a55654331fe7dfac430dc41bf8f9885ba5acde2afd2.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fblack-cardboard-boxes%2F&",
+    "file": "73997115c3ab06400da38bba6c05586ef0491dfe2374b485bd81e91b478c0155.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2237",
+    "file": "cc8c15d3d2054a6768d629f4def0bd18aec3f073065f02ceab8c4ed48a3c2ea9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcorrugated-cardboard-boxes%2F",
+    "file": "5ba29bdd648b170f98354dc62ccc0055909c87a042b3ef7e7ace33940a3224a7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcorrugated-cardboard-boxes%2F&",
+    "file": "60e99e0ac1389abc69cf83a9a79147a5a105da996d4fefe5fdfdd5dd4768f25a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2227",
+    "file": "2834b006cd9c8984019af52c2231c140b4e4b50552eef0461e01665b8c4c8349.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-for-bottles%2F",
+    "file": "55abc666878424fda640994b96fa6495565a684c5e68fea03b3bdb447e874402.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-for-bottles%2F&",
+    "file": "17b36bb375604d519c34c6b56c9b0ee6fcd323eb11a7e9f35eb9de7456654945.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2356",
+    "file": "ca783cce0aa4f24a0400102563d33df4fea6cd7f65c0b1756a5b3ed3efec573d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-gable-boxes%2F",
+    "file": "8322de83b0b3b8c4262bf6159788be6ac8bf07e7185b7f33d5181fcb33af0663.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-gable-boxes%2F&",
+    "file": "ec57b5a57e2f834398754d4fe6b329509ea452db8f0f24be344eb8087cc58852.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2276",
+    "file": "268fb0bc9b2eabe51b74e5aad3b753feb1402ea02882d28a373a873206c8ffbb.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-ornament-boxes%2F",
+    "file": "26033229b600f061e096829a48bfdfc497e96e2700a412a88ed5e58d55ee960c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-ornament-boxes%2F&",
+    "file": "dfef72e474a73900d4d0c8aa8794b7ef49791049d60d4e4daa2d1970dbbba8ec.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2265",
+    "file": "4378a7f1a987289cd607a257222abab14679f6a3acaced8d0a8d95480b159f32.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Ffolding-cardboard-boxes%2F",
+    "file": "2729161d2ea1c3495433306ea6e3c9ffeea075a2fe9da0b854819b400758b5bb.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Ffolding-cardboard-boxes%2F&",
+    "file": "a47355d96ca983844e9937b7afdf5df83c32960cdd98f61e0cf049a66e62c7f2.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2231",
+    "file": "ecf45a32d3d6d7d3f75857848ebe7c6419cbd8f3ea9dc0535260d44bbf1d11b3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-gift-boxes%2F",
+    "file": "d0da209ed353e3ff7f254b68e77493174326285f3eedf362d0208e65dad12d4e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-gift-boxes%2F&",
+    "file": "7d3dc963c32babac53b94ae29851e6f404a0d17974937c1ce874080847ae6bc7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2335",
+    "file": "c30d3b5a25f2232aaf24d502699840193e2a75eb0cb20228b09b04d858ed1fcf.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Ffancy-cardboard-boxes%2F",
+    "file": "ec3918839cf6e0fba973200cc525faca3b13b9515c6fb77353fd6c4449c92e52.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Ffancy-cardboard-boxes%2F&",
+    "file": "f1a3b806b4ed5867162a22b70b7a44ea4e9cf6f79e65d5692d91ba55326d4f39.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2346",
+    "file": "1f5bc448d3dec53adacf5be313d7b918fc2e68504dff3d426d2ec4b017669f03.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-ring-boxes%2F",
+    "file": "3dc2c9226d33d9b6cb1789097fa847495ea30255a27c7188610b9edfb7431e05.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-ring-boxes%2F&",
+    "file": "784111401c6c7dcace353fba7ab3e89e0ef1f731ae62f5826b0e45ba505ce1fd.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2266",
+    "file": "bab768cdcc1a94ac4d7ee3e575abaf7ed4e4cd7781256c2ae64daa6f76cc6e94.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-storage-boxes%2F",
+    "file": "b22817a892be8303a6ece57a3e29f82a90d77d9469aac83a78b3b75d82ba33bb.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-storage-boxes%2F&",
+    "file": "b61d7e12d12ed69f3fac2c4ecad83e08e7c73784b6f2b228be52a4114b7fc936.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2242",
+    "file": "aeae8e86e8e1cbb2f94aa842254f26691517f5e41c8bdcd2802a166f94ec3579.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-postal-boxes%2F",
+    "file": "9ed2a2e2c28271d815333b641d62db4f39109ec67cc96d94761529920980ad07.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-postal-boxes%2F&",
+    "file": "589541339e2922532f3080531adafc6dc6b882d79ba56f5a593aa419a3518a9d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2255",
+    "file": "76c2cdfb864bd1246f3369aac6f601f7921207e8996871d521cd5657bebce564.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-with-lid%2F",
+    "file": "20a2e19855595a7db0a2222218b3f222981d53dd64c2e43577e8fe73fea2d900.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-with-lid%2F&",
+    "file": "96d9f876a121d6ac999c425a1083c824de0db3ad738de9147aac7d4cc8dc9422.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2244",
+    "file": "c960a5483215f95743750bfc10d7165b5319571bbe96b21dd899ed8066576a19.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fwhite-cardboard-boxes%2F",
+    "file": "2dfba2e129d0971dd22a606239e1d6dd45cd6caba631d169fd41980074f93645.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fwhite-cardboard-boxes%2F&",
+    "file": "b3eac7db696cead4633b566df39137efbd58d1e6bbb46cef62dc99e45a77fe01.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2236",
+    "file": "792f0f30b12fe1c208d0b70525a1be60c116c81e8104cfb65a230a814824e33d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-for-jewellery%2F",
+    "file": "f12babfaa137a629c4c5d82b651094a5e8cdcc7bd7df707fda99dd864b468f55.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-for-jewellery%2F&",
+    "file": "dc920bdf191e6f67e227676b44e8bc129f1af26a1cd04ed3360f27f16d873d34.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2275",
+    "file": "0f99640ba604f7eb7d51ce1a294b1d0c6a16246eecdc38753a56f54fdc91b6b6.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Ffoldable-cardboard-boxes%2F",
+    "file": "8a9efbfc1e145b92aad0019cbc1dcf76745f51680f5acce78884c0096a47d62d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Ffoldable-cardboard-boxes%2F&",
+    "file": "21551e3101c5d1d0beccbd7fdcab4e70e62b22f7cdc7d83de46851e8e2a1f339.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2232",
+    "file": "f2b49f65c99bab7b647b433e04934ca0ad49ef356acaaec860b287d634f4c2cc.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-sandwich-boxes%2F",
+    "file": "1d321770f13fad55f38a9fdba25362fb1e206b865535b4216a8f33f69c313a86.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-sandwich-boxes%2F&",
+    "file": "c6f178c9b4fe0c677974af73fec7e68808b489487d2555a08b63f48c1e2f98dc.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2305",
+    "file": "1fb2bb098c9e033f7923f58ccfc1108b2305fee1edfd330ce9f77024a7db21da.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-food-packaging%2F",
+    "file": "506fb8b3a427ae4b0e211a5770f24ba649e635d4cc39b6ef4d8b2a1f8a2ae970.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-food-packaging%2F&",
+    "file": "e0d63829cc51744ff1a11f71bc575d92b52cb2e9c2bfe36a3020b4b0614ed13d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2296",
+    "file": "5ec38a75b2c6dcd4a137d696ab99c4b08ee3c03f83ccaf39548a921ec456c06e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fbrown-cardboard-boxes%2F",
+    "file": "4240017d6fc5eb0fd2dedf2649bc1c27a537161afc05ece6a1109c7903fe1a1b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fbrown-cardboard-boxes%2F&",
+    "file": "9bc28aac616dd721a7c028ef06a0de54b534100744c3c6b9d2a50a6ac792e452.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2238",
+    "file": "d462f57b5b5679de3a4517015ef74f86c61ca6621234a9e4c2c0d36db5d76141.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-soap-boxes%2F",
+    "file": "9e2790261a5cb9a1869bb05e557540843228853032a493becd8a6f8fde4a42a8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-soap-boxes%2F&",
+    "file": "3fc1f0fa3dd735a4c98ca263107168fd95f1b9647a42c35254cf9634a604bc96.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2345",
+    "file": "98102e1fc77782fa67476c8677d06d1a82a96f9371bc014adfcde981ad6af9a0.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-burger-boxes%2F",
+    "file": "3aeb83ec36292fd5bc1f5f744f19547f8e75e3fc739c06c6af08932eef701de6.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-burger-boxes%2F&",
+    "file": "25e7253f75471f2f90daa9c7b811d0e2f687c4ee0474a166ee98bd4d24a11e5a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2315",
+    "file": "b4ce7d1e9d0549beff7ee9bf57d9ef8ce157cbdd7dee574308d45ac70db77dc0.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fsmall-cardboard-boxes%2F",
+    "file": "9aad18eb07a8edbcd8ff9a0dcf10f3f554fa3b6fbc7a5eac55138f212563e77b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fsmall-cardboard-boxes%2F&",
+    "file": "e2ffda1132cf5a538d9161c3448220bdc336f6090900c7452e3d17f78dd9f1fa.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2219",
+    "file": "049b6b75f2ea0017e9b473f95a23d413a96b04adc2a011f7372c6415131cb22a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-snack-boxes%2F",
+    "file": "8da327c03679b732f23b280d2d5992fee56ae7cde622164264802f4f8cc32e25.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-snack-boxes%2F&",
+    "file": "987e6374ca910bc9782b8e1089d8b1891f179d29a9d4e91ccd63bcb10de63c5b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2306",
+    "file": "1fea0f7c8d27ed7231572e3062bac2e839d110e900681c773a10aeab2e460a6c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fbranded-cardboard-boxes%2F",
+    "file": "00fc10f589e8e386fbff81e1889ec6c96ec65621879840b37e83736f84d042bb.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fbranded-cardboard-boxes%2F&",
+    "file": "5163506a30ea0671842bcadcb3e8eb82e8a87cf5c0a0a1191b86c3379b23ff64.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2241",
+    "file": "7ca2e703115cd00134c975c59429f8c40567785e55a30e46792760440f81cbb3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-bakery-boxes%2F",
+    "file": "990a8e2207455cd598996196579a698e5456729898dd5587b95c77d8739e8f77.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-bakery-boxes%2F&",
+    "file": "c44d3abf4e7fe802c07f677d9c3144e24f0a4bc9a55e0cd0bbf0cc44b575340c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2326",
+    "file": "755ea884a79018e022bc283b5bfcee2060a46d13850fcba5ee01b264998b3f8a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-candle-boxes%2F",
+    "file": "93ed014f99aa718cef18e40bc3632290ca979df4996f7dfc054b2490a3b43614.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-candle-boxes%2F&",
+    "file": "6fc06ad243f0249fa2079710d69fc0fd773304ab2ed610958db83cf069ea1c90.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2285",
+    "file": "63ea96576e55660084d28268e785a52de35b98320e3d8f16ae9bff02755dcf15.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Frectangle-cardboard-boxes%2F",
+    "file": "313db5e26e049a3dad1b8dc0e9d08db2bceff385c72b9a80a932979c9a891709.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Frectangle-cardboard-boxes%2F&",
+    "file": "27d6261a5be44c6afe941f316d2478b311ba7e8130774c25cc783a7b6367ac9d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2223",
+    "file": "2f5a20caaa3e09f255b63f44127ff2feaea3ce24bf8701354a52f5839af61e60.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-with-handle%2F",
+    "file": "056c2544e9f9ee8b0602b5af12b1b1cc9a5d61797ebdb85b686f228dbab608c4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-with-handle%2F&",
+    "file": "6b3aee2505a890a64533270309532be80bb539d4726ac5e813910cc4eec26eb4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2245",
+    "file": "f14639803a7aa6f618a5bc790189b9f83d0edf623ee7a88f87bd2f817dc7a908.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcube-cardboard-boxes%2F",
+    "file": "1439f98ee64a6d012d8cf57ea15bee389b12ad2396c00a3db38e6a02904803b4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcube-cardboard-boxes%2F&",
+    "file": "7d0b4735d38c2a6897a3e07815109ea54f483603cdc07865792f6c61034bd31a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2221",
+    "file": "249105646addf4edf6d4b5861f5dacd04c6f9bf803824c3fbe5c8ad897f46a40.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Flarge-cardboard-boxes%2F",
+    "file": "9e20fa584750c0b8359395432b4458a9b2e004c463d943d9d5afa8f9c32c336c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Flarge-cardboard-boxes%2F&",
+    "file": "380d5cd1899d55b887d0312807fff4697e8da650875f3b0b4b602e97b660619c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2217",
+    "file": "5374e7055bbc1fd253c896eb69a75ca4818b370002d60eb926d4207d26c8f03f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-paper-boxes%2F",
+    "file": "4c1e0f888b5dadc42a2c7b05211da8f6238f822386ff63db4953a45bf1f6be54.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-paper-boxes%2F&",
+    "file": "52c6f84f9bd7cecf6050f1dd952fe4806ed082498fd5e7de237bec1d5e965f9b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2365",
+    "file": "6a1940f49508a3086afa18b6c2d56bbc61a7044cdd6399c052f0faeeac101c2e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fdouble-wall-cardboard-boxes%2F",
+    "file": "735e7ed7832ff464456a5fc6220e84ab7b8bdcdefa92c1857a939313565c9969.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fdouble-wall-cardboard-boxes%2F&",
+    "file": "9125feff114f855f0b1cbda529c653061cbb1de90a45dd8268e2fa28169f35e1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2228",
+    "file": "dde43d8ec9c28adce8bf9690c2e445faa7f80dc77bce19cf9a17e23e2dcd0706.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fmedium-cardboard-boxes%2F",
+    "file": "025d58593543ab21cb4977fbf64647f86506f431fb76e850e1d50e055090d6ec.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fmedium-cardboard-boxes%2F&",
+    "file": "2648163ed482571b92d7aec7487a8913f5453ad81335f1794c7f2c47bae521de.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2218",
+    "file": "1396b1371aaeb2e5ae41996c51dab27b29c81df3ec68277814748c5f9a4bc49b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Flunch-cardboard-boxes%2F",
+    "file": "52bbc4827daef784337fd1554a9454c3f1a065803c2bcf3aedc88e40894eb532.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Flunch-cardboard-boxes%2F&",
+    "file": "bbbdf2e1d0e0b356213486a7711d55c6cdc0e33e07f27e28c8e986f1aab8eb42.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2325",
+    "file": "d26236b80e2618ae149de8698299e446b6068c577745c94389b3b683dac4cae5.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-presentation-boxes%2F",
+    "file": "0ee8f569fc3d9e1ac0490828648144e1c9126c7e07c58d0f60b45ee0ff73926b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-presentation-boxes%2F&",
+    "file": "a22f0d56ba82610885ba0a87d95f455badbe7e7433571625cfc2fbc9dcae2939.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2256",
+    "file": "283a7c657675aeac127073f4686c4b76e8f5f4769bdcc126d7e2f3dfe15ad605.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fchristmas-cardboard-boxes%2F",
+    "file": "13e23a9cdea89470edd6a2322424e96c51e3e5bddef380ca79e2d47bf77c3a92.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fchristmas-cardboard-boxes%2F&",
+    "file": "8a8c201a5fe912b83611904ea1a4317cfcf2b3c37894eda7e2f92b244e465e76.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2355",
+    "file": "795d291b0c74ea68bb152f7720efc4d402b4cc6bdf7db076d5b23a6351b11d69.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcolored-cardboard-boxes%2F",
+    "file": "96b42733c16b9926a3819f393f2dc33c3df24586993a349e5fbd1a80601ce0d2.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcolored-cardboard-boxes%2F&",
+    "file": "5269d4c4e8d9c8dd39e6e4dbf8659f5d42d96e51383dae2593fdf50b5e62bd84.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2234",
+    "file": "d5adad5e9c3cef6fa8af3225fe78b02bb8ca22e23ffbbf3010f5d7a1df5ab9e0.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cosmetic-packaging%2F",
+    "file": "e5f4447444a4e5d20849c81e64f0444edaee67c9b87241d319371f8e036f8438.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cosmetic-packaging%2F&",
+    "file": "e6826d9ec1fadc6f723093d7618b36d7391a5cd7628c24dceeb172d6587ab051.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2336",
+    "file": "d1552bc9225ad01608f6fe84de63ee930808cbc4d593030a5adf58969b5291b4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fsingle-wall-cardboard-boxes%2F",
+    "file": "2ca64ad53d204961f5cbcf844e9be4cd391617f6cab73eca2bdd2e421673924c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fsingle-wall-cardboard-boxes%2F&",
+    "file": "7af0e8ae6604c68d754b8c6a133e26a57a867264a24801fdd6670df0f17eddd3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2229",
+    "file": "75725192ebb4f3ae71dbc376396d0f5f2de2665fc0b2f18c219e99d09aedd1d4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fluxury-cardboard-boxes%2F",
+    "file": "cfca077629c860539ddd86f2c45042fd47c8e9966841031846e122989a4d4c39.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fluxury-cardboard-boxes%2F&",
+    "file": "5fd7b1cf8815d810ad2a0cc535b7a194f49211b0d6d6f13c2530debe05ec9400.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2240",
+    "file": "b64c8b5c3828c3c670875b6041e79fa3d388160bca9469c156d5a50e41ebfa95.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Ftriple-wall-cardboard-boxes%2F",
+    "file": "19fd9e2d0ed3aa07991c74c1d8d70975cd657f50e10cd29960998ff73f8cdc81.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Ftriple-wall-cardboard-boxes%2F&",
+    "file": "2b1e1e13932d3e6fbc247441eee6ed849b384f3ec664d9c4239bfcc507d6e538.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2230",
+    "file": "206a6bc15989ba533341b4ff14698fc9d3dfedad1cf0229a582806b3c078c1ef.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-with-window%2F",
+    "file": "7d3cf3bfb2596a29441f4cc47cbb5ec06de9530e060e7e7aa38d6517eeee4cb4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-with-window%2F&",
+    "file": "e695a27091ac13d71d6d7224761b048a187531c8acf338933820ba821fcba723.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2246",
+    "file": "2d742f0766947e21474f02e6b33c5cb05f7219fbd8889c97b9b3791ade5a8c4c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fblank-cardboard-boxes%2F",
+    "file": "593ac3a00bdf9af4257c7bcf0bfc626a8b27d1d11a4586858744e337cc768b23.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fblank-cardboard-boxes%2F&",
+    "file": "7c2e488f5bc2c46a239686552acb4be0381fa843e230382eed760927a3b12db5.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2233",
+    "file": "e312d53924fd6637564f7eacde5d4bdb33b32ecd1ec87e9c4f28340fc5d2d900.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-sleeve-packaging%2F",
+    "file": "071d05c1a51e24aa05a48e1b07ab43c040507814e0686a1fc804394ca4293863.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-sleeve-packaging%2F&",
+    "file": "3f0b7812ac9fe0394f14126c4b49915ca3cc7d52fd4b4094917f8dd4163407d8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2286",
+    "file": "9b3f28747c56c20d2fd3dc6cd10eb45a796e9ed81d9d2f07d60ff23ff60263e6.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-with-holes%2F",
+    "file": "835f2a1fa6e97930e74ec9fa1dc70f7bac4516d38604417e5598d095c6f0379a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-with-holes%2F&",
+    "file": "fd3cf5ea6affe685ec391d453632d05ba82ca435abb61805e022e2a3bba42278.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2987",
+    "file": "c51d815ad31246ef294a7858b1136d764d4d37fd66340c0809578579db5aecf2.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fchristmas-cardboard-gift-boxes%2F",
+    "file": "fe0e79b044ef5c574c91477f0a4138a90541df4fa3df7f2369cbcce7e43262b0.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fchristmas-cardboard-gift-boxes%2F&",
+    "file": "9bfdb12ebe9556bc29810bf5ecfebd0d84e73aca3a1a3268848d8eedad41d123.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2993",
+    "file": "c12de808e599324108b15f7a105ce1ebe4027190fe7e2b5a9d8643d452a86693.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcustom-cardboard-boxes-with-logo%2F",
+    "file": "f0cbaa4753a4d0b49c5dea49075a2b6ea3ca77b95c0442eef895debe0b52cc73.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcustom-cardboard-boxes-with-logo%2F&",
+    "file": "6dcc8ca93623cfa481dc642470eae828a88e2c2b3efb8de6e1f4a278d62ed09f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2988",
+    "file": "116920afe95a0e6abf8d2009ae8b53b9c2287e9eb80cd9cce3ce448178c50eaf.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Ftriple-wall-corrugated-cardboard-boxes%2F",
+    "file": "73f10aeadacf526f560ca09d55906816d4bb3f3cd7f89965c5b2443b1f1c0f31.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Ftriple-wall-corrugated-cardboard-boxes%2F&",
+    "file": "0c7b458e594098fc27dbef60c266df4ab21352a13ceb079eee206f9d1e954a87.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2985",
+    "file": "66e1fd69be343e3f64103646b5d29abe905cb80d6c3e31255ee19350061a5736.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-takeout-box%2F",
+    "file": "56251a8b982ac722cd37e99ed19eca94e490f84221445a8278d41bb13464ca0e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-takeout-box%2F&",
+    "file": "d6c275d2a09744769d78fde7a152adc8fa7100c8a7afcc5b7553cef5a184186c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3041",
+    "file": "a5af1699672ed9852453726fc493fd1bc18f6b3121959e0d513016e57158f0d9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-mailing-boxes%2F",
+    "file": "1a02b82fbfdc82fc944890f32eb9c8c5dee8adfe558d773130c9fdd09c86db4a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-mailing-boxes%2F&",
+    "file": "28d91fdae15aeb289f7ece9de94595dfcfaa2f5e3ec89c67daf2b1594768ae5e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2997",
+    "file": "b46437621d525dbfb2ac0da2f53396db120e8469f11bcfdd33202ccb6078a9a3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcustom-size-cardboard-boxes%2F",
+    "file": "c1779a8658bf2304cf800411d06fde0e727982cf1d2b903d0876f9939e6dfb49.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcustom-size-cardboard-boxes%2F&",
+    "file": "1a60ddfee790f9e9684e57064d2c5cd65fd8844976a20b71b5f8995710affa51.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2998",
+    "file": "54aff90c7b235794fed7f80d249c40157563926fb97ff4037f7d638a3a87378a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-product-packaging%2F",
+    "file": "381925b8dbd67cdd7a4895b84c2ab9ed1840a91cbf1683addf4b3e794c6ae7ca.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-product-packaging%2F&",
+    "file": "28037354de3e809442c071c15ceff0512740790c3ffd054016522485e10c92a5.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2984",
+    "file": "33524629564c4e2834bcd8c6e3f74cbd93b19f949fb11a1db32d7b1730ea4158.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fsmall-cardboard-food-boxes%2F",
+    "file": "3b9ebda47efff512356a252125fc6cfa7140316da07882561eba078a76734085.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fsmall-cardboard-food-boxes%2F&",
+    "file": "d9c6b06187dded01d9ed2e04db7ddec380349143c4a32db61c434ec4ed1dbd27.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2999",
+    "file": "2189839daf4491c06f403967829b47dfafdf26b94e718fa8b3286d3600006f4a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cylindrical-boxes%2F",
+    "file": "df0f42a2a845fabed504f981f1f3c1c2346381bb9b0b1fbd116f2f9debf257b4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cylindrical-boxes%2F&",
+    "file": "a0104b8cdeaf866af725975b785db32c03c64f849512f31be158cd1b41fba92c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3188",
+    "file": "c4d661bdebfbb9a2b2bc4b2263476a21ef73674276c0886e6ff0dfe0e0c258d4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-poster-shipping-tubes%2F",
+    "file": "5a5b53fc7771760dc9554db257426fc0263942023cda2e0ef1a82dfa3803aeb7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-poster-shipping-tubes%2F&",
+    "file": "3e2b2bef0dad446bda8ca59ee0a7532978060570a13fd6cc47cab48c9202b470.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3186",
+    "file": "0cd0afed871dc2093e27fb9af84b4ab5e53e4097ef36cb29870535d6cfe59f7c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pyramid-boxes%2F",
+    "file": "2673a47780fb83887afeafe9801c50504afed359dfa566a1f21acfa00917ec3b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pyramid-boxes%2F&",
+    "file": "97ee73f70a2b6a60f1d1ad879322900bb7ce2d4bf35d86e51052a7b45572a4fe.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3190",
+    "file": "200ab0295ac7774994bbd344d210a484f6672b4290cb275d04d9c60f57449c67.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-triangle-packaging-boxes%2F",
+    "file": "aa555b41ed69e75d506e7827c10da987075cedb92fbcbe100abe1fbec0933b8c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-triangle-packaging-boxes%2F&",
+    "file": "40bb693e71b3263d079db8d472374f851a82cb615e3789ec5753c1b227df2da5.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3189",
+    "file": "ced2960a8f1f17885aa97ef96ace5b5fb3f42a3c2d9ab9a57ad32c4fa09a4b92.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-octagon-boxes%2F",
+    "file": "4a407374e9e0bad5e2885438d3d2fc87eeff190fb2d7bf488c4b99f63efaa1dd.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-octagon-boxes%2F&",
+    "file": "bd138be1dc4bd59d48f9cf866d3b1ce407d432d3d9768f825f031dcf360386f8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3191",
+    "file": "55ef7e994528d6e68ee33e353e778eef6f00c52dd2e32e097a4b464fd4f45bb0.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-rigid-lid-base-boxes%2F",
+    "file": "f1b5d3ae80dfd3642824c1c60d055240a1bd743e382114b06413f8f121de184e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-rigid-lid-base-boxes%2F&",
+    "file": "1dd1267290586443d53d565ec428c8d0dece2ecfbb2d1f051a98c456c78e51b9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3195",
+    "file": "a237ad4a74b7c9e00ffcf0a5c82b4808cd4ae942a4c100140a543ed3b5d5db73.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-rigid-drawer-boxes%2F",
+    "file": "7951c35878ebd01527145116b9ba614396de7695fa751d770f0c2b2a4d3db54c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-rigid-drawer-boxes%2F&",
+    "file": "a446b977f8033d2ca5d4a6ec390ae66728c3c3273f6678c7eb0d5a980c48f133.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3194",
+    "file": "585b4a1464ef79953df03130e511aa21520fc5ddccc821e573a92a01d8972a94.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-hexagon-rigid-boxes%2F",
+    "file": "324b8f3372a55e14bb3106965f84c1f6e8afe61824531cb0817a3cf6f5115821.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-hexagon-rigid-boxes%2F&",
+    "file": "073ecf78719a5c64d21cefe0ac071533d942605f1a52fed309ac396a45338c9b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3192",
+    "file": "17f56f35a4cc9870071f4f708db456093930d4c9f55c0d6078e68092cc2736b2.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-rigid-flip-top-boxes%2F",
+    "file": "66f262a82301c082b0a2ac72364f9e0c62051d756d2ef3734e17b9161ba97620.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-rigid-flip-top-boxes%2F&",
+    "file": "e57289e770da839477578b69b1e4f70ce33e754faf77cf22d4370f7988252d0e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3196",
+    "file": "48d208175f6fae50ab56b03e04e8fa1bf11276eef09b25996a3e2aa21a72c9e6.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-divider-packaging%2F",
+    "file": "c87435df70d37a6388304c7150cc625b30e5df74c8a65d3d63ddc2168496c570.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-divider-packaging%2F&",
+    "file": "1d3913625a5d041e8ac09a19c9601b4ed0ad118cd3987d276c30dee2e66be40a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3199",
+    "file": "5eefe22f7767eb7437735f2a5f7c3e2a4207815a8853b73555b17c2351a18868.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-multi-compartment-boxes%2F",
+    "file": "e852d79b24450637e6b51be68f214867110cf8649bf02ca1f3ee45916ffd6d26.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-multi-compartment-boxes%2F&",
+    "file": "d5e15af9d92e1a19c6ab1f35663861dbf2fc252f5385e4ba6531f4df28e4cb07.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3198",
+    "file": "0f5d69b56d9124a7b9a2375cb6e9ef14b1280064809d628978bc996b0c6cd159.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-shoulder-boxes%2F",
+    "file": "2ac2d618d25135d362d074dc6d246d13e36fcd8c48a09fd074af9f0b4397c769.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-shoulder-boxes%2F&",
+    "file": "d9e702137df029046eddfe3e34b351ff802fe5041b10b88252d020aaef079f4f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3197",
+    "file": "4502627e263398551d072391a1a997d0db4d6b06f9e10711644973d49f55539b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-partitioned-insert-boxes%2F",
+    "file": "d4e633da5f07dfc80d93c462d3ca6ad98d213b96248a2c36b56d2ba89c2e3ad7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-partitioned-insert-boxes%2F&",
+    "file": "6e5c3d8073fd9bc28461bc0c7e2965d59a3833e4213fe013d1b86ec03c415e34.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3200",
+    "file": "2b271bf4ead25d4c5c7c092d034fb4730699d32d3c396471ff3da3e700e47870.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-shadow-boxes%2F",
+    "file": "342c60b8d12cf27abff3fdd5d8fb31db5f45e2999cf9aab4f91c476e92919fba.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-shadow-boxes%2F&",
+    "file": "31eb47d166c29c1341a0f9ec307ed2312a8371e5d8670c67b8e28cff4bced557.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3202",
+    "file": "7d5f00396b6447732629b736be21362991c9532ed9ed899fc71a2283ec8ae384.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-display-window-boxes%2F",
+    "file": "aaa220de4186427dae0404f0b008a8232cb9df40952443ff07652d6e5387be4f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-display-window-boxes%2F&",
+    "file": "ee41292946da259f5d00dc4fd0181c82aacd168898d2d107c30311b5934c96b9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3204",
+    "file": "96e3e1319fb55e8036bcb819090e396abf8740fc8c0b718c5b45dd4c775ba0c2.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-corrugated-pallet-boxes%2F",
+    "file": "4c1d914c0d04a927b9774ddbc3e70430e4d0f740aad173f2bda5dba3578d7088.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-corrugated-pallet-boxes%2F&",
+    "file": "d828d4d17eb87d412a4fbdfae5993a42e215326f41fdd84a7b63a782ce5f5068.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3206",
+    "file": "1ce5a16b3591723e4ff8cde39ecd4f3ab1889185bb21dd4f2fd8dc03047a4380.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-insulated-cold-boxes%2F",
+    "file": "3f61c5abb925c4b7ec6cff27c93ca9b5081efe1ea9fff4bce89e162f63138c2b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-insulated-cold-boxes%2F&",
+    "file": "93ce91477281eb4e6a8cb0b06892c0c4137737b77e530e67a117c3be6488b93b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3211",
+    "file": "cdff1461c7a6c9088f90427bc2758a177129dd51bd2fa67cfb7a5770988a3efa.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-recycled-kraft-boxes%2F",
+    "file": "02afb69a3ebe732612811b53f87b0b64b269686eb1c19408ea08c6773402bca8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-recycled-kraft-boxes%2F&",
+    "file": "48d3eff16f689dbfad336c53d6744a0c569393ac46de6035190530a117db4b45.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3215",
+    "file": "a6baefc4f1be5c98f0faa54b0cfa448188b2e6f9577cc84592203dab28d9abe3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-thermal-food-boxes%2F",
+    "file": "4de235db2d85f621a49edcd5a0fc0c071577c05ab57d5e98da476642413193a5.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-thermal-food-boxes%2F&",
+    "file": "1ebf3345d11660a7ab69ea48bcd7d5669b162cb8d9a1adb7e2ff5e7b9b94e399.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3212",
+    "file": "6645728cf8d62c4ee2c32dd8555f2d8964dfa9d41f427e55a74d6aadc5d4c319.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-retail-display-trays%2F",
+    "file": "5c6fd69c2813cd0dd69bd8fe7ea757679f2a64b94478cb71bc4df9eeb036d5df.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-retail-display-trays%2F&",
+    "file": "e3ab35c883703a180eab9fdf7e54bf1b111ca9c2bc0d9c2bf810d2a925dbe4b5.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3217",
+    "file": "1d5dc59561d96bd555566f953b4d585cd1fd805b5e6dd3162701a7f30c5a1908.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-counter-display-units%2F",
+    "file": "f7a40acb9e4c24a9989bb37c636713cb26ab8280b4e0827471309541ee570dad.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-counter-display-units%2F&",
+    "file": "73eacc2401749a88e2c6aabe37c2b24a8cb284d91a6bdfb3ff270d27622dcf8d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3218",
+    "file": "1c7ecfd22debe65d805cd837e3993ef106817e227558a952b9d8d78b108d617b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-shelf-ready-packaging%2F",
+    "file": "1019068d6b512fe948a97ec54681c9ef1457f6cc6b3c8345617fb6956e8c5006.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-shelf-ready-packaging%2F&",
+    "file": "678e75716a7af3a4c1a256d9e1b8c7d8dd6b4866554c14cb2ebbbf22041e6c43.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3220",
+    "file": "2744197953c3831fcbd2d47cadb19f97bc5c91a5d9753d8bce544d80620b24c1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pop-display-boxes%2F",
+    "file": "34bb0198f9bd090a10402f4ed18770c2cf4544b275e47091cac004a901e82620.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pop-display-boxes%2F&",
+    "file": "9f19081e08ed0b6046ec6e0a26cca7b88197a35bceba7aed8f85d972219a5cda.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3222",
+    "file": "b55279eed1dee48a7aa95068e4af457813dbdbdeb1411399c2bb63bc5057d42d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-industrial-parts-packaging%2F",
+    "file": "6e0b7ed6468e0d2893f9b7e6fde5cee715da2ff8717e8a1a3e1524d7c199ca3c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-industrial-parts-packaging%2F&",
+    "file": "373c71f83858078126e71d6a8d73840703a254bfee8a38836b0175d1baac13e1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3205",
+    "file": "0e3dd7000f5a4025b0c9eec358a229b6af126b6b8ee6e849b3f14adcc480ef5f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-heavy-duty-shipping-crates%2F",
+    "file": "ff3dc8d1933a0dcfb126b853f0617d489599a54626386615cc59755923dbbd73.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-heavy-duty-shipping-crates%2F&",
+    "file": "e179c2a24bae62e779fef8f2e6ec78d3c04bb45e05f056bcb4a8e156e08e7a6b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3207",
+    "file": "3492f5d1708f93e0c9300b4e08d0127149bd6da26e4325a9a8d99ed189e010f7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-bulk-shipping-trays%2F",
+    "file": "864c08b822134d0896e7d27b769f3e69ea9aecf247c0b2067c880d6d52ba30f0.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-bulk-shipping-trays%2F&",
+    "file": "a4d281e9696b03db21158d7f524ae09aa1f985bb16df5fa255deddd41a5dbb9a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3210",
+    "file": "4a0a43cef036659238b1c543a88f189023e7b30a8a55b6068905024588548efc.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-eco-friendly-compostable-boxes%2F",
+    "file": "a7a8031721828c158e29d220981ed2ff06619249b3413edddc2a501fec91096e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-eco-friendly-compostable-boxes%2F&",
+    "file": "aba0e12763e7d2d69afea3e07d9fe1e1309b9c3056762f7289bb2739528c3f48.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3214",
+    "file": "8bb813c1d2aeb146d075fedd86b8105a96979d9a529afdf239eea177dbbcf231.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-chemical-safe-cardboard-packaging%2F",
+    "file": "41f05dd287dcd9b4206fdd32c8d0298183dbe8ff12401e9d745cf8675766852d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-chemical-safe-cardboard-packaging%2F&",
+    "file": "33bffe6db030438658b6fe246ad8a1c7441864a9ca1d6fe471f51106c6a25b8a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3213",
+    "file": "305e641b47584440dc14f6cd3743eb819a3329e4b488c78c8fca8cb285256cde.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-minimalist-packaging-boxes%2F",
+    "file": "1455ed8cda2174cb915a05345f83546aebfd086c7692c71b23a590fd14f66dbd.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-minimalist-packaging-boxes%2F&",
+    "file": "4c39b787ef596d4b9dc2e432dff71d92289d4fa0b5ffffb17f69b3e1cec149c3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3216",
+    "file": "7f314d3c357aee6c1ec4142301e82460466c679f28fcb51dfa10622de48d39db.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-hanging-display-packaging%2F",
+    "file": "0c64392bee0fe5468a6fcab6b0f0521d6a63aebf1a9c4c8a6c777d2617d4b4e4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-hanging-display-packaging%2F&",
+    "file": "0c711061b07e4bb08c57613db57febc48e271e741011b737b933207d189c745d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3223",
+    "file": "5272f56e8f3c1c27f1979fbe467d38e86b64bf55b88a7f76f2a23d723e977aad.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-for-cupcakes%2F",
+    "file": "3a5aec41ee2883d26a34301fd17da4ee8d168851c2ae6367acadc54d94ff2c08.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-boxes-for-cupcakes%2F&",
+    "file": "8191a22afa25b4c7f0702e734b16a466ef18c8714e9c7c4091415d4198657251.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3042",
+    "file": "0ed8d50ef0b930020deddb680e5726ee0dbb9a30f6d813fbb539cb93e12548cb.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcollapsible-cardboard-boxes%2F",
+    "file": "23fe673d63bd0d0a9427b31702d0668d1efdfaa8acd6139bae6f9ff41f988be2.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcollapsible-cardboard-boxes%2F&",
+    "file": "84233c234125bfeaa1dbd8d670b24a4475ca4656f24e0b6357a9b39f058f53a1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2989",
+    "file": "3108ae12d72af9a4ff348026fec96a935779d270e9d79677a42c501b01747c6d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcorrugated-cardboard-cartons%2F",
+    "file": "ec07373da328f7f117b68701ab6dac373a1cb2b9ad708bbbcd3f4be9b1860379.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcorrugated-cardboard-cartons%2F&",
+    "file": "1a4352487e910bb5837157b565f5ce5eccd0e246923da88311c810d8e6d9ad6f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2990",
+    "file": "d406bdb32846f2d3630b0bfa00f6321a5c88702f4c51b44c17914a9c1bb91688.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcustom-cardboard-shipping-boxes%2F",
+    "file": "695143ed12095c5a8221243973d127aeb35b75237b8828a874ea77be0c646d34.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcustom-cardboard-shipping-boxes%2F&",
+    "file": "dd374b1066263ecb9dab4677901abb695289767dec9fce1734d956c2e5a282d0.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2996",
+    "file": "091f142aeb3ba6a448141b824cc6fc0ab7ede2ad362462d059c92d6764fd1ea4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-tote-boxes%2F",
+    "file": "ee81bada3b6b9040bcdac5912cad9a6737ba97d22bec3e3cc7f14a23adc3adb9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-tote-boxes%2F&",
+    "file": "0c6e34152a7668a33ff43826fbe72b339b30d10ff3f3f21a2b9bbe4bc6eda134.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2995",
+    "file": "2a2cccf57ae2823b9991f2833549cb5442b6770200b5dcbd6265c86c1c051f61.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-soap-packaging%2F",
+    "file": "d25a6e963567189182ca8f18012535f18fd7919eb08f23c174f84e077f9e68c4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-soap-packaging%2F&",
+    "file": "bd1c5ea390a87c5062b0f2c6bde8b2f0672b95b7de77ab4f802f02098cece73c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2981",
+    "file": "47d59f5a02e35f31d3195716fc0cb5c61712a2385ee978c2d3fe363b24fe8b15.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-organizer-boxes%2F",
+    "file": "d6989b34083d3a4d8baad17329a9344fabbd714e14647a7ea7c1dd503360792a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-organizer-boxes%2F&",
+    "file": "c5af378de503d747ef106810619a6fab259f516d167a5b434ee14a9e929a6da9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/2983",
+    "file": "5f84119d33659f7d41aea1ac9b88e29f652062b869805c9fe86e89641f80cbfe.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-liquor-gift-boxes%2F",
+    "file": "4c5f8e9925cdddb3d0a29727e3d78b42f3bef9dfea520d5df1910e399a4e35f0.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-liquor-gift-boxes%2F&",
+    "file": "8eeca3f4ac849b3dab06eef16c31ec8badd21df53afafa4bab97d02393494960.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3034",
+    "file": "276441d38826bb8a1105ebd2ea2747d0552a761c21e1b0c4a9a6049fdf1187b9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-coffee-packaging-boxes%2F",
+    "file": "51863cbaea0a8d25942e704fdcce55133f1133f8f4a06e7f9430b94d45e6243c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-coffee-packaging-boxes%2F&",
+    "file": "970c140f9c0e91f8049c8a9ca3f682e5ad6dcedaf5280695030be74388eb9901.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3036",
+    "file": "95f0743260962d0a152e5447bce05786800eb822bd828cbe04f60190c024455e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-tea-packaging-boxes%2F",
+    "file": "b16443ad343c1de1192bbb6b189b03f3361e3bf3ad51af8110518a6b4f40fed9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-tea-packaging-boxes%2F&",
+    "file": "03a8bd65534e3ee95c848aca3b4f99404b133e60ec94a702992775f31fddaafa.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3229",
+    "file": "56fa5aaa4576f2a75883bd4aee34b898b73c77c5834c495420a3144690d70968.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-chocolate-packaging-boxes%2F",
+    "file": "99858fa16bcc23e9aa7d7c4d314980c4a34f2bf263fe79619c8637a9c1a411a9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-chocolate-packaging-boxes%2F&",
+    "file": "53628c3e7af1b33e60139ff7a8430bbbf27179444a651cc4599507910ec705a3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3038",
+    "file": "c852887cafb0601eff9879a3946847dcb7ca76e6f8d8def65e7a110e0d5656ed.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-biscuit-packaging-boxes%2F",
+    "file": "c2e9abc3e6b069f8a21bea63494b14dbfc20dbacc82c9e2149224be01a37994d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-biscuit-packaging-boxes%2F&",
+    "file": "90b2a5910a345df3157c9f64c5143fa941f14bda9911c038974aa59d84026856.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3039",
+    "file": "c81c40b4c7d235be8caa496ef885a061db7928de24ef88e7e23e1c1741e38581.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-popcorn-packaging-boxes%2F",
+    "file": "74320d844f028eca1c413be51f64c915cf81f74b5b8eeef722afab10910a4c05.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-popcorn-packaging-boxes%2F&",
+    "file": "9ebf5fef641e1491ef24c20bc7bb6e03ea94546816b25d5a2639ffd4329e243d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3053",
+    "file": "baadd07e6e73a487aa0055ba5ecd6f1492e281e9600e78cb4341fbcdfdeb9b0d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cookie-packaging-boxes%2F",
+    "file": "405eef06f3e3d18e7f7950de5e1dc3ed9452f364f2688a1565defe6253f19543.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cookie-packaging-boxes%2F&",
+    "file": "2f45b1b60d4a66173f38b88923ce737e7f86fae73d0e7946c34136fc28938446.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3055",
+    "file": "78913a5cf0ae7940126c6a7a2fb96c8e299ac971410f28cfef4ef2a0d62e7fda.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cupcake-carrier-boxes%2F",
+    "file": "4ddd4adc8a9665bdaf4bc20f6113e82be3ba004367d37f2fed8dabbffdad695e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cupcake-carrier-boxes%2F&",
+    "file": "79cd02f0af7cd2f54e17d822820a3b95f26019ef308897a1738ef289cd3b07d8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3058",
+    "file": "1341a68d80e42108005f27aa674ceb64a1f0d3fc846d01cb3710169c355d6583.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-muffin-boxes%2F",
+    "file": "a79f5b2abe5dce1d7be547aa73e3c8602e9c1dbd92c4d722db6b30bdc9e1a9fa.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-muffin-boxes%2F&",
+    "file": "12d2170f3c1085d4ed6340b51b61116404f55f45d3c6ea7bd42d9cf2568d24d1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3057",
+    "file": "f325280544e38b0f6d0cf158f131919acb9ff8fb4ba6d9c3ae27037f88799638.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-donut-boxes%2F",
+    "file": "1e94cd2c47f57ae7026e8c1ac3e03bfd7e98f812dbae486b8de08128c16398b8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-donut-boxes%2F&",
+    "file": "b31825a1fb3550e2f5ca3e020460f52b6658fb68c79c7621cfdb3a0364ba705c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3056",
+    "file": "eb373dd08e586dfa540cfb753f1cb39567b92a11bba68ab479d87da2b106b1fd.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-macaron-boxes%2F",
+    "file": "8c7e4342c438cb315b356c2fe75f8bf3b745f1e8dd1dacb07f3c813e96340b56.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-macaron-boxes%2F&",
+    "file": "86d4cbc659770059cab0c6ab4da5a3a720c0e55b0f330c5cffec821ac763e715.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3064",
+    "file": "5028548695a1426855b5f109e1b94788b05d62b5dd3febd0d7964e8e16ebaa8d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pastry-boxes%2F",
+    "file": "4b11d056fc7ce0d0155ad25207e03cd1f5f42f65da4cdb9613eff2494ae9f2ef.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pastry-boxes%2F&",
+    "file": "ad354b9af1fc622ed32c97b03ac066e8f60aad6d8f318e64b38eecba4d1a1c48.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3293",
+    "file": "1f0dfb23d2bfcff1e6906df9080d22d070790bde4446a3a1ee4679c8c190c44d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-sandwich-wedge-boxes%2F",
+    "file": "0a99beef04ea7e0c7ee0cb8a6508d2776160ad6c95dfcdadb7a17527d4705c62.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-sandwich-wedge-boxes%2F&",
+    "file": "9ddb9ac2743ed07562d4f434034b783749dbb12f4ebd5c492ad2688b659d155c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3065",
+    "file": "33d89c47e2775c4b72611471a4591151562c1e3ceba70ff9b815ad2c0b4bf4e3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-noodle-boxes%2F",
+    "file": "69096b4682a27d8da7200e1b49137a28a9e036d54d76e5d5697a6aebba60cd0b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-noodle-boxes%2F&",
+    "file": "eef313c898d58ef914ea70175534e118a5a303a77f31c8ef281178f917250753.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3077",
+    "file": "0bc51e13028da6e58b34b6c57246e3e43e7cef2b625ac84bead1e3d2b21da47a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-sushi-boxes%2F",
+    "file": "452f549e9579d84273d9e6b5a476931d39dfb6732f82dd9b37bc4c125d482d49.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-sushi-boxes%2F&",
+    "file": "1371c758e34203b05cf3d32b377b75e9f365a8c3289ccf657fc535ee0cd42d1c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3072",
+    "file": "c1e2ef973dc688b623f7757095742c7a82d93f5fe8eb46665d1a425888835cb9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-salad-boxes%2F",
+    "file": "9ec519b75b4293463fabd622b10db508698651f1d1e1fff91965229f62be1de4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-salad-boxes%2F&",
+    "file": "506667a94f5f511354db597895bfdae8a10e41381be0361e605647440ed3553d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3079",
+    "file": "0c42be6027915bd9f0d929b2bcc8787ee90c8d2095425e3affe98d89a689edbe.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-meal-prep-boxes%2F",
+    "file": "465b065e3f64884192d4dcaba9851c933fb8baf05ea5806f114415ccabc8ddf2.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-meal-prep-boxes%2F&",
+    "file": "595c2a64ab8d6812a49148701770d199a7bf023fb9419bd69b486f99be8699ef.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3080",
+    "file": "a153e0efed1ac0a865b1ac2414a49fc164453a28978261c1e3f2d8c94d9fc485.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-catering-trays%2F",
+    "file": "b93912c4b46920f7c564b321d8cdac5f8ffd95fdedcb842fdc5186d6f541926a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-catering-trays%2F&",
+    "file": "a968fdf32dc68e0c53216fb6c61c2e3127bd3968d1717fd12b8f9cba5050df83.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3081",
+    "file": "8228b1001e6775e09cf754da0251861bf5367de685e9c868266feac999ca708d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-frozen-food-boxes%2F",
+    "file": "f0bfc814c9d765b4321ab734f3dc66d32c6ac709c124c5ea815c8494d1594943.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-frozen-food-boxes%2F&",
+    "file": "f001f45ed27a3c15b18b36e17272c81ac2ee04b5c873c243c1d935b0563bf342.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3082",
+    "file": "d2cacff42f089a7598ade3d401e0bbff9fecd8245c896feef641cc51181c5a3b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-meat-packaging-boxes%2F",
+    "file": "f3414f8789ca49b44445b501bb3f57b4f2714b35a6dd8deb7d72614dc79fec95.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-meat-packaging-boxes%2F&",
+    "file": "7d4d649fbd16d6f886922f67fbe459b8b75d98f75df4fb6cd0ae2d99fddb83c4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3085",
+    "file": "df5e0d57ac14056d77ea13f7d3b3fe046949c9de2344895e5a9c615dee407e5a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-seafood-packaging-boxes%2F",
+    "file": "a3c6bc6891af3c12430b6c147653b0b9627cc1186bb4b90c99f960c35a350273.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-seafood-packaging-boxes%2F&",
+    "file": "bae8d1518ad0aea5ee78a43d89c03a2ce41da52f3054c238dd9f215b23ac06a9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3084",
+    "file": "4027c49ff9a4388b546533f925249b73e0ccfd004c01ba53167355fdb5427df3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-vegetable-packaging-boxes%2F",
+    "file": "70ab25d852bd11e0d6412e59e75f8b7af72e215e314d6acd00ff8f052588ed3a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-vegetable-packaging-boxes%2F&",
+    "file": "111ee1434fe207858a735e2f79e6c27a34ce40b11b569181ed3af81d4a7a05dd.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3090",
+    "file": "33351e2b813f22e60016da992e16db0aecca5e2586c9d6338cdf8dcbbfbde5b5.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-fruit-packaging-boxes%2F",
+    "file": "cc588f6fc92fdfe524676999e21a1d26d070b4ad14ac04688281e2d000bce45f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-fruit-packaging-boxes%2F&",
+    "file": "62a6ce8d17c30232171f0d531dd45c5a941119769e5ff3ed5e6b2f91a7d1b1da.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3091",
+    "file": "14d69730d155cbc41742576766748748bbe186603437eea8853d1e58042af134.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-milk-bottle-holders%2F",
+    "file": "70ae60bd03c5c231a5a864aae2a538f0e84dea32d22d658b76dbd911dcef2532.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-milk-bottle-holders%2F&",
+    "file": "998b10a0b930826a7ee52674954bcc05a49cb26cc59ee2b40552855f244f756e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3103",
+    "file": "d6c9774050373399a8273247c2b0a69c59b4376578d8c1aaf0034287d1a6aeef.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-juice-bottle-carriers%2F",
+    "file": "0f763149872d96c117617bb726f87cd8c9d5edf0a85b973ade8de08c75080fc9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-juice-bottle-carriers%2F&",
+    "file": "1257fe88f7f4efaeb2a471da72d90083fb29d71d989f8ced7362b905b9e8714d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3092",
+    "file": "6c4b23a9572b066f1119e1d1bb13c09ae79771aa0b022ff5949882fdf1f30c41.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-egg-trays%2F",
+    "file": "428738fee266929b8637955d1af736f41261250a0460c18e5d51ef8a3ea0ca04.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-egg-trays%2F&",
+    "file": "3874192bcfee627c283e0cc0cc19769d65d1a49cfcacc710cac659ab91ef1d09.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3104",
+    "file": "1bb97cbb522cc004b8711f39e44b906595abfab493c14926dacc1f70ce1215de.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-candy-favor-boxes%2F",
+    "file": "469adb492ba255e2b7526b7f82ea84211dca7212e3e1303383b68f23db878cb7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-candy-favor-boxes%2F&",
+    "file": "424abcfcdf1550b62a3867576959763481c45fe14cc5ff9e072ab9c7bf35c083.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3105",
+    "file": "d4ec12b0a6068f1e3ed248b431fa992b76e7cd41af55f2827701bc0b92b4700e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cosmetic-serum-boxes%2F",
+    "file": "698b9d0b639a7d687e7e427c1b0ead6266eb146438b2db6ce898f02a706361df.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cosmetic-serum-boxes%2F&",
+    "file": "3ec9c798a74325f7d5a189d5a6ba9cf4e9312b0cc550da6ceca6a0360219f081.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3106",
+    "file": "bbdd875beb67e8f07c90181cb5bf3b5cdfdbf36b112c5acd7316b9ad44816f31.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-facial-mask-packaging-boxes%2F",
+    "file": "489664d47058884df7db4de0aec2450cff9702396d40cc0792955a1b9ff775c1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-facial-mask-packaging-boxes%2F&",
+    "file": "312e2640520c604ddb6f99fff5f196c43f7b76921363b89067f46158075c016e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3110",
+    "file": "537b1ae65ba2f061d582ea3a79b7ce06d671d72b87e9a4598eb408e855f81a8d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-perfume-sleeve-boxes%2F",
+    "file": "64f96b8eb75fc832570a1359f47688479f85458fec0e2bd840fb6e243f99b17b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-perfume-sleeve-boxes%2F&",
+    "file": "c93022e0ec5883191daaf50188147d5cb2266e8b35211b2af4d85a2b5f78550c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3107",
+    "file": "c188e936679399f1b8c2ad6072b017e6c67ede56c9218cee408caf96e7e7d038.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cosmetic-jar-boxes%2F",
+    "file": "f3191e28d2493d47a2d688842f0a9c17fefea23949aeff42b99f74a3d737e695.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cosmetic-jar-boxes%2F&",
+    "file": "dcdd69876be641d2ad7d8845df0086a650931a1e9c9bf377bc7a669fbcae917c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3108",
+    "file": "f0a53ca010652901c531a0598c6aa97f7d35bc63ea776c2e3807195faa36b1ca.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pop-up-gift-boxes%2F",
+    "file": "fdb260c39c39e1d20cbb85b0d62b00b286e0d470da75cd8a9dcd2db3c1ef1843.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pop-up-gift-boxes%2F&",
+    "file": "b7e6d536436c1fcee46f48517c94122304aae736c1caacb9ecba32963276acfd.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3115",
+    "file": "a30c54870dd9943dae7598762eb49cb840859da874c58b284061601c3afa0a3c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-skincare-kit-boxes%2F",
+    "file": "a0329a6e223399add06463a74e7c74b9171b43b7b53ae4090127eca461e377da.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-skincare-kit-boxes%2F&",
+    "file": "4497ab7ca3367e2cb74f43f4d162ba0d575ac2bd99dc678aa2d0ccaf0381a941.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3111",
+    "file": "a63f6dab7486087b1bbcb0f8af28af99f0d1000c310d1d32e3f92f3df9d29a68.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-hair-color-boxes%2F",
+    "file": "f40ee8c8bed310c9026a2ca80a9c0564e6ab836514f9dfe7e0fb98316e2fb17a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-hair-color-boxes%2F&",
+    "file": "0c71e70dba7b02322eee35a450a687a2dc2242b5fdf12ff6f5476379c727a850.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3112",
+    "file": "ad0f613aa8fc7cd612e98d7a119c280d43656243bc4793c8093152aab6221715.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-flower-boxes%2F",
+    "file": "e7c7ac0c452000d45103b3ce1e921bea56d28bce11a5207b892680c54e46e41d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-flower-boxes%2F&",
+    "file": "324d33a93f9b7daf2e8fc60d487bf99d88646651b3d8993692f2f5a9d325f0f9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3117",
+    "file": "97a1b7ac8ac115f9c809b872ab8a7e726229999c655e97ce3faf5469b74920df.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-event-favor-boxes%2F",
+    "file": "a22051b2bcdd0d92741c5466c46ff46a236685056098249282b8f9341130c42c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-event-favor-boxes%2F&",
+    "file": "05740adc1b5335c6815245b17795478ead56f0aaf4dee3a70f36f5d415084024.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3113",
+    "file": "fd1782eb0a6b986c2fde5eee52d70ed489cceebe064331c974bc041bca48de23.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-bouquet-boxes%2F",
+    "file": "7afab6d0c1482786de0968b5dd1d94223977c3e8fc81169569b80a4e00bb6f5b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-bouquet-boxes%2F&",
+    "file": "f871923f24a5fb09f41e39bf51f48c4ec1ec9268423736501639afff5dcd3199.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3118",
+    "file": "b11bde2bbf12f32d9dafff00f9188a917bed846c6c9460d1a28206bdbce50db8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-gift-hamper-boxes%2F",
+    "file": "e9a9a1dfa72cb41eec369eea76b53b0c750ff169c35ec9790f74a096bbf720b3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-gift-hamper-boxes%2F&",
+    "file": "5392706a4163f49aebec899c656cc0d0611b9e5df1048781c5168148ae03c481.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3119",
+    "file": "a2593918de4fec999e6fc8152d342efad835ac344b61f37c41d25ba891097384.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-luxury-magnet-boxes%2F",
+    "file": "b80bc576182fd8414d0aded3c720690d055f7eb7f7554560688ee9151013e829.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-luxury-magnet-boxes%2F&",
+    "file": "261d571464925818d0fe13f13efdf65def97e974bf8e80811cdc50800949fe44.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3120",
+    "file": "52b4d06bf27ff4a6e8027335766e412de929d1ccf85898e671a0f54cafb28cf1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-ribbon-closure-boxes%2F",
+    "file": "87a34290f4a176d79f4340b400cbde0f190bf742af14315b55f9fd7389c41d23.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-ribbon-closure-boxes%2F&",
+    "file": "0d4ffcc7ef7508b82fef3e40224da2f72c4d2778129c41dd30e9c4c15b4f236e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3123",
+    "file": "698c8d35b5847b56e865503d0fb712848d04cdcad9817ecb8535a63abb064a42.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pillow-packaging-boxes%2F",
+    "file": "04527d0d0b17ceb7d6f9e9e6f2654b44194234e9f3b4b6cfb2130e362e5285da.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pillow-packaging-boxes%2F&",
+    "file": "16bbed0796104afc9e45453c0e3f608390ba5841cdd5ca6e94d0d4f1b4cc1550.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3124",
+    "file": "2762cd30d55d4e83a46d967a98abf9d6338e8243b0fc497b55d71be4b7bdf6ff.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-heart-shaped-boxes%2F",
+    "file": "284a3311489e56fc92e4c59d599a4d5bc2bad3f8fd98d6369f5bf9396ebaaaa9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-heart-shaped-boxes%2F&",
+    "file": "8253efb2823699d53d1a1aca938a8e145c85fe871152e6cdc9f144690aafaaf0.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3125",
+    "file": "48c2ff0055a01f00e508d78ba858ea995922eeb9999e86789185e45612670176.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-gift-card-holder-boxes%2F",
+    "file": "d7f224831f6f893cd6fd332d7a63bb7fc30fad89209b684cda100233eecdc26e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-gift-card-holder-boxes%2F&",
+    "file": "833ba28fe5575ce71b49d83340902a7dea6dd59e139683e3ef8d5bd3a2fd52dd.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3127",
+    "file": "5bbcd675767e1047edfe02f884d54d6d5410867a50debf570ded1bf81c36a9f7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-invitation-boxes%2F",
+    "file": "54de75df10deb0e470e9ac8d407964b52978b800510c530cde4ac5494a047038.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-invitation-boxes%2F&",
+    "file": "080a826b3cf6d457eba8b025b5fbf181726cfe7343ecca18844d531c6ed7b3ea.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3126",
+    "file": "cfadc8341afd9fb50cb503672b0588c3fe3d37e59ec486e8b9b40c9048c860d8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pr-kit-boxes%2F",
+    "file": "6eca1d09b01595294bc8ae8b7454ccc4d14a629b2496f8628be9c9d4a15975d8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pr-kit-boxes%2F&",
+    "file": "adae4950aee0359554cfc58b7f96a90b7681681b31d6955b3685699e352c6924.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3128",
+    "file": "d32fa4ba2694483d2b2d07e8ae70782780e7c793e09714fdff1cc51800262672.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-promotional-packaging-boxes%2F",
+    "file": "bef815570441515a1fdf4ba43b149efb7401a92aca7ace0b507a01c248b8ea1f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-promotional-packaging-boxes%2F&",
+    "file": "5ae9654a719ec5950876aa05d109b94f6ec87dd0ba79f351817386fb1c6b724d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3130",
+    "file": "b3658e1ec5d11fc96a736dda77f4df183cc7634c845625f180100634a6f0478e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-brand-story-packaging-boxes%2F",
+    "file": "b4859d20e99903ab75c35b1aa4901288825e31408b98166c5fc67986d3843212.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-brand-story-packaging-boxes%2F&",
+    "file": "c1e520f04da8359a7b343bae31f33e49e7c7610a20c0c5e080e77ef995eb6d72.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3133",
+    "file": "19aa4c5adeddd148c08282609d7ee27049bbe677d1b35d831b9b7522f0fb6e52.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-corporate-gift-packaging%2F",
+    "file": "bbbae4b81c1127cecb1c6c1304613e12bea6aeaaf5bee25a001a9a89601163bc.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-corporate-gift-packaging%2F&",
+    "file": "3b380680d04dee4bbd18012e1e5c66dfb7cc4585081260bb0ee54385fe37b4b6.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3132",
+    "file": "7e37984fc2c8656520aef9e631ae390d9458420dfc3609979ba3c1b39638a7e8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-welcome-kit-boxes%2F",
+    "file": "64ab63b8ebf4d37e399928ac149f70e1622946d02eebabe41a95eb3d11e9b240.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-welcome-kit-boxes%2F&",
+    "file": "15c04c313d24f56439bcc8eb6451e6da823dca4a2d1991043daad7780369368b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3131",
+    "file": "3f15d84e6ba6abfcfacab1d1ea143298b19f707f7fcb948a2fd04f0c933483bd.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-influencer-send-out-boxes%2F",
+    "file": "6293307b585476de49dd4be32957c795395a08185accf32009a37a94ed5d46fc.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-influencer-send-out-boxes%2F&",
+    "file": "9cb3197354b1ca46598b29c72b1f5ce863e32f8fe5de3bea91a6f57f32b8c8de.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3134",
+    "file": "82bf65493f989ecd8f34c14c23b1cb6949e965dc3c07f12861a50b8ff55a6335.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-phone-accessory-boxes%2F",
+    "file": "bc93f706e9569e1f6e83952c3d2e4633f30738efe3b1cf466651c28a84801617.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-phone-accessory-boxes%2F&",
+    "file": "c610472a949a9c7e7555bbb6bf48b5c00c9992bbb97b60e61c4856e32677df60.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3135",
+    "file": "25205a4961b3a7e861bf5510d4451e5872b6efb077ed9fe1f8ea13adb3682695.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-bluetooth-speaker-boxes%2F",
+    "file": "4b4393e0146d3fe0e09c37f45592f9f35abdf81af6346aab369497c4b445e1d1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-bluetooth-speaker-boxes%2F&",
+    "file": "a62b91eaed8eb8b0a0fc7e7bf7d36d2574e60a9df433d36bffadc9c2119bf0b6.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3137",
+    "file": "6e55bc8cd2718ece074a00cff38dbc7440ba9ca40a969d7ce9dbdc9f957ca7e8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-earbuds-packaging-boxes%2F",
+    "file": "038978c0dc1111d7c655f54f9b7e969ca66825bdd5b7fd1755554cc759fee7ac.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-earbuds-packaging-boxes%2F&",
+    "file": "701a9a2de6ebd070e68e38b57b018358686eb0f67116dfb9a4ad93f3c9a52e28.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3136",
+    "file": "a7919d56e6c8d73469f33a816ca1a76d2a2aca1b554e35e88e872ecadf880a9f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-power-bank-packaging-boxes%2F",
+    "file": "3690f64ec307d3b134f7a7a54cd58f820b1f50b3482a4240b49c9a0c729187d3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-power-bank-packaging-boxes%2F&",
+    "file": "123b5c29bcc02c0c38d01b73e71dab413d932bcf652d8b4ad71decf1760154bc.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3138",
+    "file": "92bd6d25434b9f26e4843a1d54e817b3a8181c57bc6c3862b392e767bafaefa1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-smartwatch-packaging-boxes%2F",
+    "file": "71f98ee1a17fa1f143eac4ca7fe595b2fc75cece50ce13f41914c311a16605bb.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-smartwatch-packaging-boxes%2F&",
+    "file": "14bda845cb43abf7bdb218bead782cf7a2e48c3c74bbded05b2d1cba6ca3da07.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3139",
+    "file": "ff23ac873e9bbf094d8b576c959d35e9f4efcdcfa470e3f325e3129ede022586.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-vr-headset-boxes%2F",
+    "file": "f950ba5df3de2172f491cea8e67b8dfcd2400c7a1449da7abf432d877004be46.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-vr-headset-boxes%2F&",
+    "file": "33b700f12d9acc248a8e154aa4210be051d390b24e70c11c22aea3af12c0faae.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3140",
+    "file": "4dc07c5150ffaa4585b9c957a8fdba0beb07b073ce825101460e6469aca493fa.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-gadget-kit-boxes%2F",
+    "file": "fa41ef453034b76747fd8df95326d99d7a9988c8accf940f5012268cfc15f791.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-gadget-kit-boxes%2F&",
+    "file": "d0d2649200e9b677ae792ad04dccd829d0d20883daec6992452b7b77727326d6.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3141",
+    "file": "057965800ba93dd57f982cf1c57ed63bf7d63919c364a72c4c75dfeb0c3e2e88.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-router-packaging-boxes%2F",
+    "file": "0b2bddd5bfda37d1f719b5e8444fb1838b655a785e56c33b189ffe077622e153.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-router-packaging-boxes%2F&",
+    "file": "4938f32a3a8c1c6a6035fb6d1493bda484727c0277e8aadde0d8ed1afccdc55c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3142",
+    "file": "d956fbe811a62c533e964f194bac87b614200c4f6946aa3d0d5397276d847e1b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-wifi-device-boxes%2F",
+    "file": "5e80cf5b16ecb3808d9eccde1456987ec95b3de7c21b3e030989b0c46edea2b0.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-wifi-device-boxes%2F&",
+    "file": "999343b12257f7805ee5bfae4fed1ec8ba57311a3e5a1a7dfed64f6836993326.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3148",
+    "file": "ce34d02e1bdab115e2960b3dc29f46ecf05b6ae95b26349b4d1c13e2945ac685.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-camera-lens-boxes%2F",
+    "file": "c494b387b8c3d3a6d019225b428456ce592356ef210c950dde0bed916c996771.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-camera-lens-boxes%2F&",
+    "file": "5fda9a9c17ec0da97799a40af93d944ef166c6ed9a6ea3f0d6810f32b3e9a7f7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3149",
+    "file": "7176da67e1c435ed2b7e6aae3b16f387bf3c8616a2b10e20ac731f2fd95a2ca7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-led-bulb-packaging-boxes%2F",
+    "file": "aca83bbd4c75cd2f0f0f15c9f8fbb6bcf406a96d8b4eb8c23e6859ecfd45c959.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-led-bulb-packaging-boxes%2F&",
+    "file": "35455863ec011621e69ea03f0d93b62fac75f818a991a9bcbb729386c669bd6a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3153",
+    "file": "6c4a790030d2daa2be4a6fb99db0d2db90c8ef77a11cc2dec15921cc724c3abd.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-computer-accessory-boxes%2F",
+    "file": "09faab93b67a492a67f076254a84a9b2ed311bbfc0fef1437c6426a8680e2a9a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-computer-accessory-boxes%2F&",
+    "file": "63969f4a28e51737be298d19967d411e7bd6637b5b5e5518f5dc968fcfac37c1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3150",
+    "file": "1007389d00203332fc36403788fd7bc99b90da73909275fd4bda88c74081096e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-appliance-packaging-boxes%2F",
+    "file": "2551b77fc08ceef8e12fd009add3503a69ba60af0d7f1eb2489ff932f474d658.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-appliance-packaging-boxes%2F&",
+    "file": "23012225b7b657581728518ccaf58c84b980001d84d5748b558f1cf9b1617a91.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3154",
+    "file": "a5dde6a584e3343482a66fbd1f4bf1af8cb70342ce8a849721a3bb9ad4feefd7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-small-equipment-boxes%2F",
+    "file": "6485fc6ef5ab9f49c08fddded9bf501d543aa20575054bce1f605291318eb3f3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-small-equipment-boxes%2F&",
+    "file": "4566236d01fbca7ff0878d159f6c66af602fd7df1005c8b458bc8b78001917c1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3155",
+    "file": "41c2433ff6849ed71e10c29fb8afc1bba27cefc549917e8ea22483a1f41a31a8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-beard-kit-boxes%2F",
+    "file": "4bfe837564c220a330c89b9201af69d75272b93c6edb1f9e33c1ddb93fec3f53.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-beard-kit-boxes%2F&",
+    "file": "12f8d3abba76d3dd30673df0679999eba40c82fd5820a0e1f4fe893535bd7f12.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3156",
+    "file": "bbccd93dba514cc7177d402e95870231a7505b28b14010f4c2ed50ba6b6629f5.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-supplement-boxes%2F",
+    "file": "79d88d53b90994c5f32f479e88576ac72ddb846e124e6d69f8de054a07346a34.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-supplement-boxes%2F&",
+    "file": "5ee65188ddf8befa13f659402035203493bb7e429738121c4deb9433df92b782.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3158",
+    "file": "9b24c1becafe0f6f0ff51ca61ac363cd695bf0db057aec356d7a1970dae71271.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-vitamin-packaging-boxes%2F",
+    "file": "27f17d70762821dc4248fbe20996ffc116595d6b560e7e0f3986d7a703ddca0b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-vitamin-packaging-boxes%2F&",
+    "file": "8fe8074dcfdd0e398f01562979149cb411cb0dd39a05b9a2ab9860926ec2e02d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3157",
+    "file": "07d79520ae734e2c5dc5b2ba8c6fc4997c916bce76bb20171f158840f80dc31c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-medical-device-packaging%2F",
+    "file": "68c0ad1bf0e7e08e44d271d862f742f2d4f780b3c05db0ad58aebedb9081b836.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-medical-device-packaging%2F&",
+    "file": "ac4d4f75919b66da5fdfd2dce68addab8c42f483268ffd44b9b45c1509613ce4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3159",
+    "file": "eb78906300c4c70dd90f4b1f6f96c015caa157e7c45ac64cc60c5edd094e55bf.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-syrup-packaging-boxes%2F",
+    "file": "9d184a6976164f0c17f68bc98a092a251504a977f17c29716167b375dade1813.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-syrup-packaging-boxes%2F&",
+    "file": "b1ea784c0f554a1ee48b64c391e68b3aed1b3fa253fe023ce6bbacd40cefeb6c.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3161",
+    "file": "07e3a86e2f20e60e9a31639f9089e546fd315da29be760f933b8248de662dd82.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-first-aid-kit-boxes%2F",
+    "file": "7ac414ef57bb36da740dd26b75675bde777a868622bad94addce1152829db8b5.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-first-aid-kit-boxes%2F&",
+    "file": "030518d8d0a24a670c692e1efbc387f398719da9fb7ffaf5463d7955bc66572f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3160",
+    "file": "4058239ac1dbc2a69347f52e13a98b8932d539425a10208835fd235dd6889fc1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pill-packaging-boxes%2F",
+    "file": "238689a0c817479ad03798ba708f3480627ee605bfb2ea6e7f6c1218be055d15.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pill-packaging-boxes%2F&",
+    "file": "52a25d6906f8ec9a71433f1df39fe636c11c9dc7118807e2fc301145561f6128.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3163",
+    "file": "afd408792f0d247208b472a66ef4b5dff46c268d245a2d5416c6db404ec0b746.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-ppe-packaging-boxes%2F",
+    "file": "fd8b054927fa700e5826be2218b522470ad8ecf29478c2be9df63b885b814e51.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-ppe-packaging-boxes%2F&",
+    "file": "8d3cd27ac8456a579601000a6482b932918cb5835f4f8d2a4fb44b01d310223d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3165",
+    "file": "d8538dbd651a4b485cb2a9780c18de47302689fc81baea4a8273c36c99ada057.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-sticker-packaging-boxes%2F",
+    "file": "362ad445aa8a2aac92bd5dcac3c6595358abbdab4b286561105ea186e7304b39.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-sticker-packaging-boxes%2F&",
+    "file": "7f4aafd1d24c2399dfd3def8715dea90e2757fcfc8131568420bc65e64e928df.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3164",
+    "file": "4bb3ad87d8db3ceec453345e6e57f96129c21e3faf076ba62567635ff0e473d4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pen-packaging-boxes%2F",
+    "file": "abbd650170087e3a54fa2b089f4c8edf7a2de2306093414285a13ae06fe82b13.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-pen-packaging-boxes%2F&",
+    "file": "529602cb889357efab0358717c70de0c05e9e0c259d082a2ee2872b24c69f1a4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3174",
+    "file": "d87d21365e2f088ddf62ebb87a295748aa3f0d658b3bc125d862b02c02f156a6.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-badge-packaging-boxes%2F",
+    "file": "5bf68d0122f882858796b88ad3eaea29376e4151b1a6d536a6acc67c28fa21e1.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-badge-packaging-boxes%2F&",
+    "file": "4a8df58177f6e6b8ba3d7a8a99b8b9be8930bf4163eefaea34e7c063c77f3e47.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3172",
+    "file": "02733b8a68472956416707e3b8955a30ac93efcea50e7bc4c4ce6294a73d53ca.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-keychain-boxes%2F",
+    "file": "39a76e932ceaef8664d2feee6a7dc6b3488384f64e1ae0008a1a14a08a886e45.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-keychain-boxes%2F&",
+    "file": "eabad099809cb1b35c6d0cec2ecf1c587671de336d7f894a7aa73000b00ef579.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3173",
+    "file": "10706a7adea3105c6ec0b502e642cda1da65a651655687f56dfa0f909269b6eb.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-stationery-gift-boxes%2F",
+    "file": "0220afec748a4a530cd3311cc18c98868f5af486b44bab3019a52e738c5905f5.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-stationery-gift-boxes%2F&",
+    "file": "630c60863a468ee753d6ea15b173e37f01e5c177a223cad3676841c35642fa5d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3175",
+    "file": "43153e6dced16c34ef4a38c547a973063e8922a50bae9824cd71dd0877cb788e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-notebook-boxes%2F",
+    "file": "76702c2b5a3c704823baa37a800959043a0a30006cf0f6f8245056051b4cb216.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-notebook-boxes%2F&",
+    "file": "7f8aa05c34dbd879c54f46832cb5d2b7b016798e6412f688f379e62fa885192d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3176",
+    "file": "a3d3fb9729039a2f40f4726fd6e09e5ecc09ea57e1c3df0dfc1cca3d09fa2af8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-book-sleeve-packaging%2F",
+    "file": "c0c3e09eb961fd9dd7fe754794a4daaf5a36e3476b1307f62786278dc69b545a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-book-sleeve-packaging%2F&",
+    "file": "d56b185eb61bea90c7e766077e72962b255b8e10c14246709e90762d662cbd28.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3177",
+    "file": "7d331cc7854776f3052cc01c9c4bba78d08c8760daf719633023fd86f364a6a5.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-magazine-storage-boxes%2F",
+    "file": "3d82a62b4198f60a8b834fdf7165890d1605c2f80c779f0ea4a63f36e1367027.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-magazine-storage-boxes%2F&",
+    "file": "110e8d239ce9fefef820e466880ce63cd5f1f07eef287beeec451c1769fc96a2.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3178",
+    "file": "e5d08d12880dfddab129a1c307d55fc36f2b4c71993a4372edf79cc8c23bec79.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-document-mailers%2F",
+    "file": "e1f8a12eafabed6d9c41ad131e00f981cbba4e420084b6fe6f1aa914f67ba1ca.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-document-mailers%2F&",
+    "file": "bbbf5b8464b0718864212e62c5827ebd8bd46222d0b8fcd9a14f927a5b2ca828.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3179",
+    "file": "2df739a998b24ca2c06b7ff1b9dc03515102ac5baad253b323335b7e09b58fa8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-photo-frames-packaging%2F",
+    "file": "9f5ee43168ab19e3ceac746ace3fa10f5caed60ad9973c6f596798d15d203ed8.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-photo-frames-packaging%2F&",
+    "file": "74b41d8d54183096007ae8878594272580d94e1c9c135e8950922f1d38fe4439.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3181",
+    "file": "e8b999b21f1c5b884a7c1ba2f4b34ea9bf6788927d8de52fec3903c3432081eb.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-certificate-holders%2F",
+    "file": "c483365e816ac7fc953bbbfb8fa7318fbe73cce0df8bd4c7aa48ebf7357b487f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-certificate-holders%2F&",
+    "file": "43f317424b965a4ba3df130d64c2296eb13efb2343e58be7b88e2d471dc24c55.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3180",
+    "file": "122ebfd458b4fe58b258244a65dccaa3e720800af7603dcfa6fa21db6ba9f23f.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cd-dvd-packaging-boxes%2F",
+    "file": "11856987b4f3afa9abfeec36cb8c6674b9e93d0d895d56c6d05eb0dd3ab26078.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-cd-dvd-packaging-boxes%2F&",
+    "file": "5a5a42e67aaa26a725aff78c6d473d3e761dffac21ae960ae709a77f0e02cbae.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3182",
+    "file": "d33313c87f2e410d0d9b77820e4329c3e9078aad019d3b7d04f18201590122ab.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-home-decor-packaging%2F",
+    "file": "e257e72eda668e5b6acdde206eee90bf4c659ddf8dbfc29437cf254649ac926b.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-home-decor-packaging%2F&",
+    "file": "25c2e3cbac36c87fd1a880789ba0917d2fc18af5a4c75b264e06ada2c7e607c3.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3183",
+    "file": "67fcde11ed7a598fd320bf733ba9e765de388711f8e45e721121e427323008e7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-craft-packaging-boxes%2F",
+    "file": "58050b4e5bb67e4990006a6bffc720771c722dfdbba87ff2e4f79afc8d07ce60.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-craft-packaging-boxes%2F&",
+    "file": "e7f06155a932cbf72d5fa59e1673ae50c54b41719c51384607f8680ed3d62fa7.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3184",
+    "file": "82c8bd2e5229eb5478525f009c77d68003e7f0e8226416af203acb3a386f34d4.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-drawing-roll-tubes%2F",
+    "file": "7e4a92e74b70a50bffb64ee749db948cb3b50f5fe62b7c289ece9c981ecfc512.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshopcardboardboxes.com%2Fproduct%2Fcardboard-drawing-roll-tubes%2F&",
+    "file": "4fd267bfe71e6cdff0d89fda26fb06343f43f7b6bd58ffde083f6d23614611b0.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product/3185",
+    "file": "0322f266b8b04d9b0040c1c5b1928c80172171375987f90c59c724d8e029a37a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/category/information/feed/",
+    "file": "6e15563e6b6bddc3328e9d29e08a0028745f4e08efde465887e2a39cdafe89e4.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/categories/186",
+    "file": "9c6ce666cbebedcfa0056bd2ff382240ffb80dc82b99b450f365f27506ca8a7a.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/product-category/cardboard-boxes-by-functionality/feed/",
+    "file": "9892f0b35d2af4702c44315fa7397e4a75766b70713425ce18d049f915ac7ab5.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product_cat/181",
+    "file": "253a02558e8ee37cdef71be194684a8e204392fbfdd79ae2b62db9a4e72ce2e6.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/product-category/cardboard-boxes-by-material-strength/feed/",
+    "file": "3811f29f408d504f82a717941916f9fb1522d942fabaac48560226705160a6d1.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product_cat/180",
+    "file": "24932090b5ac85c43ca3c5b1cace676f245e444672519633371e8ad8c171644e.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/product-category/cardboard-boxes-by-size-and-shape/feed/",
+    "file": "7edb43db125bdfea4031621a0ea923a268471cc6fe780220b27248480d0068c4.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product_cat/179",
+    "file": "f03aabc89d7dcd4418025791bdbde8fe69059ddf0c511e24173d822011b4fcce.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/product-category/cardboard-boxes-for-specific-uses/feed/",
+    "file": "b4ab1441e228e8142c65005ccfc0655b7c06bebaa4f7ea5eb49ef32a47b47a85.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product_cat/182",
+    "file": "5ab826666de0d9453cbc9e168ce65ad85556d789bdda8990f138267c79e55193.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/product-category/food-related-cardboard-boxes/feed/",
+    "file": "0668a606f0882cb099ff261919a6cb36f22a5216788d30965d554d40a1fbfc66.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product_cat/183",
+    "file": "1c109b5e2f3f824b5247972e95062ebc5ca611a95d12a60a3585e5ac16b0ed3d.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/product-category/cosmetic-and-gift-cardboard-boxes/feed/",
+    "file": "5d4f6b99be899ec5f4ea229c5b615f34d141185e808990e74ec6b6465b938543.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product_cat/184",
+    "file": "a7e31e5577a74ea44c5d51dc4bef32a6b537bcc8a4632706e7d6465df75a24c9.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/product-category/packaging-for-specific-items/feed/",
+    "file": "843a33dae59338a221edd0b7fbcdde5bb3b5a70aa21eb116a85cecf6570e6d96.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/product_cat/185",
+    "file": "0ad5380404458f91273a3790ff160f682efe157f5d480bf44ca1ddf8797b1be0.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/author/shanimazhar82gmail-com/feed/",
+    "file": "9e1b0913996dc45527cd65c1dc224161c2cd4c303ae06ab4db905aed35a30e94.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/wp-json/wp/v2/users/1",
+    "file": "a49349931ffb00b27a78c4ba0a39afa71546a2007bd80c2613d845e52a487efa.body",
+    "status": 200,
+    "contentType": "application/json; charset=UTF-8"
+  },
+  {
+    "key": "/search/cardboard/feed/rss2/",
+    "file": "1e041c844083b5b328e0f3a2955dc65bebf5a44a3c4e32421ce5ec4c043f79d3.body",
+    "status": 200,
+    "contentType": "application/rss+xml; charset=UTF-8"
+  },
+  {
+    "key": "/post-sitemap.xml",
+    "file": "6eb5b70f5c28f4061d44863cc5e6ad4305040b20072a7a6971f8f8d04a4f6d5a.body",
+    "status": 200,
+    "contentType": "application/xml; charset=UTF-8"
+  },
+  {
+    "key": "/page-sitemap.xml",
+    "file": "b82370ba2acca69a6d61d9b4b8c20f8c5f262ff9a488aace42a3adb1897379af.body",
+    "status": 200,
+    "contentType": "application/xml; charset=UTF-8"
+  },
+  {
+    "key": "/product-sitemap.xml",
+    "file": "94fd8692c2ab6ab7c0c60a7e997d416649b5b8a03b371f62d23be696ac433300.body",
+    "status": 200,
+    "contentType": "application/xml; charset=UTF-8"
+  },
+  {
+    "key": "/category-sitemap.xml",
+    "file": "0bb716d1dc0e2104b3063d760b77aeff5f29928fd2d80a9a558b591017be29e4.body",
+    "status": 200,
+    "contentType": "application/xml; charset=UTF-8"
+  },
+  {
+    "key": "/product_cat-sitemap.xml",
+    "file": "1a674dc3deb6634bb9edc835152ef24f9322509d88a7014b8c08430fc0d4853b.body",
+    "status": 200,
+    "contentType": "application/xml; charset=UTF-8"
+  },
+  {
+    "key": "/author-sitemap.xml",
+    "file": "2141d0f159c68d9efa550cfcf8a2e26d2af56c25b74f3c7193e9b47df8c50269.body",
+    "status": 200,
+    "contentType": "application/xml; charset=UTF-8"
+  }
+]

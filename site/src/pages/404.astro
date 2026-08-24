@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import type { Snapshot } from '../lib/snapshots';
+const snapshot: Snapshot = {
+  path: '/404/',
+  title: 'Page not found - Shop Cardboard Boxes',
+  description: '',
+  canonical: 'https://shopcardboardboxes.com/404/',
+  robots: 'noindex, follow',
+  bodyClass: 'error404',
+  metaTags: '',
+  stylesHtml: '',
+  jsonLd: [],
+  contentHtml: '',
+};
+---
+<BaseLayout snapshot={snapshot} status={404}>
+  <div class="site-content"><div class="scb-not-found"><h1>Page not found</h1><p>The page you requested could not be found.</p><a class="button" href="/">Return to homepage</a></div></div>
+</BaseLayout>

@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getSnapshot } from '../lib/snapshots';
+
+const snapshot = getSnapshot('/');
+if (!snapshot) throw new Error('Homepage snapshot is missing');
+---
+
+<BaseLayout snapshot={snapshot}>
+  <Fragment set:html={snapshot.contentHtml} />
+</BaseLayout>

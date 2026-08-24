@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getSnapshot } from '../lib/snapshots';
+import type { Snapshot } from '../lib/snapshots';
+
+const cart = getSnapshot('/cart/');
+if (!cart) throw new Error('Cart snapshot is missing');
+const snapshot: Snapshot = {
+  ...cart,
+  path: '/checkout/',
+  title: 'Checkout - Shop Cardboard Boxes',
+  canonical: 'https://shopcardboardboxes.com/checkout/',
+  robots: 'noindex, follow',
+  bodyClass: cart.bodyClass.replace('page-id-7', 'page-id-8').replace('woocommerce-cart', 'woocommerce-checkout'),
+  contentHtml: '<div class="site-content"><div class="scb-checkout-app"><h1>Checkout</h1><p>Loading local test checkout…</p></div></div>',
+};
+---
+
+<BaseLayout snapshot={snapshot}>
+  <Fragment set:html={snapshot.contentHtml} />
+</BaseLayout>
