@@ -5,6 +5,13 @@ import routeIndex from '../data/route-index.json';
 
 export const prerender = true;
 
+const excludedUtilityPaths = new Set([
+  '/cart/',
+  '/checkout/',
+  '/my-account/',
+  '/thank-you/',
+]);
+
 const escapeXml = (value: string) => value
   .replaceAll('&', '&amp;')
   .replaceAll('<', '&lt;')
@@ -14,6 +21,7 @@ const escapeXml = (value: string) => value
 
 export const GET: APIRoute = () => {
   const urls = routeIndex.flatMap((route) => {
+    if (excludedUtilityPaths.has(route.path)) return [];
     const snapshot = JSON.parse(readFileSync(resolve(process.cwd(), 'src/data/snapshots', route.file), 'utf8')) as {
       canonical?: string;
       robots?: string;
