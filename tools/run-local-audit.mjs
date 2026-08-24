@@ -75,9 +75,36 @@ const compatibilityResults = await pool(httpSnapshotIndex, 12, async (record) =>
 
 const assetReferences = new Set(['/scripts/site.js']);
 const internalLinks = new Set();
+
+function collectReference(value) {
+  if (/^(?:data:|mailto:|tel:|javascript:|#)/i.test(value)) return;
+  let parsed;
+  try { parsed = new URL(value, 'https://shopcardboardboxes.com'); } catch { return; }
+  if (parsed.hostname !== 'shopcardboardboxes.com' && parsed.hostname !== 'www.shopcardboardboxes.com') return;
+  const pathname = decodeURIComponent(parsed.pathname);
+  if (/\.(?:css|js|jpe?g|png|gif|webp|svg|avif|ico|woff2?|ttf|otf|eot|pdf|mp4|webm)$/i.test(pathname)) assetReferences.add(pathname);
+  else internalLinks.add(pathname.endsWith('/') || extname(pathname) ? pathname : `${pathname}/`);
+}
+
+function collectMarkupReferences(material) {
+  for (const match of material.matchAll(/(?:href|src|poster)=["']([^"']+)["']/gi)) collectReference(match[1]);
+  for (const match of material.matchAll(/srcset=["']([^"']+)["']/gi)) {
+    for (const candidate of match[1].split(',')) collectReference(candidate.trim().split(/\s+/)[0]);
+  }
+  for (const match of material.matchAll(/url\(["']?([^)"'?]+)(?:\?[^)"' ]*)?["']?\)/gi)) {
+    const pathname = pathFor(match[1]);
+    if (pathname.startsWith('/wp-content/')) assetReferences.add(decodeURIComponent(pathname));
+  }
+}
+
+collectMarkupReferences([
+  readFileSync(resolve(site, 'src/data/header.html'), 'utf8'),
+  readFileSync(resolve(site, 'src/data/footer.html'), 'utf8'),
+].join('\n'));
 for (const route of routeIndex) {
   const snapshot = JSON.parse(readFileSync(resolve(snapshotDir, route.file), 'utf8'));
   const material = `${snapshot.metaTags}\n${snapshot.stylesHtml}\n${snapshot.contentHtml}`;
+  collectMarkupReferences(material);
   for (const match of material.matchAll(/(?:href|src|poster)=["']([^"']+)["']/gi)) {
     const value = match[1];
     if (/^(?:data:|mailto:|tel:|javascript:|#)/i.test(value)) continue;
@@ -99,6 +126,14 @@ for (const pathname of [...assetReferences].sort()) {
   const candidate = resolve(publicDir, `.${pathname}`);
   if (!candidate.startsWith(publicDir) || !existsSync(candidate) || !statSync(candidate).isFile()) missingAssets.push(pathname);
 }
+
+const assetHttpResults = await pool([...assetReferences].sort(), 16, async (pathname) => {
+  try {
+    const response = await fetch(new URL(pathname, base), { redirect: 'manual' });
+    return { path: pathname, status: response.status, contentType: response.headers.get('content-type') || '' };
+  } catch (error) { return { path: pathname, error: String(error) }; }
+});
+const assetHttpFailures = assetHttpResults.filter((row) => row.status !== 200 || !row.contentType || /^text\/html/i.test(row.contentType));
 
 const knownPaths = new Set(routeIndex.map((route) => route.path));
 const publicLinkPaths = new Set(['/robots.txt', '/sitemap_index.xml']);
@@ -200,6 +235,7 @@ const result = {
     brokenSitemapRoutes: brokenSitemapRoutes.length,
     uniqueAssetReferences: assetReferences.size,
     missingAssets: missingAssets.length,
+    assetHttpFailures: assetHttpFailures.length,
     uniqueInternalLinks: internalLinkResults.length,
     brokenInternalLinks: brokenInternalLinks.length,
     sourceBrokenInternalLinks: sourceBrokenInternalLinks.length,
@@ -211,6 +247,7 @@ const result = {
   redirectFailures,
   gscFailures,
   missingAssets,
+  assetHttpFailures,
   brokenInternalLinks,
   sourceBrokenInternalLinks,
   brokenSitemapRoutes,
@@ -222,7 +259,8 @@ const result = {
   gscUrls: gscResults,
   internalLinks: internalLinkResults,
   sitemapRoutes: sitemapRouteResults,
+  assetHttpResults,
 };
 writeFileSync(resolve(root, 'analysis/local-audit.json'), `${JSON.stringify(result, null, 2)}\n`);
 console.log(JSON.stringify(result.summary, null, 2));
-if (routeFailures.length || compatibilityFailures.length || redirectFailures.length || gscFailures.length || brokenSitemapRoutes.length || prohibitedExtensions.length || sensitivePatternFindings.length) process.exitCode = 1;
+if (routeFailures.length || compatibilityFailures.length || redirectFailures.length || gscFailures.length || brokenSitemapRoutes.length || missingAssets.length || assetHttpFailures.length || prohibitedExtensions.length || sensitivePatternFindings.length) process.exitCode = 1;
