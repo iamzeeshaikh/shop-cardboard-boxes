@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import products from '../../data/products.json';
+import { sendOrderSubmission, smtpConfigured } from '../../lib/email';
 
 const catalog = new Map(products.map((product) => [product.id, product]));
 const json = (body: unknown, status = 200) => new Response(JSON.stringify(body), {
@@ -39,8 +40,18 @@ export const POST: APIRoute = async ({ request, url }) => {
     items,
   };
   const endpoint = import.meta.env.ORDER_DELIVERY_ENDPOINT;
-  const production = url.hostname === 'shopcardboardboxes.com';
-  if (!production || !endpoint) return json({ ok: true, mock: true, orderId: `LOCAL-${Date.now()}`, order });
+  const deliveryHost = url.hostname === 'shopcardboardboxes.com' || url.hostname === 'www.shopcardboardboxes.com' || url.hostname.endsWith('.vercel.app');
+  if (!deliveryHost) return json({ ok: true, mock: true, orderId: `LOCAL-${Date.now()}`, order });
+  if (smtpConfigured()) {
+    try {
+      await sendOrderSubmission(order);
+      return json({ ok: true, mock: false, orderId: order.orderId });
+    } catch (error) {
+      console.error('SMTP order delivery failed', error instanceof Error ? error.message : 'Unknown error');
+      return json({ ok: false, error: 'Order delivery failed.' }, 502);
+    }
+  }
+  if (!endpoint) return json({ ok: false, error: 'Order delivery is not configured.' }, 503);
   const headers: Record<string, string> = { 'Content-Type': 'application/json' };
   if (import.meta.env.ORDER_DELIVERY_SECRET) headers.Authorization = `Bearer ${import.meta.env.ORDER_DELIVERY_SECRET}`;
   const response = await fetch(endpoint, { method: 'POST', headers, body: JSON.stringify(order) });

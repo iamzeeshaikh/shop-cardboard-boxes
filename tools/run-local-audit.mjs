@@ -136,7 +136,7 @@ const assetHttpResults = await pool([...assetReferences].sort(), 16, async (path
 const assetHttpFailures = assetHttpResults.filter((row) => row.status !== 200 || !row.contentType || /^text\/html/i.test(row.contentType));
 
 const knownPaths = new Set(routeIndex.map((route) => route.path));
-const publicLinkPaths = new Set(['/robots.txt', '/sitemap_index.xml']);
+const publicLinkPaths = new Set(['/robots.txt', '/sitemap.xml', '/sitemap_index.xml']);
 const internalLinkResults = await pool([...internalLinks].sort(), 12, async (pathname) => {
   if (/^\/(?:wp-admin|wp-json|wp-login\.php|feed\/|comments\/feed\/)/i.test(pathname)) return { path: pathname, status: 'wordpress-endpoint-excluded' };
   const local = new URL(pathname, base);

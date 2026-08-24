@@ -74,7 +74,9 @@
         if (!response.ok || !result.ok) throw new Error(result.error || 'Form delivery failed.');
         notice.textContent = result.message;
         emit(result.mock ? 'form_submit_mock' : 'form_submit', { form: form.getAttribute('name') || form.id || 'form', product_name: payload.get('product_name'), product_url: payload.get('product_url'), files });
+        const formName = form.getAttribute('name') || form.id || 'quote';
         form.reset();
+        location.href = `/thank-you/?form=${encodeURIComponent(formName)}`;
       } catch (error) {
         notice.textContent = error.message || 'An error occurred.';
         emit('form_error', { message: notice.textContent });

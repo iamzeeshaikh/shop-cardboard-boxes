@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import { sendFormSubmission, smtpConfigured } from '../../lib/email';
 
 const json = (body: unknown, status = 200) => new Response(JSON.stringify(body), {
   status,
@@ -14,10 +15,20 @@ export const POST: APIRoute = async ({ request, url }) => {
     if (!String(form.get(field) || '').trim()) return json({ ok: false, error: `Missing ${field}.` }, 400);
   }
   const endpoint = import.meta.env.FORM_DELIVERY_ENDPOINT;
-  const production = url.hostname === 'shopcardboardboxes.com';
-  if (!production || !endpoint) {
+  const deliveryHost = url.hostname === 'shopcardboardboxes.com' || url.hostname === 'www.shopcardboardboxes.com' || url.hostname.endsWith('.vercel.app');
+  if (!deliveryHost) {
     return json({ ok: true, mock: true, message: 'Local test accepted; no email was sent.' });
   }
+  if (smtpConfigured()) {
+    try {
+      await sendFormSubmission(form);
+      return json({ ok: true, mock: false, message: 'The form was sent successfully.' });
+    } catch (error) {
+      console.error('SMTP form delivery failed', error instanceof Error ? error.message : 'Unknown error');
+      return json({ ok: false, error: 'Form delivery failed.' }, 502);
+    }
+  }
+  if (!endpoint) return json({ ok: false, error: 'Form delivery is not configured.' }, 503);
   const headers: Record<string, string> = {};
   if (import.meta.env.FORM_DELIVERY_SECRET) headers.Authorization = `Bearer ${import.meta.env.FORM_DELIVERY_SECRET}`;
   const response = await fetch(endpoint, { method: 'POST', headers, body: form });
