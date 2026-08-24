@@ -151,6 +151,11 @@ const reconciliation = await pool(missingCandidates, 12, async (url) => {
     const headerRobots = response.headers.get('x-robots-tag') || '';
     let classification = 'valuable-missing';
     if (response.status >= 300 && response.status < 400 && sitemapSet.has(destination)) classification = 'redirects-to-sitemap-url';
+    else if (response.status >= 300 && response.status < 400) {
+      const followed = await get(url, 'follow');
+      const followedCanonical = normalizeUrl(canonicalFrom(followed.body));
+      if (sitemapSet.has(normalizeUrl(followed.response.url)) || sitemapSet.has(followedCanonical)) classification = 'redirects-to-sitemap-url';
+    }
     else if (response.status === 200 && sitemapSet.has(normalizeUrl(canonical))) classification = 'canonical-alias';
     else if (/noindex/i.test(`${metaRobots} ${headerRobots}`)) classification = 'excluded-noindex';
     else if (response.status === 404 || response.status === 410) classification = 'retired-not-found';
