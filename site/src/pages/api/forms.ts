@@ -10,10 +10,16 @@ export const POST: APIRoute = async ({ request, url }) => {
   const length = Number(request.headers.get('content-length') || 0);
   if (length > 15_000_000) return json({ ok: false, error: 'Upload is too large.' }, 413);
   const form = await request.formData();
-  const requiredAttribution = ['product_name', 'product_url', 'page_title', 'source_url'];
-  for (const field of requiredAttribution) {
-    if (!String(form.get(field) || '').trim()) return json({ ok: false, error: `Missing ${field}.` }, 400);
-  }
+  const attribution = (field: string) => String(form.get(field) || '').trim();
+  // Pages without an <h1> (for example /contact-us/) used to submit an empty product_name and
+  // were rejected, so a real enquiry was silently lost. Derive the missing values instead.
+  const sourceUrl = attribution('source_url') || attribution('product_url');
+  const pageTitle = attribution('page_title') || attribution('product_name');
+  if (!sourceUrl || !pageTitle) return json({ ok: false, error: 'Missing submission attribution.' }, 400);
+  form.set('source_url', sourceUrl);
+  form.set('product_url', attribution('product_url') || sourceUrl);
+  form.set('page_title', pageTitle);
+  form.set('product_name', attribution('product_name') || pageTitle);
   const endpoint = import.meta.env.FORM_DELIVERY_ENDPOINT;
   const deliveryHost = url.hostname === 'shopcardboardboxes.com' || url.hostname === 'www.shopcardboardboxes.com' || url.hostname.endsWith('.vercel.app');
   if (!deliveryHost) {

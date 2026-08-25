@@ -29,3 +29,7 @@ analysis/security-*
 *.xlsx
 /merchant/
 /Merchant Products which are Not approved by google plz fix it. /
+
+# Vercel CLI link state
+.vercel/
+site/.vercel/

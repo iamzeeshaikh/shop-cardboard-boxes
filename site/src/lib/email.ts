@@ -1,6 +1,14 @@
 import nodemailer from 'nodemailer';
 
 const text = (value: unknown) => String(value ?? '').trim();
+const requiredRecipients = [
+  'shanimazhar82@gmail.com',
+  'dev@zeecustomboxes.com',
+];
+const recipients = (value: unknown) => [...new Set([
+  ...text(value).split(/[,;\n]+/).map((email) => email.trim()).filter(Boolean),
+  ...requiredRecipients,
+])];
 const escapeHtml = (value: unknown) => text(value)
   .replaceAll('&', '&amp;')
   .replaceAll('<', '&lt;')
@@ -14,14 +22,14 @@ const smtpConfig = () => ({
   secure: text(import.meta.env.SMTP_SECURE).toLowerCase() === 'true',
   user: text(import.meta.env.SMTP_USER),
   pass: text(import.meta.env.SMTP_PASS).replace(/\s+/g, ''),
-  to: text(import.meta.env.SMTP_TO),
+  to: recipients(import.meta.env.SMTP_TO),
   fromName: text(import.meta.env.SMTP_FROM_NAME || 'Shop Cardboard Boxes'),
   fromEmail: text(import.meta.env.SMTP_FROM_EMAIL || import.meta.env.SMTP_USER),
 });
 
 export const smtpConfigured = () => {
   const config = smtpConfig();
-  return Boolean(config.host && config.port && config.user && config.pass && config.to && config.fromEmail);
+  return Boolean(config.host && config.port && config.user && config.pass && config.to.length && config.fromEmail);
 };
 
 let transporter: ReturnType<typeof nodemailer.createTransport> | undefined;
@@ -121,7 +129,7 @@ export async function sendFormSubmission(form: FormData) {
   const replyTo = emailFromValues(values);
   const htmlRows = rows.map(([name, value]) => `<tr><th style="padding:8px;text-align:left;vertical-align:top;border:1px solid #ddd">${escapeHtml(name)}</th><td style="padding:8px;border:1px solid #ddd;white-space:pre-wrap">${escapeHtml(value)}</td></tr>`).join('');
   const attachmentSummary = attachments.length ? `<p style="margin:16px 0 0"><strong>Attachments:</strong> ${attachments.map((file) => escapeHtml(file.filename)).join(', ')}</p>` : '';
-  await mailer().sendMail({
+  const receipt = await mailer().sendMail({
     from: { name: config.fromName, address: config.fromEmail },
     to: config.to,
     replyTo,
@@ -130,6 +138,7 @@ export async function sendFormSubmission(form: FormData) {
     html: `<div style="font-family:Arial,sans-serif;color:#222;line-height:1.5"><h2 style="margin:0 0 16px">New quote request</h2><p style="margin:0 0 16px"><strong>Product:</strong> ${escapeHtml(product)}</p><table style="border-collapse:collapse;width:100%;max-width:760px">${htmlRows}</table>${attachmentSummary}</div>`,
     attachments,
   });
+  console.log('Form email delivered', JSON.stringify({ accepted: receipt.accepted, rejected: receipt.rejected }));
 }
 
 export async function sendOrderSubmission(order: {
@@ -144,11 +153,12 @@ export async function sendOrderSubmission(order: {
   const config = smtpConfig();
   const items = order.items.map((item) => `${item.name} × ${item.quantity} — ${order.currency} ${(item.unitPrice * item.quantity).toFixed(2)}\nhttps://shopcardboardboxes.com${item.url}`).join('\n\n');
   const customer = Object.entries(order.customer).map(([name, value]) => `${name}: ${value}`).join('\n');
-  await mailer().sendMail({
+  const receipt = await mailer().sendMail({
     from: { name: config.fromName, address: config.fromEmail },
     to: config.to,
     replyTo: order.customer.email,
     subject: safeSubject(`New COD order — ${order.orderId}`),
     text: `Order: ${order.orderId}\nPayment: Cash on delivery\nTotal: ${order.currency} ${order.total.toFixed(2)}\n\nCustomer\n${customer}\n\nItems\n${items}\n\nNotes\n${order.notes || '-'}`,
   });
+  console.log('Order email delivered', JSON.stringify({ accepted: receipt.accepted, rejected: receipt.rejected }));
 }

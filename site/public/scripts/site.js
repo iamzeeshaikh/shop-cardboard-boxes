@@ -54,11 +54,15 @@
     addButton.closest('.product, .summary, li')?.prepend(notice) || addButton.parentElement?.prepend(notice);
   });
 
-  document.querySelectorAll('form:not(.scb-search-modal form)').forEach((form) => {
-    if (form.closest('.scb-checkout-app')) return;
+  const skipEmailForm = (form) => form.matches('.search-form, [role="search"], .woocommerce-ordering, .woocommerce-form-login, .woocommerce-ResetPassword')
+    || form.closest('.scb-search-modal, .search-toggle-form, .scb-checkout-app')
+    || form.querySelector('input[type="password"]');
+
+  document.querySelectorAll('form').forEach((form) => {
+    if (skipEmailForm(form)) return;
     const productField = [...form.querySelectorAll('input')].find((input) => /product/i.test(input.placeholder || '') || /product/i.test(input.name || ''));
     if (productField && !productField.value) productField.value = document.querySelector('h1')?.textContent?.trim() || document.title;
-    for (const [name, value] of [['product_name', document.querySelector('h1')?.textContent?.trim() || ''], ['product_url', location.href], ['page_title', document.title], ['source_url', location.href]]) {
+    for (const [name, value] of [['product_name', document.querySelector('h1')?.textContent?.trim() || document.title], ['product_url', location.href], ['page_title', document.title], ['source_url', location.href]]) {
       const hidden = document.createElement('input'); hidden.type = 'hidden'; hidden.name = name; hidden.value = value; form.append(hidden);
     }
     form.addEventListener('submit', async (event) => {
