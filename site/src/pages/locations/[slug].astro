@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { toSnapshot } from '../../lib/seo/chrome';
+import { locationBySlug, LOCATIONS } from '../../data/seo/locations';
+import { breadcrumbHtml, breadcrumbJsonLd, faqHtml, faqJsonLd, esc, abs } from '../../lib/seo/util';
+import { quoteForm, cta, linkRow } from '../../lib/seo/blocks';
+
+const slug = Astro.params.slug ?? '';
+const location = locationBySlug.get(slug);
+if (!location) return Astro.rewrite('/404');
+
+const path = `/locations/${location.slug}/`;
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Where we ship', path: '/locations/' },
+  ...(location.stateSlug && LOCATIONS.some((entry) => entry.slug === location.stateSlug)
+    ? [{ name: location.stateName as string, path: `/locations/${location.stateSlug}/` }]
+    : []),
+  { name: location.name, path },
+];
+
+// The note and the closing call to action are taken from copy written for this
+// page, so no two of the forty carry the same sentence.
+const form = quoteForm({
+  heading: location.cta.heading,
+  note: location.cta.body,
+  buttonLabel: location.cta.label,
+  formName: `Quote — ${location.name}`,
+});
+
+const facts = location.facts?.length
+  ? `<ul class="scb-intro-facts">${location.facts.map((fact) => `<li><strong>${esc(fact.value)}</strong>${esc(fact.label)}</li>`).join('')}</ul>`
+  : '';
+
+const sectionsHtml = location.sections.map((section, index) => `<section class="scb-section${index % 2 === 1 ? ' scb-tinted' : ''}"><h2>${esc(section.h2)}</h2>${section.html}</section>`).join('');
+
+// Where the form sits varies by page so the forty pages do not share one skeleton.
+const formInHero = location.layout === 'form-in-hero';
+const formAfterFirst = location.layout === 'form-after-first-section';
+
+const firstSection = location.sections.length
+  ? `<section class="scb-section"><h2>${esc(location.sections[0].h2)}</h2>${location.sections[0].html}</section>`
+  : '';
+const restSections = location.sections.slice(1).map((section, index) => `<section class="scb-section${index % 2 === 0 ? ' scb-tinted' : ''}"><h2>${esc(section.h2)}</h2>${section.html}</section>`).join('');
+
+const formBlock = `<section class="scb-section scb-tinted"><div style="max-width:620px">${form}</div></section>`;
+
+const body = formAfterFirst
+  ? `${firstSection}${formBlock}${restSections}`
+  : sectionsHtml;
+
+const hasStatePage = location.kind === 'city' && location.stateSlug && LOCATIONS.some((entry) => entry.slug === location.stateSlug);
+const onward = `<section class="scb-section">
+  <h2>${hasStatePage ? `Beyond ${esc(location.name)}` : `The rest of ${esc(location.name)}'s packaging questions`}</h2>
+  <p>${hasStatePage
+    ? `The <a href="/locations/${esc(location.stateSlug || "")}/">${esc(location.stateName || '')} page</a> covers what applies across the state rather than to ${esc(location.name)} specifically, and these are the products and guides ${esc(location.name)} customers open most.`
+    : `${esc(location.summary)} These are the products and guides that answer them.`}</p>
+  ${linkRow([...location.shop, ...location.guides, { path: '/locations/', label: 'All locations' }].map((link) => ({ path: link.path, label: link.label })))}
+</section>`;
+
+const contentHtml = `<div class="site-content">
+  <div class="scb-intro">
+    <div class="scb-intro-inner">
+      <div>
+        ${breadcrumbHtml(crumbs)}
+        <span class="scb-eyebrow">${esc(location.eyebrow)}</span>
+        <h1>${esc(location.h1)}</h1>
+        ${location.lede}
+        ${facts}
+      </div>
+      <div>${formInHero ? form : ''}</div>
+    </div>
+  </div>
+  ${body}
+  ${faqHtml(location.faqs, location.faqHeading)}
+  ${onward}
+  ${location.layout === 'form-at-end' ? formBlock : ''}
+  ${cta(location.cta.heading, esc(location.cta.body), [{ path: '/contact-us/', label: location.cta.label }, { path: '/design-your-box/', label: 'Configure a box', kind: 'ghost' }])}
+</div>`;
+
+const snapshot = toSnapshot({
+  path,
+  title: location.title,
+  description: location.description,
+  contentHtml,
+  bodyClass: `scb-location scb-location-${location.kind}`,
+  // No LocalBusiness schema: there is no branch, address or phone number in this
+  // location, and claiming one would be a fabrication.
+  jsonLd: [
+    breadcrumbJsonLd(crumbs),
+    faqJsonLd(location.faqs, path),
+    JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      '@id': `${abs(path)}#webpage`,
+      url: abs(path),
+      name: location.h1,
+      description: location.description,
+      isPartOf: { '@type': 'WebSite', name: 'Shop Cardboard Boxes', url: abs('/') },
+      about: { '@type': 'Thing', name: `Cardboard packaging for ${location.name}` },
+    }),
+  ],
+});
+---
+
+<BaseLayout snapshot={snapshot}>
+  <Fragment set:html={snapshot.contentHtml} />
+</BaseLayout>

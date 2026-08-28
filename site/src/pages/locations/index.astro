@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { toSnapshot } from '../../lib/seo/chrome';
+import { STATES, CITIES, REGIONS } from '../../data/seo/locations';
+import type { LocationPage } from '../../data/seo/locations';
+import { breadcrumbHtml, breadcrumbJsonLd, esc, abs } from '../../lib/seo/util';
+import { cta, linkRow } from '../../lib/seo/blocks';
+
+const crumbs = [{ name: 'Home', path: '/' }, { name: 'Where we ship', path: '/locations/' }];
+
+const REGION_NOTE: Record<string, string> = {
+  Northeast: 'Dense delivery, limited storage and a heavy concentration of regulated manufacturing.',
+  Southeast: 'Humidity that changes the board grade, port freight, and a large protein and produce trade.',
+  Midwest: 'Palletised distribution, food manufacturing at scale, and parts packaging for industry.',
+  Southwest: 'Heat that affects adhesives more than board, long in-state freight, and high-volume food service.',
+  West: 'Produce export, beauty and beverage brands, and some of the longest domestic journeys we ship into.',
+};
+
+const card = (location: LocationPage) => `<li class="scb-card"><span class="scb-card-meta">${location.kind === 'state' ? 'State' : `City · ${esc(location.stateName || '')}`}</span><h3><a href="/locations/${esc(location.slug)}/">${esc(location.name)}</a></h3><p>${esc(location.summary)}</p></li>`;
+
+const byRegion = REGIONS.map((region) => ({
+  region,
+  states: STATES.filter((location) => location.region === region),
+  cities: CITIES.filter((location) => location.region === region),
+})).filter((group) => group.states.length || group.cities.length);
+
+const contentHtml = `<div class="site-content">
+  <div class="scb-intro">
+    <div class="scb-intro-inner">
+      <div>
+        ${breadcrumbHtml(crumbs)}
+        <span class="scb-eyebrow">Where we ship</span>
+        <h1>Cardboard Boxes Across the United States</h1>
+        <p>We produce to order and ship anywhere in the country, with delivery included. These pages cover what customers in each market actually ask us for — the industries, the constraints and the specifications that keep coming up in that part of the country.</p>
+        <p><strong>What these pages are not:</strong> we have no regional warehouses, offices, showrooms or collection points, and no local phone numbers. Everything is made to order and shipped to you.</p>
+      </div>
+      <div>
+        <div class="scb-quote">
+          <h2>Shipping anywhere in the US</h2>
+          <p class="scb-quote-note">Delivery is included in the price, wherever you are. Production runs 8–10 business days from artwork approval.</p>
+          <p><a class="scb-btn scb-btn-solid" href="/contact-us/" style="width:100%">Get a delivered price</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  ${byRegion.map((group, index) => `<section class="scb-section${index % 2 === 1 ? ' scb-tinted' : ''}">
+    <h2>${esc(group.region)}</h2>
+    <p class="scb-lede">${esc(REGION_NOTE[group.region] || '')}</p>
+    ${group.states.length ? `<h3>States</h3><ul class="scb-cards">${group.states.map(card).join('')}</ul>` : ''}
+    ${group.cities.length ? `<h3>Cities</h3><ul class="scb-cards">${group.cities.map(card).join('')}</ul>` : ''}
+  </section>`).join('')}
+  <section class="scb-section">
+    <h2>The same answers, wherever you are</h2>
+    <p>Most packaging questions are not regional at all. If you would rather go straight to the specification, these are the guides customers reach for most.</p>
+    ${linkRow([
+      { path: '/resources/cardboard-box-sizes-guide/', label: 'Cardboard box sizes' },
+      { path: '/resources/how-to-choose-a-shipping-box/', label: 'Choosing a shipping box' },
+      { path: '/resources/corrugated-box-strength-guide/', label: 'Board strength explained' },
+      { path: '/resources/', label: 'All packaging guides' },
+      { path: '/design-your-box/', label: 'Design your box' },
+    ])}
+  </section>
+  ${cta('Get a delivered price', 'Tell us the box, the quantity and where it is going. Delivery is included anywhere in the United States, and the quote says so.', [{ path: '/contact-us/', label: 'Request a quote' }, { path: '/products/', label: 'Browse every box', kind: 'ghost' }])}
+</div>`;
+
+const snapshot = toSnapshot({
+  path: '/locations/',
+  title: 'Where We Ship | Cardboard Boxes Across the United States',
+  description: 'Custom cardboard boxes shipped free across the US. Market notes for 20 states and 20 cities — the industries, constraints and specifications that come up in each.',
+  contentHtml,
+  bodyClass: 'scb-locations-hub',
+  jsonLd: [
+    breadcrumbJsonLd(crumbs),
+    JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      '@id': `${abs('/locations/')}#collection`,
+      url: abs('/locations/'),
+      name: 'Cardboard Boxes Across the United States',
+      description: 'Where Shop Cardboard Boxes ships, and what customers in each market ask for.',
+      isPartOf: { '@type': 'WebSite', name: 'Shop Cardboard Boxes', url: abs('/') },
+    }),
+  ],
+});
+---
+
+<BaseLayout snapshot={snapshot}>
+  <Fragment set:html={snapshot.contentHtml} />
+</BaseLayout>

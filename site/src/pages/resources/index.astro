@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { toSnapshot } from '../../lib/seo/chrome';
+import { RESOURCES, RESOURCE_TOPICS } from '../../data/seo/resources';
+import { breadcrumbHtml, breadcrumbJsonLd, esc, abs } from '../../lib/seo/util';
+import { cta, linkRow } from '../../lib/seo/blocks';
+import type { Resource } from '../../data/seo/resources';
+
+const crumbs = [{ name: 'Home', path: '/' }, { name: 'Packaging guides', path: '/resources/' }];
+
+const TOPIC_BLURB: Record<string, string> = {
+  Specification: 'Getting the dimensions, structure and closure right before anything is printed.',
+  Materials: 'What the board is, how strong it is, and which grade a load actually needs.',
+  Shipping: 'Surviving the carrier network without paying freight on empty space.',
+  'Design and print': 'How artwork reaches the board, and what each process costs to run.',
+  'By industry': 'Written for a particular kind of business rather than a particular box.',
+  Sustainability: 'What the claims on a box mean, and which finishes break recyclability.',
+};
+
+const groups = RESOURCE_TOPICS
+  .map((topic) => ({ topic, items: RESOURCES.filter((resource) => resource.topic === topic) }))
+  .filter((group) => group.items.length);
+
+const cardsFor = (items: Resource[]) => `<ul class="scb-cards">${items.map((resource) => `<li class="scb-card"><span class="scb-card-meta">${resource.readingMinutes} min read</span><h3><a href="/resources/${esc(resource.slug)}/">${esc(resource.h1)}</a></h3><p>${esc(resource.summary)}</p></li>`).join('')}</ul>`;
+
+const START_HERE = ['cardboard-box-sizes-guide', 'corrugated-box-strength-guide', 'how-to-choose-a-shipping-box'];
+
+const contentHtml = `<div class="site-content">
+  <div class="scb-intro">
+    <div class="scb-intro-inner">
+      <div>
+        ${breadcrumbHtml(crumbs)}
+        <span class="scb-eyebrow">Packaging guides</span>
+        <h1>Cardboard Packaging Guides</h1>
+        <p>Eighteen guides covering the decisions that come up before anyone looks at a product page — what size, what board, what closure, what it costs, and what breaks if you get it wrong.</p>
+        <p>Written by the people who quote these boxes every day. Where a guide points at a product, it is because that product is the answer.</p>
+      </div>
+      <div>
+        <div class="scb-quote">
+          <h2>Would rather just ask?</h2>
+          <p class="scb-quote-note">Describe what you are packaging and we will tell you what to specify. No obligation, usually the same working day.</p>
+          <p><a class="scb-btn scb-btn-solid" href="/contact-us/" style="width:100%">Talk to a specialist</a></p>
+          <p class="scb-quote-note" style="margin-top:14px">Or work through the options yourself with the <a href="/design-your-box/">box configurator</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="scb-section">
+    <h2>Where to start</h2>
+    <p class="scb-lede">Three guides answer the majority of first questions. If you are new to specifying packaging, read them in this order.</p>
+    ${cardsFor(RESOURCES.filter((resource) => START_HERE.includes(resource.slug)))}
+  </section>
+  ${groups.map((group) => `<section class="scb-section${group.topic === 'Materials' || group.topic === 'By industry' ? ' scb-tinted' : ''}">
+    <h2>${esc(group.topic)}</h2>
+    <p>${esc(TOPIC_BLURB[group.topic] || '')}</p>
+    ${cardsFor(group.items)}
+  </section>`).join('')}
+  <section class="scb-section">
+    <h2>Straight to the boxes</h2>
+    <p>If you already know what you need, these are the collections the guides point at most often.</p>
+    ${linkRow([
+      { path: '/product-category/cardboard-shipping-boxes/', label: 'Shipping and mailing boxes' },
+      { path: '/product-category/cardboard-boxes-by-material-strength/', label: 'Boxes by board strength' },
+      { path: '/product-category/food-related-cardboard-boxes/', label: 'Food packaging' },
+      { path: '/product-category/retail-and-display-packaging/', label: 'Retail and display' },
+      { path: '/products/', label: 'All 186 box styles' },
+    ])}
+  </section>
+  ${cta('Still not sure what to specify?', 'Send the product dimensions and roughly what you ship. We will recommend a box, a board grade and a quantity that makes sense — before you commit to anything.', [{ path: '/contact-us/', label: 'Ask a packaging specialist' }, { path: '/design-your-box/', label: 'Configure a box', kind: 'ghost' }])}
+</div>`;
+
+const snapshot = toSnapshot({
+  path: '/resources/',
+  title: 'Cardboard Packaging Guides | Sizes, Board, Print & Cost',
+  description: 'Eighteen practical guides to specifying cardboard packaging — box sizes, board strength, flute types, printing methods, inserts, food packaging and cost control.',
+  contentHtml,
+  bodyClass: 'scb-resource-hub',
+  jsonLd: [
+    breadcrumbJsonLd(crumbs),
+    JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      '@id': `${abs('/resources/')}#collection`,
+      url: abs('/resources/'),
+      name: 'Cardboard Packaging Guides',
+      description: 'Practical guides to specifying cardboard boxes and packaging.',
+      isPartOf: { '@type': 'WebSite', name: 'Shop Cardboard Boxes', url: abs('/') },
+      mainEntity: {
+        '@type': 'ItemList',
+        numberOfItems: RESOURCES.length,
+        itemListElement: RESOURCES.map((resource, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          url: abs(`/resources/${resource.slug}/`),
+          name: resource.h1,
+        })),
+      },
+    }),
+  ],
+});
+---
+
+<BaseLayout snapshot={snapshot}>
+  <Fragment set:html={snapshot.contentHtml} />
+</BaseLayout>

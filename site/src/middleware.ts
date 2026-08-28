@@ -5,6 +5,7 @@ import httpSnapshotIndex from './data/http-snapshot-index.json';
 import redirectIndex from './data/redirect-index.json';
 import repairRedirectIndex from './data/repair-redirects.json';
 import routeIndex from './data/route-index.json';
+import { SEO_REDIRECTS } from './data/seo/redirects';
 
 const compatibilityResponses = new Map(httpSnapshotIndex.map((record) => [record.key, record]));
 const redirects = new Map(redirectIndex.map((record) => [record.key, record]));
@@ -47,6 +48,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
   let decodedPathname = context.url.pathname;
   try { decodedPathname = decodeURIComponent(context.url.pathname); } catch {}
   const repairRedirect = repairRedirects.get(decodedPathname);
+  const seoRedirect = SEO_REDIRECTS.get(context.url.pathname.endsWith('/') ? context.url.pathname : `${context.url.pathname}/`);
   if (context.url.pathname === '/sitemap_index.xml' || retiredWordPressSitemap.test(context.url.pathname)) {
     response = context.redirect(productionSitemapUrl, 301);
     response.headers.set('Cache-Control', 'public, max-age=0, s-maxage=3600');
@@ -65,6 +67,14 @@ export const onRequest = defineMiddleware(async (context, next) => {
     response = context.redirect(preservedRedirect.location, redirectStatus);
   } else if (repairRedirect) {
     response = context.redirect(repairRedirect, 301);
+  } else if (/\/page\/1\/$/.test(context.url.pathname) && knownRoutes.has(context.url.pathname.replace(/page\/1\/$/, ''))) {
+    // WooCommerce emitted page/1/ links from later pages. Page one has no URL of
+    // its own, so those are folded into the archive root.
+    response = context.redirect(context.url.pathname.replace(/page\/1\/$/, ''), 301);
+  } else if (seoRedirect) {
+    // Duplicate case-variant archives and one broken legacy page, folded into their
+    // canonical URLs. See src/data/seo/redirects.ts for why each one is safe.
+    response = context.redirect(`${seoRedirect}${context.url.search}`, 301);
   } else if (context.url.pathname === '/checkout/' && context.cookies.get('scb_cart_present')?.value !== '1') {
     response = context.redirect('/cart/', 302);
   } else if (!context.url.pathname.endsWith('/') && knownRoutes.has(`${context.url.pathname}/`)) {

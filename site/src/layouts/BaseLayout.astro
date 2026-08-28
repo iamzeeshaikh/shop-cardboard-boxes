@@ -3,11 +3,16 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import type { Snapshot } from '../lib/snapshots';
+import { hoistChromeCss } from '../lib/seo/chrome';
 import products from '../data/products.json';
 
 interface Props { snapshot: Snapshot; status?: number; }
 const { snapshot, status = 200 } = Astro.props;
 const productionHost = Astro.url.hostname === 'shopcardboardboxes.com';
+// 133 KB of identical inline theme CSS shipped in the HTML of all 264 pages.
+// It is served from one cached stylesheet instead; the link sits in the exact
+// position the blocks occupied, so the cascade is unchanged.
+const stylesHtml = hoistChromeCss(snapshot.stylesHtml);
 const previewRobots = productionHost ? snapshot.robots : 'noindex, nofollow';
 const trackingEnabled = productionHost && import.meta.env.PUBLIC_ENABLE_PRODUCTION_TRACKING === 'true';
 const productPrice = products.find((product) => product.path === snapshot.path)?.price;
@@ -52,7 +57,9 @@ Astro.response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geol
     <link rel="canonical" href={snapshot.canonical || `https://shopcardboardboxes.com${snapshot.path}`} />
     <meta name="robots" content={previewRobots || 'index, follow'} />
     <Fragment set:html={snapshot.metaTags} />
-    <Fragment set:html={snapshot.stylesHtml} />
+    <Fragment set:html={stylesHtml} />
+    <!-- Styles the sections this project adds to every page type, replayed or authored. -->
+    <link rel="stylesheet" href="/scb-pages.css" />
     {jsonLdGraphs.map((graph) => <script is:inline type="application/ld+json" set:html={graph}></script>)}
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" href="/wp-content/uploads/2024/09/cropped-Cardboard-Boxes-4-32x32.png" sizes="32x32" />

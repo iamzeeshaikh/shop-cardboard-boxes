@@ -1,9 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getSnapshot } from '../lib/snapshots';
+import { renderHome } from '../lib/seo/render-home';
 
-const snapshot = getSnapshot('/');
-if (!snapshot) throw new Error('Homepage snapshot is missing');
+const snapshot = renderHome();
 ---
 
 <BaseLayout snapshot={snapshot}>

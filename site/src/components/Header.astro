@@ -1,18 +1,105 @@
 ---
 import recoveredHeader from '../data/header.html?raw';
+import { esc } from '../lib/seo/util';
 
-const nav = [
-  ['Home', '/'],
-  ['By Functionality', '/product-category/cardboard-boxes-by-functionality/'],
-  ['By Material Strength', '/product-category/cardboard-boxes-by-material-strength/'],
-  ['By Size and Shape', '/product-category/cardboard-boxes-by-size-and-shape/'],
-  ['Cosmetic and Gift', '/product-category/cosmetic-and-gift-cardboard-boxes/'],
-  ['Food Boxes', '/product-category/food-related-cardboard-boxes/'],
+/**
+ * The recovered WordPress header carried a flat six-item menu of product categories
+ * and nothing else — no route to the full catalogue, the guides, the configurator or
+ * the location pages. The chrome is kept exactly as recovered; only the contents of
+ * the main menu list are replaced, with a two-level structure that keeps every hub
+ * within one click and stays a plain crawlable list of anchors.
+ */
+interface NavItem { label: string; href: string; children?: { label: string; href: string }[] }
+
+const NAV: NavItem[] = [
+  { label: 'All Boxes', href: '/products/' },
+  {
+    label: 'Shipping & Bulk',
+    href: '/product-category/cardboard-shipping-boxes/',
+    children: [
+      { label: 'Shipping & mailing boxes', href: '/product-category/cardboard-shipping-boxes/' },
+      { label: 'Wholesale & bulk', href: '/product-category/wholesale-cardboard-boxes/' },
+      { label: 'By material strength', href: '/product-category/cardboard-boxes-by-material-strength/' },
+      { label: 'By size & shape', href: '/product-category/cardboard-boxes-by-size-and-shape/' },
+    ],
+  },
+  {
+    label: 'By Use',
+    href: '/product-category/cardboard-boxes-by-functionality/',
+    children: [
+      { label: 'By functionality', href: '/product-category/cardboard-boxes-by-functionality/' },
+      { label: 'For specific uses', href: '/product-category/cardboard-boxes-for-specific-uses/' },
+      { label: 'Packaging for specific items', href: '/product-category/packaging-for-specific-items/' },
+    ],
+  },
+  { label: 'Food Packaging', href: '/product-category/food-related-cardboard-boxes/' },
+  {
+    label: 'Gift & Retail',
+    href: '/product-category/cosmetic-and-gift-cardboard-boxes/',
+    children: [
+      { label: 'Cosmetic & gift boxes', href: '/product-category/cosmetic-and-gift-cardboard-boxes/' },
+      { label: 'Retail & display packaging', href: '/product-category/retail-and-display-packaging/' },
+    ],
+  },
+  { label: 'Guides', href: '/resources/' },
+  { label: 'Design Your Box', href: '/design-your-box/' },
+];
+
+const menuHtml = NAV.map((item, index) => {
+  const submenu = item.children?.length
+    ? `<ul class="sub-menu scb-subnav">${item.children.map((child) => `<li class="menu-item"><a href="${esc(child.href)}">${esc(child.label)}</a></li>`).join('')}</ul>`
+    : '';
+  const classes = `menu-item menu-item-type-taxonomy menu-item-object-product_cat${item.children?.length ? ' menu-item-has-children scb-has-children' : ''}`;
+  return `<li id="scb-nav-${index}" class="${classes}"><a href="${esc(item.href)}">${esc(item.label)}</a>${submenu}</li>`;
+}).join('');
+
+// The export stripped alt text from the logo and the two social icons, leaving the
+// home link and both social links with no accessible name.
+const ALT_FIXES: [string, string][] = [
+  ['src="/wp-content/uploads/2024/09/Cardboard-Boxes-1.png" class="attachment-full size-full" alt=""', 'src="/wp-content/uploads/2024/09/Cardboard-Boxes-1.png" class="attachment-full size-full" alt="Shop Cardboard Boxes"'],
+  ['src="/wp-content/uploads/2024/10/fb-icon-300x300.png" alt=""', 'src="/wp-content/uploads/2024/10/fb-icon-300x300.png" alt="Shop Cardboard Boxes on Facebook"'],
+  ['src="/wp-content/uploads/2024/10/circle-linkedin-512-300x300.webp" alt=""', 'src="/wp-content/uploads/2024/10/circle-linkedin-512-300x300.webp" alt="Shop Cardboard Boxes on LinkedIn"'],
+];
+
+const MENU_OPEN = '<ul id="menu-main-menu" class="rishi-menu">';
+const withAlt = ALT_FIXES.reduce((html, [from, to]) => html.replaceAll(from, to), recoveredHeader);
+const menuStart = withAlt.indexOf(MENU_OPEN);
+const menuEnd = withAlt.indexOf('</ul>', menuStart);
+const header = menuStart >= 0 && menuEnd > menuStart
+  ? `${withAlt.slice(0, menuStart)}<ul id="menu-main-menu" class="rishi-menu scb-nav">${menuHtml}${withAlt.slice(menuEnd)}`
+  : withAlt;
+
+// The off-canvas menu is a flat list: nested disclosure on a phone is worse than one
+// scrollable column, and every destination is reachable either way.
+const MOBILE: { label: string; href: string; group?: boolean }[] = [
+  { label: 'Shop', group: true, href: '' },
+  { label: 'All 186 box styles', href: '/products/' },
+  { label: 'Shipping & mailing', href: '/product-category/cardboard-shipping-boxes/' },
+  { label: 'Wholesale & bulk', href: '/product-category/wholesale-cardboard-boxes/' },
+  { label: 'By material strength', href: '/product-category/cardboard-boxes-by-material-strength/' },
+  { label: 'By size & shape', href: '/product-category/cardboard-boxes-by-size-and-shape/' },
+  { label: 'By functionality', href: '/product-category/cardboard-boxes-by-functionality/' },
+  { label: 'For specific uses', href: '/product-category/cardboard-boxes-for-specific-uses/' },
+  { label: 'Food packaging', href: '/product-category/food-related-cardboard-boxes/' },
+  { label: 'Cosmetic & gift', href: '/product-category/cosmetic-and-gift-cardboard-boxes/' },
+  { label: 'Retail & display', href: '/product-category/retail-and-display-packaging/' },
+  { label: 'Packaging for specific items', href: '/product-category/packaging-for-specific-items/' },
+  { label: 'Tools & guides', group: true, href: '' },
+  { label: 'Design your box', href: '/design-your-box/' },
+  { label: 'Packaging guides', href: '/resources/' },
+  { label: 'Where we ship', href: '/locations/' },
+  { label: 'Company', group: true, href: '' },
+  { label: 'About us', href: '/about-us/' },
+  { label: 'Contact us', href: '/contact-us/' },
 ];
 ---
 
-<Fragment set:html={recoveredHeader} />
+<Fragment set:html={header} />
 <nav id="scb-mobile-menu" class="scb-mobile-menu" aria-label="Mobile navigation" hidden>
   <button type="button" class="scb-mobile-close" aria-label="Close menu">×</button>
-  <ul>{nav.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul>
+  <ul>
+    {MOBILE.map((item) => (item.group
+      ? <li class="scb-mobile-group">{item.label}</li>
+      : <li><a href={item.href}>{item.label}</a></li>))}
+  </ul>
 </nav>

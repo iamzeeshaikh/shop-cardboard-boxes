@@ -2,6 +2,10 @@ import type { APIRoute } from 'astro';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import routeIndex from '../data/route-index.json';
+import { NEW_CATEGORIES } from '../data/seo/categories';
+import { RESOURCES } from '../data/seo/resources';
+import { LOCATIONS } from '../data/seo/locations';
+import { SEO_REDIRECTS } from '../data/seo/redirects';
 
 export const prerender = true;
 
@@ -9,7 +13,10 @@ const excludedUtilityPaths = new Set([
   '/cart/',
   '/checkout/',
   '/my-account/',
+  '/my-account/lost-password/',
   '/thank-you/',
+  // An author archive of a single account adds nothing a reader would search for.
+  '/author/shanimazhar82gmail-com/',
 ]);
 
 const escapeXml = (value: string) => value
@@ -20,8 +27,10 @@ const escapeXml = (value: string) => value
   .replaceAll("'", '&apos;');
 
 export const GET: APIRoute = () => {
-  const urls = routeIndex.flatMap((route) => {
+  const fromSnapshots = routeIndex.flatMap((route) => {
     if (excludedUtilityPaths.has(route.path)) return [];
+    // Anything that now redirects must not be advertised as a canonical URL.
+    if (SEO_REDIRECTS.has(route.path)) return [];
     const snapshot = JSON.parse(readFileSync(resolve(process.cwd(), 'src/data/snapshots', route.file), 'utf8')) as {
       canonical?: string;
       robots?: string;
@@ -37,10 +46,19 @@ export const GET: APIRoute = () => {
     }
   });
 
+  const authored = [
+    ...NEW_CATEGORIES.map((category) => category.path),
+    '/resources/',
+    ...RESOURCES.map((resource) => `/resources/${resource.slug}/`),
+    '/locations/',
+    ...LOCATIONS.map((location) => `/locations/${location.slug}/`),
+    '/design-your-box/',
+  ].map((path) => `https://shopcardboardboxes.com${path}`);
+
   const body = [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-    ...[...new Set(urls)].sort().map((url) => `  <url><loc>${escapeXml(url)}</loc></url>`),
+    ...[...new Set([...fromSnapshots, ...authored])].sort().map((url) => `  <url><loc>${escapeXml(url)}</loc></url>`),
     '</urlset>',
     '',
   ].join('\n');

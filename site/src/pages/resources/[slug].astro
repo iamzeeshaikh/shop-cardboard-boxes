@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { toSnapshot } from '../../lib/seo/chrome';
+import { resourceBySlug } from '../../data/seo/resources';
+import { breadcrumbHtml, breadcrumbJsonLd, faqHtml, faqJsonLd, esc, abs } from '../../lib/seo/util';
+import { cta } from '../../lib/seo/blocks';
+
+const slug = Astro.params.slug ?? '';
+const resource = resourceBySlug.get(slug);
+if (!resource) return Astro.rewrite('/404');
+
+const path = `/resources/${resource.slug}/`;
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Packaging guides', path: '/resources/' },
+  { name: resource.h1, path },
+];
+
+const asideLinks = (heading: string, links: { path: string; label: string }[]) => links.length
+  ? `<div class="scb-aside"><h2>${esc(heading)}</h2><ul>${links.map((link) => `<li><a href="${esc(link.path)}">${esc(link.label)}</a></li>`).join('')}</ul></div>`
+  : '';
+
+const updated = new Date(resource.updated).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const contentHtml = `<div class="site-content">
+  <div class="scb-intro">
+    <div class="scb-intro-inner">
+      <div>
+        ${breadcrumbHtml(crumbs)}
+        <span class="scb-eyebrow">${esc(resource.topic)}</span>
+        <h1>${esc(resource.h1)}</h1>
+        <p>${esc(resource.description)}</p>
+        <ul class="scb-intro-facts">
+          <li><strong>${resource.readingMinutes} min</strong>reading time</li>
+          <li><strong>${esc(updated)}</strong>last reviewed</li>
+        </ul>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <div class="scb-article">
+    <article class="scb-prose">${resource.body}</article>
+    <aside>
+      ${asideLinks('Related boxes', resource.shop)}
+      ${asideLinks('Read next', resource.next)}
+      <div class="scb-aside"><h2>Need a hand?</h2><ul><li>Describe what you are packaging and we will recommend a specification.</li><li><a href="/contact-us/">Talk to a packaging specialist</a></li><li><a href="/design-your-box/">Configure a box yourself</a></li></ul></div>
+    </aside>
+  </div>
+  ${resource.faqs?.length ? faqHtml(resource.faqs, resource.faqHeading || 'Common questions') : ''}
+  ${cta(`Apply this to your own packaging`, `${esc(resource.summary)} If you would rather have someone work it through with you, send the product details and a specialist will specify it and quote it.`, [{ path: '/contact-us/', label: 'Ask about my packaging' }, { path: '/resources/', label: 'Back to all guides', kind: 'ghost' }])}
+</div>`;
+
+const jsonLd = [
+  breadcrumbJsonLd(crumbs),
+  JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${abs(path)}#article`,
+    headline: resource.h1,
+    description: resource.description,
+    url: abs(path),
+    dateModified: resource.updated,
+    author: { '@type': 'Organization', name: 'Shop Cardboard Boxes', url: abs('/') },
+    publisher: { '@type': 'Organization', name: 'Shop Cardboard Boxes', url: abs('/') },
+    mainEntityOfPage: abs(path),
+    articleSection: resource.topic,
+  }),
+];
+if (resource.faqs?.length) jsonLd.push(faqJsonLd(resource.faqs, path));
+
+const snapshot = toSnapshot({
+  path,
+  title: resource.title,
+  description: resource.description,
+  contentHtml,
+  jsonLd,
+  bodyClass: 'scb-resource',
+});
+---
+
+<BaseLayout snapshot={snapshot}>
+  <Fragment set:html={snapshot.contentHtml} />
+</BaseLayout>
