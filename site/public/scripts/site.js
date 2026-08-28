@@ -22,7 +22,7 @@
   // navigation follows the reader down.
   let scrolledState = false;
   const trackScroll = () => {
-    const scrolled = window.scrollY > 140;
+    const scrolled = window.scrollY > 24;
     if (scrolled === scrolledState) return;
     scrolledState = scrolled;
     document.body.classList.toggle('scb-scrolled', scrolled);

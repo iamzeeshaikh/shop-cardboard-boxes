@@ -333,6 +333,39 @@
 .scb-gallery-thumbs button[aria-current="true"] { border-color: var(--scb-gold); }
 .scb-gallery-thumbs button:focus-visible { outline: 3px solid var(--scb-gold); outline-offset: 2px; }
 
+/* ---------- primary navigation typography ---------- */
+.site-header .scb-nav > li > a {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  color: var(--scb-ink);
+  position: relative;
+  padding-block: 8px !important;
+}
+.site-header .scb-nav > li > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--scb-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .18s ease;
+}
+.site-header .scb-nav > li:hover > a::before,
+.site-header .scb-nav > li:focus-within > a::before { transform: scaleX(1); }
+.site-header .scb-nav > li:hover > a,
+.site-header .scb-nav > li > a:focus-visible { color: var(--scb-gold-ink); }
+.site-header .scb-nav { gap: 22px; }
+
+@media (max-width: 1180px) {
+  .site-header .scb-nav > li > a { font-size: 14px; }
+  .site-header .scb-nav { gap: 16px; }
+}
+
 /* ---------- mega menu ---------- */
 .site-header .scb-nav .scb-has-mega { position: static; }
 .site-header .scb-nav .scb-has-mega > .scb-mega {
