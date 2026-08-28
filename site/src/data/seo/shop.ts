@@ -48,7 +48,7 @@ export const shopRoot: CategoryContent = {
     <li><strong>Pricing from $0.30 per piece,</strong> falling with volume. Board grade, printing and quantity drive the rest.</li>
   </ul>
   ${linkRow([
-    { path: '/design-your-box/', label: 'Configure a box' },
+    { path: '/design-your-box/', label: 'Design your box' },
     { path: '/resources/', label: 'Read the packaging guides' },
     { path: '/product-category/wholesale-cardboard-boxes/', label: 'Volume pricing' },
     { path: '/locations/', label: 'Where we ship' },

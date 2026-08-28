@@ -124,7 +124,7 @@ export const cosmeticGift: CategoryContent = {
     { path: '/product-category/retail-and-display-packaging/', label: 'Retail and display packaging' },
     { path: '/product-category/cardboard-boxes-by-size-and-shape/', label: 'Rigid and shaped formats' },
     { path: '/resources/retail-packaging-guide/', label: 'Retail packaging guide' },
-    { path: '/design-your-box/', label: 'Configure a gift box' },
+    { path: '/design-your-box/', label: 'Design your box' },
   ])}
 </section>`,
   faqHeading: 'Gift and cosmetic packaging questions',
@@ -245,7 +245,7 @@ export const specificItems: CategoryContent = {
   ${linkRow([
     { path: '/resources/cardboard-box-inserts-guide/', label: 'How inserts are specified' },
     { path: '/resources/packaging-fragile-products/', label: 'Packaging fragile products' },
-    { path: '/design-your-box/', label: 'Configure a fitted box' },
+    { path: '/design-your-box/', label: 'Design your box' },
   ])}
 </section>`,
   faqHeading: 'Questions about fitted packaging',

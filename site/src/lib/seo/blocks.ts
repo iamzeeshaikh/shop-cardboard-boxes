@@ -71,6 +71,15 @@ export function linkRow(links: { path: string; label: string }[]): string {
   return `<ul class="scb-linkrow">${links.map((link) => `<li><a href="${esc(link.path)}">${esc(link.label)}</a></li>`).join('')}</ul>`;
 }
 
+/**
+ * A row of destinations rendered as cards rather than pills. A pill gives the reader
+ * a word and nothing else; the note says what sits behind the link — a product, a
+ * guide, a city — so the choice is informed before the click rather than after it.
+ */
+export function navCards(links: { path: string; label: string; note?: string }[]): string {
+  return `<ul class="scb-navcards">${links.map((link) => `<li><a href="${esc(link.path)}"><span class="scb-navcard-label">${esc(link.label)}</span>${link.note ? `<span class="scb-navcard-note">${esc(link.note)}</span>` : ''}</a></li>`).join('')}</ul>`;
+}
+
 export function specTable(caption: string, head: string[], rows: string[][]): string {
   return `<div class="scb-tablewrap"><table class="scb-table">${caption ? `<caption>${esc(caption)}</caption>` : ''}<thead><tr>${head.map((cell) => `<th scope="col">${esc(cell)}</th>`).join('')}</tr></thead><tbody>${rows.map((row) => `<tr>${row.map((cell, index) => (index === 0 ? `<th scope="row">${cell}</th>` : `<td>${cell}</td>`)).join('')}</tr>`).join('')}</tbody></table></div>`;
 }

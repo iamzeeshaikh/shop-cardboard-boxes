@@ -3,7 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { toSnapshot } from '../../lib/seo/chrome';
 import { locationBySlug, LOCATIONS } from '../../data/seo/locations';
 import { breadcrumbHtml, breadcrumbJsonLd, faqHtml, faqJsonLd, esc, abs } from '../../lib/seo/util';
-import { quoteForm, cta, linkRow } from '../../lib/seo/blocks';
+import { quoteForm, cta, navCards } from '../../lib/seo/blocks';
+import { configurator } from '../../lib/seo/configurator';
 
 const slug = Astro.params.slug ?? '';
 const location = locationBySlug.get(slug);
@@ -56,14 +57,22 @@ const hasStatePage = location.kind === 'city' && location.stateSlug && LOCATIONS
  * to the others in its state and then its region, a state to the cities we cover in
  * it and then its neighbours. Navigation only — none of it claims a local presence.
  */
+/** What kind of page a link leads to, so the card can say so. */
+const kindOf = (path: string): string =>
+  path.startsWith('/resources/') ? 'Packaging guide'
+  : path.startsWith('/product-category/') ? 'Product category'
+  : path.startsWith('/product/') ? 'Product'
+  : path.startsWith('/locations/') ? 'Location'
+  : 'Page';
+
 const others = LOCATIONS.filter((entry) => entry.slug !== location.slug);
 const sameState = others.filter((entry) => entry.kind === 'city' && entry.stateSlug === (location.kind === 'state' ? location.slug : location.stateSlug));
 const sameRegion = others.filter((entry) => entry.region === location.region && !sameState.includes(entry) && entry.kind === (location.kind === 'state' ? 'state' : 'city'));
-const nearbyLinks = [...sameState, ...sameRegion].slice(0, 6).map((entry) => ({ path: `/locations/${entry.slug}/`, label: entry.name }));
+const nearbyLinks = [...sameState, ...sameRegion].slice(0, 6).map((entry) => ({ path: `/locations/${entry.slug}/`, label: entry.name, note: `${entry.eyebrow} · ${entry.region}` }));
 const nearby = nearbyLinks.length
   ? `<section class="scb-section scb-tinted">
       <h2>Other places we ship to</h2>
-      ${linkRow([...nearbyLinks, { path: '/locations/', label: 'All 40 locations' }])}
+      ${navCards([...nearbyLinks, { path: '/locations/', label: 'All 40 locations', note: 'Every state and city we ship to' }])}
     </section>`
   : '';
 
@@ -72,7 +81,13 @@ const onward = `<section class="scb-section">
   <p>${hasStatePage
     ? `The <a href="/locations/${esc(location.stateSlug || "")}/">${esc(location.stateName || '')} page</a> covers what applies across the state rather than to ${esc(location.name)} specifically, and these are the products and guides ${esc(location.name)} customers open most.`
     : `${esc(location.summary)} These are the products and guides that answer them.`}</p>
-  ${linkRow([...location.shop, ...location.guides, { path: '/locations/', label: 'All locations' }].map((link) => ({ path: link.path, label: link.label })))}
+  ${navCards([...location.shop, ...location.guides].map((link) => ({ path: link.path, label: link.label, note: kindOf(link.path) })))}
+</section>`;
+
+const cfgBlock = `<section class="scb-section scb-cfg-section">
+  <h2>Specify your boxes</h2>
+  <p class="scb-lede">Four steps to a brief we can price — structure and size, board, printing, and where to send the quote. Nothing is billed and no card is needed.</p>
+  ${configurator({ prefix: 'lcfg', compact: true })}
 </section>`;
 
 const contentHtml = `<div class="site-content">
@@ -91,9 +106,10 @@ const contentHtml = `<div class="site-content">
   ${body}
   ${faqHtml(location.faqs, location.faqHeading)}
   ${onward}
+  ${cfgBlock}
   ${nearby}
   ${location.layout === 'form-at-end' ? formBlock : ''}
-  ${cta(location.cta.heading, esc(location.cta.body), [{ path: '/contact-us/', label: location.cta.label }, { path: '/design-your-box/', label: 'Configure a box', kind: 'ghost' }])}
+  ${cta(location.cta.heading, esc(location.cta.body), [{ path: '/contact-us/', label: location.cta.label }, { path: '/design-your-box/', label: 'Design your box', kind: 'ghost' }])}
 </div>`;
 
 const snapshot = toSnapshot({

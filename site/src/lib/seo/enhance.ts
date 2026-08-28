@@ -95,13 +95,13 @@ function enhanceCategory(snapshot: Snapshot): Snapshot {
     html += `<div class="scb-append">${content.sections}${faqHtml(content.faqs, content.faqHeading, content.faqIntro)}${cta(
       content.ctaHeading,
       esc(content.ctaBody),
-      [{ path: '/contact-us/', label: 'Request a quote' }, { path: '/design-your-box/', label: 'Configure your box', kind: 'ghost' }],
+      [{ path: '/contact-us/', label: 'Request a quote' }, { path: '/design-your-box/', label: 'Design your box', kind: 'ghost' }],
     )}</div>`;
   } else {
     html += `<div class="scb-append"><section class="scb-section"><h2>More from this collection</h2><p>You are on page ${page} of the ${esc(content.crumbs[content.crumbs.length - 1].name.toLowerCase())} collection. The full buying guidance, specifications and questions are on <a href="${esc(content.path)}">page one of this collection</a>.</p>${linkRow([
       { path: content.path, label: 'Back to page one' },
       { path: '/products/', label: 'Browse every box' },
-      { path: '/design-your-box/', label: 'Configure a custom box' },
+      { path: '/design-your-box/', label: 'Design your box' },
     ])}</section></div>`;
   }
 

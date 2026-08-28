@@ -61,7 +61,7 @@ export function renderNewCategory(content: CategoryContent): Snapshot {
   ${cta(
     content.ctaHeading,
     esc(content.ctaBody),
-    [{ path: '/contact-us/', label: 'Request a quote' }, { path: '/design-your-box/', label: 'Configure your box', kind: 'ghost' }],
+    [{ path: '/contact-us/', label: 'Request a quote' }, { path: '/design-your-box/', label: 'Design your box', kind: 'ghost' }],
   )}
 </div>`;
 

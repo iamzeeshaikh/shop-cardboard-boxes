@@ -75,7 +75,7 @@ export const shipping: CategoryContent = {
     { path: '/product-category/wholesale-cardboard-boxes/', label: 'Bulk and wholesale ordering' },
     { path: '/resources/corrugated-box-strength-guide/', label: 'ECT and Mullen explained' },
     { path: '/resources/packaging-fragile-products/', label: 'Packaging fragile products' },
-    { path: '/design-your-box/', label: 'Configure a shipping box' },
+    { path: '/design-your-box/', label: 'Design your box' },
   ])}
 </section>`,
   faqHeading: 'Shipping box questions',

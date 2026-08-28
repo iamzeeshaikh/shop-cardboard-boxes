@@ -19,6 +19,7 @@
 
   --scb-ink: #292929;
   --scb-body: #55504a;
+  --scb-muted: #6f6961;
   --scb-line: #e4ddd1;
   --scb-surface: #faf7f1;
   --scb-radius: 10px;
@@ -131,6 +132,10 @@
 .scb-btn-gold:hover { background: var(--scb-tan); color: #21160a; }
 .scb-btn-ghost { border-color: rgba(255,255,255,.6); color: #fff; }
 .scb-btn-ghost:hover { background: rgba(255,255,255,.12); color: #fff; }
+.site-content a.scb-btn-ghost,
+.scb-cta a.scb-btn-ghost { color: #fff; }
+.site-content a.scb-btn-ghost:hover,
+.scb-cta a.scb-btn-ghost:hover { color: #fff; background: rgba(255,255,255,.14); }
 .scb-btn-solid { background: var(--scb-blue); color: #fff; }
 .scb-btn-solid:hover { background: var(--scb-blue-dark); color: #fff; }
 
@@ -357,6 +362,59 @@
 @media (max-width: 767px) {
   .row-wrapper:has(#rishi-footer-widgets-three) { grid-template-columns: minmax(0, 1fr) !important; }
 }
+
+/* ---------- destination cards ---------- */
+.scb-navcards {
+  list-style: none;
+  margin: 22px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 236px), 1fr));
+}
+.scb-navcards li { margin: 0; }
+.scb-navcards a {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+  padding: 15px 40px 15px 17px;
+  position: relative;
+  border: 1px solid #e6ddcc;
+  border-radius: 10px;
+  background: #fff;
+  text-decoration: none;
+  transition: border-color .15s ease, background-color .15s ease, transform .15s ease;
+}
+.scb-navcards a::after {
+  content: "→";
+  position: absolute;
+  right: 16px;
+  top: 15px;
+  color: var(--scb-gold-ink);
+  font-size: 15px;
+  transition: transform .15s ease;
+}
+.scb-navcards a:hover,
+.scb-navcards a:focus-visible {
+  border-color: var(--scb-gold);
+  background: #fdfaf3;
+  transform: translateY(-1px);
+}
+.scb-navcards a:hover::after,
+.scb-navcards a:focus-visible::after { transform: translateX(3px); }
+.scb-navcard-label {
+  font-weight: 650;
+  font-size: 15.5px;
+  line-height: 1.35;
+  color: var(--scb-ink);
+}
+.scb-navcard-note {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--scb-muted);
+}
+.scb-tinted .scb-navcards a { background: #fff; }
 
 /* ---------- primary navigation typography ---------- */
 .site-header .scb-nav > li > a {
