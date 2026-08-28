@@ -8,10 +8,17 @@ import recoveredFooter from '../data/footer.html?raw';
  *
  * The only change is alt text on the certification strip, which the export dropped.
  */
-const footerHtml = recoveredFooter.replaceAll(
-  'src="/wp-content/uploads/2024/10/certificate.png" alt=""',
-  'src="/wp-content/uploads/2024/10/certificate.png" alt="Quality and secure-payment certification badges"',
-);
+const footerHtml = recoveredFooter
+  .replaceAll(
+    'src="/wp-content/uploads/2024/10/certificate.png" alt=""',
+    'src="/wp-content/uploads/2024/10/certificate.png" alt="Quality and secure-payment certification badges"',
+  )
+  // Shipping terms have to be reachable from the site chrome for Merchant Center, so
+  // the policy joins the others in the existing Company menu rather than in a new block.
+  .replace(
+    '<li id="menu-item-437"',
+    '<li id="menu-item-shipping" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/shipping-policy/">Shipping Policy</a></li>\n<li id="menu-item-437"',
+  );
 ---
 
 <Fragment set:html={footerHtml} />

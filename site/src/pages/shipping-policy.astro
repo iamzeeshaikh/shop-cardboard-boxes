@@ -1,0 +1,159 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { toSnapshot } from '../lib/seo/chrome';
+import { breadcrumbHtml, breadcrumbJsonLd, faqHtml, faqJsonLd, abs } from '../lib/seo/util';
+import { specTable, linkRow, cta } from '../lib/seo/blocks';
+
+/**
+ * Shipping policy.
+ *
+ * Google Merchant Center requires shipping terms to be visible on the website, and
+ * the delivery estimate configured there has to agree with what the site says. Every
+ * figure below is the one the catalogue already states — 7–10 business days including
+ * production and free US shipping, with a 4–6 day production window after artwork
+ * approval — so the page, the product FAQs and the Merchant Center settings match.
+ */
+const path = '/shipping-policy/';
+const crumbs = [{ name: 'Home', path: '/' }, { name: 'Shipping Policy', path }];
+
+const FAQS = [
+  { q: 'How much does shipping cost?', a: 'Nothing. Standard delivery anywhere in the United States is included in the price you are quoted. There is no separate shipping line and no minimum order value to qualify — the 100-box minimum order is the only threshold.' },
+  { q: 'How long will my order take?', a: '7–10 business days from artwork approval to delivery. That figure covers both production and transit; it is not production time with shipping added on top.' },
+  { q: 'Why does the clock start at artwork approval rather than at checkout?', a: 'Because every box is made to order against a dieline built for your dimensions. Nothing can be cut until the artwork and the specification are signed off, so an order placed today with artwork approved next week ships from next week.' },
+  { q: 'What counts as a business day?', a: 'Monday to Friday, excluding United States public holidays. Production runs Monday to Friday; carriers deliver Monday to Saturday, so the last leg can land on a Saturday.' },
+  { q: 'Can I get an order faster than 7–10 business days?', a: 'Rush production is available on many box styles. Tell us your date before you order and we will confirm in writing whether we can meet it rather than after the order is placed.' },
+  { q: 'Do you ship outside the United States?', a: 'Free delivery covers the United States. For anywhere else, contact us with the destination and we will quote the freight before you commit — international shipping is not included in the listed price.' },
+  { q: 'Can you deliver to a third-party fulfilment centre or freight forwarder?', a: 'Yes, and it is a common arrangement. Receiving sites usually have their own dock booking, pallet height limit and labelling format. Send those with your enquiry so the shipment is built to them rather than corrected on arrival.' },
+  { q: 'What happens if my order arrives damaged?', a: 'Tell us within a reasonable period of delivery and keep the packaging and any damaged boxes. Photographs of the pallet or carton as it arrived help considerably, because carrier claims depend on them. Our Refund and Returns Policy sets out what happens next.' },
+  { q: 'Can I change the delivery address after ordering?', a: 'Before the order ships, usually yes — contact us as soon as possible. Once a shipment is with the carrier an address change may not be possible, and where the carrier allows one it can add days to the delivery.' },
+  { q: 'How will my boxes arrive?', a: 'Flat-packed and bundled, on pallets or in outer cartons depending on the quantity. We confirm the pallet count and shipment dimensions on the quote so you can plan receiving space before the delivery arrives. Rigid boxes are the exception — they cannot fold flat and arrive assembled.' },
+];
+
+const contentHtml = `<div class="site-content">
+  <div class="scb-intro">
+    <div class="scb-intro-inner">
+      <div>
+        ${breadcrumbHtml(crumbs)}
+        <span class="scb-eyebrow">Policy</span>
+        <h1>Shipping Policy</h1>
+        <p>Standard delivery across the United States is included in every price we quote. This page sets out how long an order takes, when the clock starts, how orders arrive, and what to do if something goes wrong.</p>
+        <ul class="scb-intro-facts">
+          <li><strong>Free</strong>standard US delivery</li>
+          <li><strong>7–10</strong>business days, door to door</li>
+          <li><strong>100</strong>boxes minimum order</li>
+        </ul>
+      </div>
+      <div></div>
+    </div>
+  </div>
+
+  <section class="scb-section">
+    <h2>The short version</h2>
+    ${specTable('Shipping at a glance', ['Item', 'Detail'], [
+      ['<strong>Shipping cost</strong>', 'Free on standard delivery anywhere in the United States. No separate shipping charge is added at any stage.'],
+      ['<strong>Total time</strong>', '7–10 business days from artwork approval to delivery, covering production and transit together.'],
+      ['<strong>Production</strong>', '4–6 business days, Monday to Friday, after final artwork and specification approval.'],
+      ['<strong>Transit</strong>', '3–4 business days, delivered Monday to Saturday.'],
+      ['<strong>Order cut-off</strong>', '2:00 PM Eastern Time. Approvals received after that are treated as the next business day.'],
+      ['<strong>Destinations</strong>', 'All fifty United States. Outside the US, freight is quoted separately before you commit.'],
+      ['<strong>Minimum order</strong>', '100 boxes.'],
+    ])}
+  </section>
+
+  <section class="scb-section scb-tinted">
+    <h2>What "free shipping" covers</h2>
+    <p>The price you are quoted per box is the price you pay. Standard ground delivery to a single United States address is included, and no shipping charge is added later in the process.</p>
+    <p>Also included, so there is no surprise at quote stage:</p>
+    <ul>
+      <li>Dieline preparation and artwork setup.</li>
+      <li>A print-ready proof before production begins.</li>
+      <li>Flat-packing, bundling and palletising.</li>
+    </ul>
+    <p>Quoted separately, because they depend on your requirements: rush production, delivery to more than one address, delivery outside the United States, and any receiving service the destination site charges for.</p>
+  </section>
+
+  <section class="scb-section">
+    <h2>When the clock starts</h2>
+    <p>Every box we make is produced to order. Nothing is cut until the specification and the artwork are approved, so the 7–10 business days are measured from <strong>final artwork approval</strong> rather than from the moment an order is placed.</p>
+    <p>In practice that means the two things most likely to move your delivery date are within your control: how quickly the specification is settled, and how quickly the proof is approved. An order that sits waiting for a logo file is not in production.</p>
+    <div class="scb-callout">
+      <p><strong>If you have a fixed date</strong> — a launch, a retail rollout, an event — tell us before you order. We will confirm in writing whether we can meet it, rather than discovering the problem afterwards.</p>
+    </div>
+  </section>
+
+  <section class="scb-section scb-tinted">
+    <h2>How the days are counted</h2>
+    <ul>
+      <li><strong>Business days</strong> are Monday to Friday, excluding United States public holidays.</li>
+      <li><strong>Production</strong> runs Monday to Friday.</li>
+      <li><strong>Carriers deliver</strong> Monday to Saturday, so the final leg can land on a Saturday.</li>
+      <li><strong>The cut-off is 2:00 PM Eastern Time.</strong> An approval that arrives after it counts as the next business day.</li>
+    </ul>
+    <p>Public holidays extend the estimate by the number of non-working days they fall on. Severe weather, carrier disruption and other events outside our control can also delay a delivery; where that happens we will tell you as soon as we know rather than waiting for you to ask.</p>
+  </section>
+
+  <section class="scb-section">
+    <h2>How orders arrive</h2>
+    <p>Boxes ship flat-packed and bundled, on pallets or in outer cartons depending on the quantity. The pallet count and shipment dimensions are confirmed on your quote, so you can arrange receiving space before the delivery turns up.</p>
+    <p>Rigid boxes are the exception. Their chipboard frame cannot fold flat, so they arrive assembled and take considerably more space in transit — worth allowing for when you plan the receiving area. <a href="/resources/box-styles-explained/">The box styles guide</a> explains which structures ship flat and which do not.</p>
+    <h3>Delivering somewhere other than your own address</h3>
+    <p>We deliver directly to third-party fulfilment centres, freight forwarders and retail distribution sites. Those sites usually set their own requirements — a dock booking reference, a maximum pallet height, a specific pallet or carton label format, a receiving window. Send them with your enquiry and the shipment is built to them from the start.</p>
+  </section>
+
+  <section class="scb-section scb-tinted">
+    <h2>Tracking your order</h2>
+    <p>You will be told when your order moves into production and when it leaves us. If you have not heard anything and your date is approaching, contact us with your order details and we will tell you exactly where it is — <a href="mailto:info@shopcardboardboxes.com">info@shopcardboardboxes.com</a> or <a href="tel:+15033580443">+1 (503) 358-0443</a>.</p>
+  </section>
+
+  <section class="scb-section">
+    <h2>Damaged, short or missing deliveries</h2>
+    <p>Check the shipment when it arrives. If anything is damaged or the count is short:</p>
+    <ol>
+      <li><strong>Photograph it as it arrived</strong> — the pallet, the outer cartons and the damaged boxes, before unpacking further. Carrier claims depend almost entirely on these.</li>
+      <li><strong>Note it on the delivery paperwork</strong> if the damage is visible at the point of delivery.</li>
+      <li><strong>Contact us promptly</strong> with the photographs and your order details.</li>
+    </ol>
+    <p>Keep the packaging and the affected boxes until the matter is settled. What happens next — replacement, credit or refund — is covered by our <a href="/refund_returns/">Refund and Returns Policy</a>.</p>
+  </section>
+
+  <section class="scb-section scb-tinted">
+    <h2>Changing an address or cancelling</h2>
+    <p>Contact us as early as possible. Before a shipment is handed to the carrier an address change is usually straightforward. Once it is in the carrier's network a change may not be possible at all, and where the carrier does allow one it typically adds days to the delivery.</p>
+    <p>Because every box is made to your specification, cancellation depends on how far production has progressed. The <a href="/refund_returns/">Refund and Returns Policy</a> sets out the position, and the <a href="/terms-conditions/">Terms &amp; Conditions</a> govern the order itself.</p>
+    ${linkRow([
+      { path: '/contact-us/', label: 'Contact us' },
+      { path: '/refund_returns/', label: 'Refund and Returns Policy' },
+      { path: '/terms-conditions/', label: 'Terms & Conditions' },
+      { path: '/privacy-policy/', label: 'Privacy Policy' },
+    ])}
+  </section>
+
+  ${faqHtml(FAQS, 'Shipping questions')}
+  ${cta('Need a delivery date confirmed?', 'Tell us the box, the quantity and the date you need it in hand. We will work backwards from your date and confirm it before you commit.', [{ path: '/contact-us/', label: 'Talk to us' }, { path: '/design-your-box/', label: 'Configure a box', kind: 'ghost' }])}
+</div>`;
+
+const snapshot = toSnapshot({
+  path,
+  title: 'Shipping Policy | Free US Delivery, 7–10 Business Days',
+  description: 'Free standard shipping across the United States, delivered in 7–10 business days from artwork approval. How the days are counted, how orders arrive, and what to do if a delivery is damaged.',
+  contentHtml,
+  bodyClass: 'scb-policy',
+  jsonLd: [
+    breadcrumbJsonLd(crumbs),
+    faqJsonLd(FAQS, path),
+    JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      '@id': `${abs(path)}#webpage`,
+      url: abs(path),
+      name: 'Shipping Policy',
+      description: 'Shipping terms for Shop Cardboard Boxes: free United States delivery in 7–10 business days.',
+      isPartOf: { '@type': 'WebSite', name: 'Shop Cardboard Boxes', url: abs('/') },
+    }),
+  ],
+});
+---
+
+<BaseLayout snapshot={snapshot}>
+  <Fragment set:html={snapshot.contentHtml} />
+</BaseLayout>

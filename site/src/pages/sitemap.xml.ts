@@ -53,6 +53,7 @@ export const GET: APIRoute = () => {
     '/locations/',
     ...LOCATIONS.map((location) => `/locations/${location.slug}/`),
     '/design-your-box/',
+    '/shipping-policy/',
   ].map((path) => `https://shopcardboardboxes.com${path}`);
 
   const body = [
