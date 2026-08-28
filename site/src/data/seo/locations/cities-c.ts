@@ -64,13 +64,16 @@ export const fortWorth: LocationPage = {
     {
       h2: 'Feed, seed and seasonal bulk',
       html: `<p>Agricultural packaging is bought seasonally in large single orders, which makes ordering rhythm as important as specification. Committing to an annual quantity gets the volume price; a call-off schedule means the boxes arrive before the season rather than sitting through months of humidity in a barn.</p>
-<p>For the boxes themselves, <a href="/product/cardboard-bulk-shipping-trays/">bulk shipping trays</a> and <a href="/product/cardboard-corrugated-pallet-boxes/">pallet boxes</a> cover most of the volume. Hand holes are near-universal on this work and need positioning high on the side wall, away from the corner posts that carry the stack.</p>`,
+<p>For the boxes themselves, <a href="/product/cardboard-bulk-shipping-trays/">bulk shipping trays</a> cover most of the volume, stacking in layers without crushing what sits beneath.</p>
+<p>Where a load fills the footprint rather than sitting in layers, <a href="/product/cardboard-corrugated-pallet-boxes/">corrugated pallet boxes</a> carry it as one container instead.</p>
+<p>Hand holes are near-universal on this work and need positioning high on the side wall, away from the corner posts that carry the stack.</p>`,
     },
     {
       h2: 'Aviation and precision components',
       html: `<p>Aviation parts are the demanding case: valuable, often irregular, frequently with protruding fittings, and shipped with documentation attached.</p>
 <p>The specification that works is a fitted insert rather than a heavier box. Protrusions are where punctures happen — flat faces rarely fail — so the insert has to account for the fittings specifically rather than just the bounding box. For traceability, approved dielines stay on file so every reorder is identical.</p>
-<p>See <a href="/product/cardboard-industrial-parts-packaging/">industrial parts packaging</a> and <a href="/resources/cardboard-box-inserts-guide/">the insert guide</a>.</p>`,
+<p>Dense components concentrate weight into a small footprint, which is the opposite of what a general-purpose carton is built for. <a href="/product/cardboard-industrial-parts-packaging/">Industrial parts packaging</a> is graded for the load rather than the volume.</p>
+<p>How the cavities inside it are dimensioned decides whether the part arrives marked, and <a href="/resources/cardboard-box-inserts-guide/">the insert guide</a> works through that sizing.</p>`,
     },
     {
       h2: 'Getting the weight right',
@@ -167,7 +170,9 @@ export const charlotte: LocationPage = {
     {
       h2: 'Corporate gifting and welcome kits',
       html: `<p>A kit box is a presentation problem with a logistics problem attached. It has to hold several unlike items in a fixed arrangement, survive shipping, and look deliberate when the lid comes off.</p>
-<p>The insert does nearly all of that work. A die-cut corrugated insert with a cavity per item keeps the arrangement intact and is far cheaper than the foam alternative — and it recycles with the box, which corporate buyers increasingly ask about. See <a href="/product/cardboard-welcome-kit-boxes/">welcome kit boxes</a> and <a href="/product/cardboard-corporate-gift-packaging/">corporate gift packaging</a>.</p>
+<p>The insert does nearly all of that work. A die-cut corrugated insert with a cavity per item keeps the arrangement intact and is far cheaper than the foam alternative — and it recycles with the box, which corporate buyers increasingly ask about.</p>
+<p>For onboarding and employee kits, <a href="/product/cardboard-welcome-kit-boxes/">welcome kit boxes with fitted inserts</a> make every box open the same way.</p>
+<p>Client gifting asks the same structure to look more considered than it costs, which is what <a href="/product/cardboard-corporate-gift-packaging/">corporate gift packaging</a> is finished for.</p>
 <p>For quantities in the low hundreds, digital printing is the right process: no plate cost, and the artwork can be personalised or versioned without penalty.</p>`,
     },
     {
@@ -215,12 +220,14 @@ export const indianapolis: LocationPage = {
       html: `<p>Air carriers charge on whichever is greater: the actual weight, or a volume figure derived from the box dimensions. For most of what leaves this city the volume figure wins, which means the box is billed for space rather than for contents.</p>
 <p>What follows from that is unintuitive. Negotiating five per cent off the box price moves almost nothing. Removing an inch from each dimension moves the freight bill on <em>every parcel, permanently</em> — and the freight bill is usually the larger number by a wide margin.</p>
 <p>Two things make that saving available. The first is that our boxes carry no premium for a non-standard size, because each one is cut to a dieline built for your measurements — so there is no reason to round up to a stock size. The second is that dimensional weight is calculated on external dimensions, which are larger than the internal ones you specify by roughly twice the board thickness on each axis, plus any tape overlap. Build to the band with that allowance and you sit inside it; forget it and you land just outside.</p>
-<p>Send us a week of shipment dimensions and your carrier's band table and we will design the ladder around both. <a href="/product/custom-size-cardboard-boxes/">Custom size boxes</a> and <a href="/resources/reduce-packaging-and-shipping-costs/">the cost reduction guide</a> cover the method.</p>`,
+<p>Send us a week of shipment dimensions and your carrier's band table and we will design the ladder around both. <a href="/product/custom-size-cardboard-boxes/">Custom size boxes</a> cost no more for being non-standard, because every box is cut to its own dieline.</p>
+<p>The method behind that ladder — how many sizes are worth carrying, and where each one pays for itself — is set out in <a href="/resources/reduce-packaging-and-shipping-costs/">our guide to reducing packaging costs</a>.</p>`,
     },
     {
       h2: 'Pharmaceutical distribution',
       html: `<p>Distribution cartons for regulated products have to reproduce identically batch after batch. Offset lithography with a mixed spot ink does that; digital simulation drifts slightly between runs. A coated white board holds small regulated type better than kraft.</p>
-<p>See <a href="/product/cardboard-pill-packaging-boxes/">pill packaging boxes</a> and <a href="/product/cardboard-medical-device-packaging/">medical device packaging</a>.</p>`,
+<p>Regulated cartons carry no tolerance for variation between runs, which is why <a href="/product/cardboard-pill-packaging-boxes/">pill packaging boxes</a> are produced against a dieline that stays on file once approved.</p>
+<p>Devices add a physical requirement on top of the print one, where an inner box is suspended inside an outer with a measured gap. <a href="/product/cardboard-medical-device-packaging/">Medical device packaging</a> is built to that arrangement.</p>`,
     },
     {
       h2: 'Event and sports merchandise',

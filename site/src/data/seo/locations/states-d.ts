@@ -25,12 +25,14 @@ ${specTable('What an inch costs', ['Box', 'Volume', 'Billable at a 139 divisor']
   ['11 × 9 × 7 in', '693 in³', '≈ 5.0 lb'],
   ['10 × 8 × 6 in', '480 in³', '≈ 3.5 lb'],
 ])}
-<p>There is no premium for a non-standard size — every box is cut to a dieline built for your measurements. <a href="/product/custom-size-cardboard-boxes/">Custom size boxes</a> and <a href="/resources/how-to-choose-a-shipping-box/">the shipping box guide</a> cover it.</p>`,
+<p>There is no premium for a non-standard size, because every box is cut to a dieline built for your measurements rather than pulled from a stock range. <a href="/product/custom-size-cardboard-boxes/">Custom size boxes</a> are priced on board area and run length, not on how unusual the dimensions are.</p>
+<p>Choosing the size in the first place is the harder part, and <a href="/resources/how-to-choose-a-shipping-box/">the shipping box guide</a> works through it from the product outward.</p>`,
     },
     {
       h2: 'Merchandise and apparel',
       html: `<p>Music and event merchandise ships in bursts, which makes ordering rhythm as important as specification. A tour or a release is a fixed quantity on a fixed date, so a single run with a firm delivery date beats an open account.</p>
-<p>For the boxes themselves, printed <a href="/product/cardboard-mailing-boxes/">mailers</a> do more brand work than printed shippers, because the customer sees the mailer and photographs it. Where several designs are needed, a plain box with printed <a href="/product/cardboard-sleeve-packaging/">sleeves</a> avoids reprinting the structure for every variant.</p>`,
+<p>For the boxes themselves, printed <a href="/product/cardboard-mailing-boxes/">mailers with a printed inner face</a> do more brand work than printed shippers, because the customer sees the mailer and photographs it.</p>
+<p>Where several designs are needed at once, reprinting the structure for every variant is the expensive way to do it. A plain box with <a href="/product/cardboard-sleeve-packaging/">printed sleeves over a stock tray</a> changes the artwork without changing the tooling.</p>`,
     },
     {
       h2: 'Healthcare distribution',
@@ -70,7 +72,9 @@ export const indiana: LocationPage = {
     {
       h2: 'Pharmaceutical distribution cartons',
       html: `<p>A distribution carton for regulated products has to do three things consistently: hold the regulated text at the specified size, present a barcode that scans first time, and reproduce identically from batch to batch.</p>
-<p>Consistency is what rules out digital printing for most of this work — a mixed spot ink on an offset press reproduces exactly, while a digital simulation drifts slightly between runs. A coated white board holds small type better than kraft. See <a href="/product/cardboard-pill-packaging-boxes/">pill packaging</a> and <a href="/resources/cardboard-packaging-materials/">the materials guide</a>.</p>`,
+<p>Consistency is what rules out digital printing for most of this work — a mixed spot ink on an offset press reproduces exactly, while a digital simulation drifts slightly between runs. A coated white board holds small type better than kraft does.</p>
+<p>Regulated cartons are the clearest case, and <a href="/product/cardboard-pill-packaging-boxes/">pill packaging boxes</a> are produced against a signed-off dieline so that every reorder matches.</p>
+<p>Which board suits which press is a question the <a href="/resources/cardboard-packaging-materials/">materials guide</a> answers in more detail than a specification sheet will.</p>`,
     },
     {
       h2: 'Oversized and awkward components',
@@ -81,7 +85,8 @@ export const indiana: LocationPage = {
   <li><strong>Protect the protrusions specifically.</strong> A bracket or fitting sticking out is where the puncture happens, not the flat faces.</li>
   <li><strong>Reinforce along the long axis.</strong> A long box loses stacking strength far faster than a cube of the same board, so panel support matters as much as grade.</li>
 </ul>
-<p><a href="/product/large-cardboard-boxes/">Large cardboard boxes</a> and <a href="/product/cardboard-industrial-parts-packaging/">industrial parts packaging</a> cover the range.</p>`,
+<p>The range runs from bulky and light to small and dense, and the two need opposite specifications. <a href="/product/large-cardboard-boxes/">Large cardboard boxes</a> hold their shape across a long span where the contents weigh little.</p>
+<p>Dense components invert that, concentrating weight into a small footprint. <a href="/product/cardboard-industrial-parts-packaging/">Industrial parts packaging</a> is built for the load rather than the volume.</p>`,
     },
   ],
   faqHeading: 'Indiana packaging questions',
@@ -123,7 +128,9 @@ export const missouri: LocationPage = {
     {
       h2: 'Agricultural and bulk packaging',
       html: `<p>Missouri agriculture buys packaging in single large seasonal orders rather than continuously, which makes call-off scheduling worth setting up rather than an afterthought. Commit to the annual quantity for the volume price, take delivery before the season, and avoid a barn full of boxes absorbing moisture through the winter.</p>
-<p><a href="/product/cardboard-bulk-shipping-trays/">Bulk shipping trays</a> and <a href="/product/cardboard-corrugated-pallet-boxes/">pallet boxes</a> cover most of the volume; <a href="/product-category/wholesale-cardboard-boxes/">wholesale ordering</a> covers the terms.</p>`,
+<p>Most of the volume moves on two structures. <a href="/product/cardboard-bulk-shipping-trays/">Bulk shipping trays</a> stack on a pallet without crushing the layer beneath them.</p>
+<p>Where the load fills the footprint rather than sitting in layers, <a href="/product/cardboard-corrugated-pallet-boxes/">corrugated pallet boxes</a> carry it as a single container.</p>
+<p>The terms that apply at this scale — where the breaks fall, and what a call-off schedule changes — are set out on the <a href="/product-category/wholesale-cardboard-boxes/">wholesale cardboard boxes page</a>.</p>`,
     },
     {
       h2: 'Consolidating a box ladder',
@@ -164,7 +171,9 @@ export const maryland: LocationPage = {
     {
       h2: 'Seafood and the condensation problem',
       html: `<p>Chesapeake seafood ships live or chilled, and in both cases the difficulty is water rather than temperature. Live product carries moisture with it; chilled product generates condensation every time the box crosses a temperature boundary. Untreated board absorbs both and loses strength quickly.</p>
-<p>The specification is a moisture barrier plus an insulating liner, with the coolant sized to the journey rather than to the box. Vents are a judgement call: live product needs airflow, chilled product needs the temperature held. Those pull in opposite directions and the answer depends on which you are shipping. See <a href="/product/cardboard-seafood-packaging-boxes/">seafood packaging</a> and <a href="/product/cardboard-insulated-cold-boxes/">insulated cold boxes</a>.</p>`,
+<p>The specification is a moisture barrier plus an insulating liner, with the coolant sized to the journey rather than to the box. Vents are a judgement call: live product needs airflow, chilled product needs the temperature held, and those pull in opposite directions.</p>
+<p>For live and freshly landed catch, <a href="/product/cardboard-seafood-packaging-boxes/">seafood packaging with drainage vents</a> takes the airflow side of that trade.</p>
+<p>For chilled product travelling further, <a href="/product/cardboard-insulated-cold-boxes/">insulated cold boxes</a> take the other side and hold the temperature instead.</p>`,
     },
     {
       h2: 'Biotech and laboratory shipping',
@@ -216,12 +225,16 @@ ${specTable('Common beverage configurations', ['Config', 'Gross weight', 'Board'
   ['12 bottles', 'Around 40 lb', 'Double wall'],
   ['24 cans', 'Around 25 lb', 'Double wall, handled'],
 ])}
-<p>See <a href="/product/cardboard-boxes-for-bottles/">bottle packaging</a>, <a href="/product/cardboard-juice-bottle-carriers/">bottle carriers</a> and <a href="/resources/cardboard-box-inserts-guide/">the divider sizing guide</a>.</p>`,
+<p>Bottles fail in transit where they touch, so the divider does more work than the outer board. <a href="/product/cardboard-boxes-for-bottles/">Bottle packaging with corrugated dividers</a> keeps each neck and base separated through the journey.</p>
+<p>Taprooms and juice producers selling over the counter need the load carried rather than shipped, which <a href="/product/cardboard-juice-bottle-carriers/">bottle carriers with a centre handle</a> are built for.</p>
+<p>Cell sizing is where a divider grid goes wrong, and <a href="/resources/cardboard-box-inserts-guide/">the divider sizing guide</a> works through the arithmetic.</p>`,
     },
     {
       h2: 'Outdoor and equipment packaging',
       html: `<p>Outdoor gear is bulky, often irregular, and frequently sold to customers who care about packaging waste. That combination pushes towards a tight box with a corrugated insert rather than a generous box with foam — better fit, lower dimensional weight, and packaging that goes into the paper stream in one piece.</p>
-<p><a href="/product/cardboard-eco-friendly-compostable-boxes/">Uncoated recyclable boxes</a> and <a href="/product/cardboard-recycled-kraft-boxes/">recycled kraft</a> suit the audience, and <a href="/resources/recyclable-cardboard-packaging/">the recyclability guide</a> covers which finishes would undermine the claim.</p>`,
+<p>The audience here reads the packaging as part of the purchase, so the board is the claim. <a href="/product/cardboard-eco-friendly-compostable-boxes/">Uncoated recyclable boxes</a> keep the material single-stream and obvious.</p>
+<p>Where the look matters as much as the substrate, <a href="/product/cardboard-recycled-kraft-boxes/">recycled kraft board</a> carries the visual signal without a coating.</p>
+<p>Some finishes quietly undermine the claim they are printed on, and <a href="/resources/recyclable-cardboard-packaging/">the recyclability guide</a> sets out which ones do.</p>`,
     },
     {
       h2: 'Does altitude matter?',

@@ -14,7 +14,9 @@ export const illinois: LocationPage = {
     {
       h2: 'Shelf-ready packaging for grocery',
       html: `<p>Most Illinois food manufacturers sell into grocery, and grocery buyers increasingly specify shelf-ready packaging rather than accepting whatever case you use. The requirement arrives fixed: case count, external case dimensions, tray height after opening, perforation position, front panel print area.</p>
-<p>Those figures come from the retailer's fixture and replenishment model, not from your preference, and guessing at them is the most common reason a first sample gets rejected. Send us the spec sheet and we build to it. See <a href="/product/cardboard-shelf-ready-packaging/">shelf-ready packaging</a> and <a href="/resources/retail-packaging-guide/">the retail packaging guide</a>.</p>`,
+<p>Those figures come from the retailer's fixture and replenishment model, not from your preference, and guessing at them is the most common reason a first sample gets rejected. Send us the spec sheet and we build to it.</p>
+<p>The structure that has to satisfy all of it at once is <a href="/product/cardboard-shelf-ready-packaging/">shelf-ready packaging with a tear line</a>, where one perforation decides both how the case opens and how the tray then presents.</p>
+<p>Retailers publish these requirements in different formats and rarely in the same units, which <a href="/resources/retail-packaging-guide/">the retail packaging guide</a> untangles before you commit to a sample.</p>`,
     },
     {
       h2: 'Food-grade board and coatings',
@@ -25,7 +27,8 @@ export const illinois: LocationPage = {
   <li><strong>Wet or high moisture</strong> — a PE coating, which resists more and recycles considerably less easily.</li>
   <li><strong>Frozen</strong> — a moisture barrier plus a board grade that tolerates condensation cycles.</li>
 </ul>
-<p><a href="/product/cardboard-frozen-food-boxes/">Frozen food boxes</a> and <a href="/product/cardboard-biscuit-packaging-boxes/">biscuit packaging</a> sit at opposite ends of that range.</p>`,
+<p>The range runs from freezer-grade board that has to survive condensation to a dry carton where print quality is the whole job. <a href="/product/cardboard-frozen-food-boxes/">Frozen food boxes</a> sit at the demanding end, because a coating that fails at temperature takes the print with it.</p>
+<p>At the other end, the board never gets wet and the entire specification is about how the shelf looks. <a href="/product/cardboard-biscuit-packaging-boxes/">Biscuit packaging</a> is specified for print consistency and for a lid that reseals.</p>`,
     },
     {
       h2: 'Intermodal freight and what it does to a box',
@@ -71,7 +74,10 @@ export const ohio: LocationPage = {
     {
       h2: 'Parts packaging: the insert does the work',
       html: `<p>A dense metal component in a plain box is a puncture waiting to happen. The load concentrates on whatever corner it rests against, and the wall gives before the board grade is anywhere near its rating.</p>
-<p>The fix is almost always geometry rather than board. A die-cut corrugated insert that stands the part off every face, or a divider grid where several identical parts travel together, prevents the contact that causes the failure. <a href="/product/cardboard-box-inserts/">Box inserts</a> and <a href="/product/cardboard-partitioned-insert-boxes/">partitioned boxes</a> cover most of it, and <a href="/resources/cardboard-box-inserts-guide/">the insert guide</a> works through how cell sizes are calculated.</p>`,
+<p>The fix is almost always geometry rather than board. A die-cut corrugated insert that stands the part off every face, or a divider grid where several identical parts travel together, prevents the contact that causes the failure.</p>
+<p>Where one part travels alone, <a href="/product/cardboard-box-inserts/">a die-cut insert holding it clear</a> does more than any board upgrade will.</p>
+<p>Where several identical parts share a carton, <a href="/product/cardboard-partitioned-insert-boxes/">partitioned boxes with a divider grid</a> stop them touching each other in transit.</p>
+<p>Cell sizing is where these go wrong, and <a href="/resources/cardboard-box-inserts-guide/">the insert guide</a> works through how the arithmetic is done.</p>`,
     },
     {
       h2: 'Where corrugated replaces a returnable container',
@@ -124,7 +130,8 @@ ${specTable('Corrugated crate against timber', ['', 'Corrugated crate', 'Timber 
     {
       h2: 'Poultry and protein packaging',
       html: `<p>Protein packaging is a leak and condensation problem before it is anything else. The box moves between temperatures, moisture forms on every surface, and untreated board absorbs it and weakens.</p>
-<p><a href="/product/cardboard-meat-packaging-boxes/">Meat packaging boxes</a> use a moisture barrier and a board grade that tolerates repeated condensation cycles. For anything shipped rather than trucked short-haul, an <a href="/product/cardboard-insulated-cold-boxes/">insulated cold box</a> with route-sized coolant is the specification.</p>`,
+<p><a href="/product/cardboard-meat-packaging-boxes/">Meat packaging boxes</a> use a moisture barrier and a board grade that tolerates repeated condensation cycles without losing rigidity.</p>
+<p>Anything shipped rather than trucked short-haul changes the calculation, because the box holds temperature for longer than the route was planned around. An <a href="/product/cardboard-insulated-cold-boxes/">insulated cold box</a> with route-sized coolant is the specification there.</p>`,
     },
     {
       h2: 'Humidity in storage',
@@ -165,12 +172,16 @@ export const northCarolina: LocationPage = {
     {
       h2: 'Oversized cartons for furniture',
       html: `<p>Furniture packaging runs into a limit that has nothing to do with board: what one person can lift and manoeuvre. Above roughly 24 inches on the longest side, the conversation stops being about strength and starts being about handling.</p>
-<p>That usually means double wall for the panel strength, corner protection where the load concentrates, and — critically — a decision about whether the box should have handles at all. A die-cut handle encourages manual lifting; on a heavy carton that is often exactly the wrong behaviour to encourage. See <a href="/product/large-cardboard-boxes/">large cardboard boxes</a> and <a href="/product/double-wall-cardboard-boxes/">double wall boxes</a>.</p>`,
+<p>That usually means double wall for the panel strength, corner protection where the load concentrates, and — critically — a decision about whether the box should have handles at all. A die-cut handle encourages manual lifting; on a heavy carton that is often exactly the wrong behaviour to encourage.</p>
+<p>Where the contents are bulky rather than dense, <a href="/product/large-cardboard-boxes/">large cardboard boxes</a> hold their shape across the span without needing the extra wall.</p>
+<p>Where the weight is concentrated instead, <a href="/product/double-wall-cardboard-boxes/">double wall boxes</a> carry it through the corner posts rather than the panels.</p>`,
     },
     {
       h2: 'Laboratory, medical and biotech packaging',
       html: `<p>Research Triangle work is the opposite problem: small, valuable and often fragile, with documentation requirements attached. A shock that a consumer product shrugs off can invalidate an instrument.</p>
-<p>For genuinely shock-sensitive contents the two-box principle applies — an inner box holding the item snugly, suspended inside an outer with a cushioning gap. Foam is justified here in a way it rarely is elsewhere. <a href="/product/cardboard-medical-device-packaging/">Medical device packaging</a> and <a href="/resources/packaging-fragile-products/">the fragile goods guide</a> cover it.</p>`,
+<p>For genuinely shock-sensitive contents the two-box principle applies — an inner box holding the item snugly, suspended inside an outer with a cushioning gap. Foam is justified here in a way it rarely is elsewhere.</p>
+<p><a href="/product/cardboard-medical-device-packaging/">Medical device packaging</a> is built to that arrangement, with the inner dimensioned from the device rather than from a stock size.</p>
+<p>How much cushioning gap a given drop height needs is a calculation rather than a guess, and <a href="/resources/packaging-fragile-products/">the fragile goods guide</a> sets out how it is worked.</p>`,
     },
     {
       h2: 'Apparel and textiles',
@@ -220,7 +231,8 @@ export const michigan: LocationPage = {
     {
       h2: 'Seasonal produce and orchard packing',
       html: `<p>Michigan's fruit season is short and intense, which makes ordering rhythm the interesting problem rather than specification. A single order placed for the year gets the volume price; scheduled call-off delivery means the boxes arrive before the season rather than sitting through the winter absorbing moisture in a barn.</p>
-<p>See <a href="/product/cardboard-fruit-packaging-boxes/">fruit packaging boxes</a> and <a href="/product-category/wholesale-cardboard-boxes/">wholesale ordering</a>.</p>`,
+<p>Harvest volume arrives in weeks rather than months, so the packaging decision is made once and lived with all season. <a href="/product/cardboard-fruit-packaging-boxes/">Fruit packaging boxes with die-cut vents</a> are specified for the stack height the crop actually travels at.</p>
+<p>Ordering a season's requirement in one run rather than in weekly lots is where the unit price moves, and the <a href="/product-category/wholesale-cardboard-boxes/">wholesale cardboard boxes page</a> sets out where those breaks fall.</p>`,
     },
   ],
   faqHeading: 'Michigan packaging questions',

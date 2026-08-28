@@ -26,7 +26,9 @@ export const newJersey: LocationPage = {
     {
       h2: 'Pharmaceutical and personal care cartons',
       html: `<p>New Jersey's pharmaceutical and personal care manufacturing needs cartons that reproduce identically batch after batch: regulated text at a fixed size, a barcode that scans first time, and a spot colour that does not drift.</p>
-<p>That points at offset lithography rather than digital, and at a board with a consistent white surface. <a href="/product/cardboard-pill-packaging-boxes/">Pill packaging boxes</a> and <a href="/product/cardboard-cosmetic-packaging/">cosmetic cartons</a> are both produced this way; <a href="/resources/cardboard-packaging-materials/">the materials guide</a> covers why SBS is usually specified over kraft for it.</p>`,
+<p>That points at offset lithography rather than digital, and at a board with a consistent white surface. <a href="/product/cardboard-pill-packaging-boxes/">Pill packaging boxes</a> are produced that way because a batch code has to read identically on the first carton and the hundred-thousandth.</p>
+<p>Cosmetic work shares the press but not the tolerance, where the concern is a brand colour holding across a range rather than a regulator reading a number. <a href="/product/cardboard-cosmetic-packaging/">Cosmetic cartons</a> are matched to a spot ink for that reason.</p>
+<p>Why a bleached board is usually specified over kraft for both comes down to how ink sits on the surface, which <a href="/resources/cardboard-packaging-materials/">the materials guide</a> explains.</p>`,
     },
     {
       h2: 'Port freight and long dwell times',
@@ -67,12 +69,15 @@ export const virginia: LocationPage = {
     {
       h2: 'Hardware and equipment',
       html: `<p>Server and networking hardware is the awkward combination: heavy enough to need real board, valuable enough that a failure is expensive, and dense enough that the weight concentrates on one face.</p>
-<p>The specification that works is a double wall outer, a die-cut insert that keeps the unit off every wall, and corner protection where the load rests. Rails and brackets protruding from a chassis are the usual failure point — they punch through a wall that the flat faces would never have troubled. <a href="/product/cardboard-computer-accessory-boxes/">Hardware packaging</a> and <a href="/resources/packaging-fragile-products/">the fragile goods guide</a> cover the approach.</p>`,
+<p>The specification that works is a double wall outer, a die-cut insert that keeps the unit off every wall, and corner protection where the load rests. Rails and brackets protruding from a chassis are the usual failure point — they punch through a wall that the flat faces would never have troubled.</p>
+<p><a href="/product/cardboard-computer-accessory-boxes/">Hardware packaging built around the chassis</a> takes those protrusions into account rather than treating the unit as a rectangle.</p>
+<p>How much cushioning a given drop height actually calls for is arithmetic rather than judgement, and <a href="/resources/packaging-fragile-products/">the fragile goods guide</a> sets out how to work it.</p>`,
     },
     {
       h2: 'Wine and bottle packaging',
       html: `<p>Bottles are the clearest case in packaging where fit beats board. Glass survives compression well and impact badly, and the impact that breaks it is almost always bottle against bottle rather than bottle against wall.</p>
-<p>Corrugated dividers that hold each neck and base separately solve it — the bottles never touch. <a href="/product/cardboard-boxes-for-bottles/">Bottle packaging</a> comes in 3, 6 and 12 configurations or built to your bottle profile. For gifting, <a href="/product/cardboard-liquor-gift-boxes/">bottle presentation boxes</a> add a rigid outer.</p>
+<p>Corrugated dividers that hold each neck and base separately solve it, because the bottles never touch. <a href="/product/cardboard-boxes-for-bottles/">Bottle packaging with corrugated dividers</a> comes in 3, 6 and 12 configurations or is built to your bottle profile.</p>
+<p>Gifting asks the box to do a second job, which a shipper never has to. <a href="/product/cardboard-liquor-gift-boxes/">Bottle presentation boxes</a> add a rigid outer that holds its shape once the wrapping is off.</p>
 ${specTable('Bottle box configurations', ['Config', 'Gross weight', 'Board'], [
   ['3 bottles', 'Around 10 lb', 'Single wall with dividers'],
   ['6 bottles', 'Around 20 lb', 'Single or double wall'],
@@ -179,7 +184,9 @@ export const arizona: LocationPage = {
     {
       h2: 'Electronics and semiconductor packaging',
       html: `<p>The semiconductor and electronics manufacturing around Phoenix and Chandler needs packaging that is clean, dimensionally consistent and protective against shock rather than crush.</p>
-<p>That is an insert problem. A die-cut corrugated insert holding the component off every face does more than any board upgrade, and for genuinely sensitive parts the two-box arrangement — an inner box suspended inside an outer — is the reliable answer. See <a href="/product/cardboard-computer-accessory-boxes/">electronics packaging</a> and <a href="/product/cardboard-box-inserts/">fitted inserts</a>.</p>`,
+<p>That is an insert problem rather than a board problem. A die-cut corrugated insert holding the component off every face does more than any board upgrade, and for genuinely sensitive parts the two-box arrangement — an inner box suspended inside an outer — is the reliable answer.</p>
+<p><a href="/product/cardboard-computer-accessory-boxes/">Electronics packaging with a suspended inner</a> is built to that arrangement as standard.</p>
+<p>Where the outer can stay simple, <a href="/product/cardboard-box-inserts/">fitted inserts cut to the component</a> deliver most of the protection on their own.</p>`,
     },
     {
       h2: 'Distribution across the Southwest',

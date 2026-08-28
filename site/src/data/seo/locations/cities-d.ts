@@ -26,7 +26,8 @@ export const seattle: LocationPage = {
     {
       h2: 'Coffee retail cartons',
       html: `<p>Coffee packaging is a print job rather than a structural one — a coffee shelf is a wall of competing brown, and differentiation is visual. Where roasters do hit a structural question it is usually the degassing valve, which sits in the bag rather than the carton; the carton simply needs to accommodate it without pressing against it.</p>
-<p>Kraft board suits the unbleached aesthetic many roasters want, at the cost of muted print colour. A coated white board gives accurate colour. See <a href="/product/cardboard-coffee-packaging-boxes/">coffee packaging boxes</a> and <a href="/resources/cardboard-packaging-materials/">the materials guide</a>.</p>`,
+<p>Kraft board suits the unbleached aesthetic many roasters want, at the cost of muted print colour; a coated white board gives accurate colour and loses the raw look. <a href="/product/cardboard-coffee-packaging-boxes/">Coffee packaging boxes</a> are produced on either, and the choice is aesthetic before it is technical.</p>
+<p>How much colour each substrate actually holds is easier to judge from a comparison than a description, and <a href="/resources/cardboard-packaging-materials/">the materials guide</a> sets them against each other.</p>`,
     },
     {
       h2: 'Landing seafood in a box that survives the damp',
@@ -80,7 +81,9 @@ export const denver: LocationPage = {
     },
     {
       h2: 'Events and hospitality',
-      html: `<p>Denver's events and hospitality trade buys short runs on fixed dates, which suits digital printing — no plate cost at 100 units and artwork that can change late. For catering, the priorities are assembly speed and a lid that takes stacking weight in a transport rack. See <a href="/product/cardboard-catering-trays/">catering trays</a> and <a href="/product/lunch-cardboard-boxes/">lunch boxes</a>.</p>`,
+      html: `<p>Denver's events and hospitality trade buys short runs on fixed dates, which suits digital printing — no plate cost at 100 units and artwork that can change late.</p>
+<p>For catering the priorities are assembly speed and a lid that takes stacking weight in a transport rack, which is what <a href="/product/cardboard-catering-trays/">catering trays with reinforced bases</a> are built around.</p>
+<p>Individually portioned service needs the opposite: one box per person, assembled fast and carried by hand. <a href="/product/lunch-cardboard-boxes/">Lunch boxes with fold-flat lids</a> are sized for that.</p>`,
     },
   ],
   faqHeading: 'Denver packaging questions',
@@ -116,7 +119,10 @@ export const boston: LocationPage = {
     {
       h2: 'Planning for a compressed moving season',
       html: `<p>If your business sells or supplies moving boxes, the constraint is not the box — it is that everyone needs them in the same week. Production runs 8–10 business days, so a September peak is a July or early August order.</p>
-<p>Committing to the annual quantity and taking a heavy delivery before the peak, with lighter deliveries after, gets the volume price without a warehouse full of boxes in February. See <a href="/product/cardboard-storage-boxes/">storage boxes</a>, <a href="/product/large-cardboard-boxes/">large boxes</a> and <a href="/product-category/wholesale-cardboard-boxes/">wholesale ordering</a>.</p>
+<p>Committing to the annual quantity and taking a heavy delivery before the peak, with lighter deliveries after, gets the volume price without a warehouse full of boxes in February.</p>
+<p>Student moves and seasonal turnover run on the same two structures. <a href="/product/cardboard-storage-boxes/">Storage boxes with reinforced bases</a> handle repeated lifting rather than a single journey.</p>
+<p>Bulkier and lighter loads want span instead of strength, which <a href="/product/large-cardboard-boxes/">large cardboard boxes</a> give without the extra wall.</p>
+<p>What a call-off schedule changes about the price is set out on the <a href="/product-category/wholesale-cardboard-boxes/">wholesale cardboard boxes page</a>.</p>
 ${specTable('Moving box sizes that actually get used', ['Size', 'Internal', 'Holds'], [
   ['Small', 'Around 16 × 12 × 12 in', 'Books, records, dense items'],
   ['Medium', 'Around 18 × 18 × 16 in', 'Kitchen goods, general household'],
@@ -172,7 +178,9 @@ export const nashville: LocationPage = {
     {
       h2: 'Healthcare distribution cartons',
       html: `<p>Cartons for regulated healthcare products have to reproduce identically across batches: regulated text at the specified size, a barcode that scans first time, and a spot colour that does not drift.</p>
-<p>That points at offset lithography and a coated white board rather than digital and kraft. Approved dielines stay on file so a reorder matches exactly. See <a href="/product/cardboard-medical-device-packaging/">medical device packaging</a> and <a href="/product/cardboard-pill-packaging-boxes/">pill packaging boxes</a>.</p>`,
+<p>That points at offset lithography and a coated white board rather than digital and kraft, and approved dielines stay on file so a reorder matches exactly.</p>
+<p>Devices carry a physical requirement alongside the print one, with an inner suspended inside an outer. <a href="/product/cardboard-medical-device-packaging/">Medical device packaging</a> is built to it.</p>
+<p>Where the carton itself carries the regulated information, <a href="/product/cardboard-pill-packaging-boxes/">pill packaging boxes</a> are produced for print consistency above everything else.</p>`,
     },
     {
       h2: 'Hospitality and events',
@@ -181,7 +189,8 @@ export const nashville: LocationPage = {
     {
       h2: 'Gift and visitor retail',
       html: `<p>Visitor retail shares a constraint with other tourism markets: a large share of what is sold travels home in luggage. That rewards packaging that protects without bulk and does not mind being compressed.</p>
-<p>A folding carton with a fitted insert weighs less and travels flatter than a rigid box. A <a href="/product/cardboard-rigid-lid-base-boxes/">rigid lid and base box</a> reads as a gift and holds its shape, at more cost and more bulk. Which is right depends on whether the box is the gift or merely carries it. For bottles specifically, <a href="/product/cardboard-liquor-gift-boxes/">bottle presentation boxes</a> with a fitted insert handle both the protection and the presentation.</p>`,
+<p>A folding carton with a fitted insert weighs less and travels flatter than a rigid box, and costs less to freight. A <a href="/product/cardboard-rigid-lid-base-boxes/">rigid lid and base box</a> reads as a gift and holds its shape, at more cost and more bulk. Which is right depends on whether the box is the gift or merely carries it.</p>
+<p>Bottles need both answers at once, protected in transit and presentable on arrival, which is what <a href="/product/cardboard-liquor-gift-boxes/">bottle presentation boxes with fitted inserts</a> are built for.</p>`,
     },
   ],
   faqHeading: 'Nashville packaging questions',
@@ -217,17 +226,21 @@ export const atlanta: LocationPage = {
     {
       h2: 'Boxes sized to the air freight band',
       html: `<p>Air carriers use a less forgiving dimensional weight divisor than ground services, so a light product in a generous box is billed as heavy on every shipment. Reducing a box by an inch on each axis often saves more per year than any negotiation on unit price.</p>
-<p>Work from external dimensions — internal size plus roughly twice the board thickness on each axis, plus tape overlap — and check against your carrier's band table. There is no premium for a non-standard size, because every box is cut to a dieline built for your measurements. See <a href="/product/custom-size-cardboard-boxes/">custom size boxes</a> and <a href="/resources/how-to-choose-a-shipping-box/">the shipping box guide</a>.</p>`,
+<p>Work from external dimensions — internal size plus roughly twice the board thickness on each axis, plus tape overlap — and check against your carrier's band table. <a href="/product/custom-size-cardboard-boxes/">Custom size boxes</a> carry no premium for being non-standard, because every box is cut to its own dieline.</p>
+<p>Choosing that size in the first place is the harder half, and <a href="/resources/how-to-choose-a-shipping-box/">the shipping box guide</a> works through it from the product outward.</p>`,
     },
     {
       h2: 'Beverage carriers and dividers',
       html: `<p>Atlanta's beverage sector needs divider grids more than it needs heavy board. Glass and aluminium survive compression well and impact badly, and the impact that damages them is container against container.</p>
-<p>The grid arithmetic is where these go wrong: cell size is container diameter plus two to three millimetres, and the divider walls themselves take up length inside the box. On a four-wide grid that is three internal walls of around 3 mm each. See <a href="/product/cardboard-boxes-for-bottles/">bottle packaging</a> and <a href="/resources/cardboard-box-inserts-guide/">the divider sizing guide</a>.</p>`,
+<p>The grid arithmetic is where these go wrong: cell size is container diameter plus two to three millimetres, and the divider walls themselves take up length inside the box. On a four-wide grid that is three internal walls of around 3 mm each.</p>
+<p><a href="/product/cardboard-boxes-for-bottles/">Bottle packaging with corrugated dividers</a> is built with that allowance already made.</p>
+<p>For grids you are specifying yourself, <a href="/resources/cardboard-box-inserts-guide/">the divider sizing guide</a> works the calculation through step by step.</p>`,
     },
     {
       h2: 'Production and studio packaging',
       html: `<p>Film and production work brings a steady stream of short-run, fixed-date packaging: press kits, cast gifts, wrap boxes. Digital printing handles all of it at 100 units with no plate cost and artwork that can change late.</p>
-<p><a href="/product/cardboard-pr-kit-boxes/">PR kit boxes</a> with a fitted insert are the usual structure. Where the opening is the point, <a href="/product/cardboard-luxury-magnet-boxes/">magnetic closure boxes</a> deliver it — but they ship assembled rather than flat, so allow for the freight volume in the timeline.</p>`,
+<p>A <a href="/product/cardboard-pr-kit-boxes/">PR kit box with a fitted insert</a> is the usual structure, holding the arrangement through the courier so it still reads as deliberate when it is filmed.</p>
+<p>Where the opening itself is the point, <a href="/product/cardboard-luxury-magnet-boxes/">magnetic closure boxes</a> deliver it — but they ship assembled rather than flat, so allow for the freight volume in the timeline.</p>`,
     },
   ],
   faqHeading: 'Atlanta packaging questions',

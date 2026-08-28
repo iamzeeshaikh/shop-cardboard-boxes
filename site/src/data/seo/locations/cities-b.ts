@@ -15,12 +15,14 @@ export const philadelphia: LocationPage = {
       h2: 'Long-format food packaging',
       html: `<p>Sandwich and wedge formats are specified around the product's length rather than its volume, which changes two things. The board has to resist bending along the long axis, and the closure has to hold a lid that has a lot of unsupported span in the middle.</p>
 <p>A shallow clamshell with a centre score handles both, and a <a href="/product/cardboard-sandwich-wedge-boxes/">wedge box</a> solves it geometrically by making the long dimension structural. Grease resistance is mandatory — a water-based dispersion coating keeps the box recyclable in most streams, and a greaseproof liner outperforms it on heavily saturated items.</p>
-<p>See <a href="/product/cardboard-sandwich-boxes/">sandwich boxes</a> and <a href="/resources/food-packaging-box-guide/">the food packaging guide</a>.</p>`,
+<p>A wrap or a hoagie sits against the board for hours rather than minutes, so the barrier matters more than the structure does. <a href="/product/cardboard-sandwich-boxes/">Sandwich boxes with grease-resistant board</a> are specified for that dwell time.</p>
+<p>Which coating suits which filling is a question of fat and moisture together, and <a href="/resources/food-packaging-box-guide/">the food packaging guide</a> sets the options out.</p>`,
     },
     {
       h2: 'Cartons that have to look identical every batch',
       html: `<p>The pharmaceutical corridor around the city needs cartons that reproduce identically, batch after batch: regulated text at a fixed size, a barcode that scans first time, and a spot colour that does not drift between runs.</p>
-<p>That means offset lithography and a consistent white board rather than digital and kraft. <a href="/product/cardboard-pill-packaging-boxes/">Pill packaging boxes</a> are produced this way, and <a href="/resources/cardboard-packaging-materials/">the materials guide</a> explains why SBS is normally specified over recycled board for it.</p>`,
+<p>That means offset lithography and a consistent white board rather than digital and kraft, because a batch code has to read identically on the first carton and the last. <a href="/product/cardboard-pill-packaging-boxes/">Pill packaging boxes</a> are produced that way as standard.</p>
+<p>Why a bleached board is normally specified over recycled for this work comes down to how ink sits on the surface, which <a href="/resources/cardboard-packaging-materials/">the materials guide</a> explains.</p>`,
     },
     {
       h2: 'A compact delivery footprint',
@@ -71,7 +73,8 @@ export const sanAntonio: LocationPage = {
   <li><strong>Stacking in a rack.</strong> Catering boxes are stacked in transport racks rather than carried individually, so the lid has to take the weight of everything above it without deflecting into the food.</li>
   <li><strong>Portion geometry.</strong> The box is sized around a portion count, and getting it wrong by one portion means either wasted space or a second box.</li>
 </ul>
-<p>See <a href="/product/cardboard-catering-trays/">catering trays</a> and <a href="/product/lunch-cardboard-boxes/">lunch boxes</a>.</p>`,
+<p>Volume catering asks the box to hold weight and then stack while it is still warm. <a href="/product/cardboard-catering-trays/">Catering trays with reinforced bases</a> take that load without flexing through the middle.</p>
+<p>Individually portioned service is a different structure entirely, assembled fast and carried one per person, which is what <a href="/product/lunch-cardboard-boxes/">lunch boxes with fold-flat lids</a> are built for.</p>`,
     },
     {
       h2: 'Tourism and gift retail',
@@ -122,7 +125,8 @@ ${specTable('Configurations we quote most', ['Pack', 'Gross weight', 'Board'], [
   ['6 bottles', 'Around 20 lb', 'Single or double wall'],
   ['12 bottles', 'Around 40 lb', 'Double wall'],
 ])}
-<p>See <a href="/product/cardboard-boxes-for-bottles/">bottle packaging</a> and <a href="/resources/cardboard-box-inserts-guide/">the divider sizing guide</a>.</p>`,
+<p>Bottles break where they touch, so the divider carries more of the specification than the outer board does. <a href="/product/cardboard-boxes-for-bottles/">Bottle packaging with corrugated dividers</a> keeps each neck and base apart for the whole journey.</p>
+<p>Cell sizing is where a divider grid goes wrong, because the walls themselves consume length inside the box. <a href="/resources/cardboard-box-inserts-guide/">The divider sizing guide</a> works through that arithmetic.</p>`,
     },
     {
       h2: 'Biotech and laboratory packaging',
@@ -173,11 +177,15 @@ export const dallas: LocationPage = {
   <li><strong>Approve a printed proof, not a digital one.</strong> The digital proof confirms placement; only a printed one confirms colour.</li>
   <li><strong>Ship flat and keep the assembly to few steps.</strong> Every additional fold is a chance for a store colleague to build it differently.</li>
 </ol>
-<p>See <a href="/product/cardboard-pop-display-boxes/">POP display boxes</a>, <a href="/product/cardboard-counter-display-units/">counter display units</a> and <a href="/resources/retail-packaging-guide/">the retail packaging guide</a>.</p>`,
+<p>A floor display has to arrive flat, assemble without tools and then hold its own weight for weeks under fluorescent light. <a href="/product/cardboard-pop-display-boxes/">POP display boxes</a> are engineered for that third part, which is where most fail.</p>
+<p>At the till the constraint is footprint rather than height, and the unit competes for a few square inches. <a href="/product/cardboard-counter-display-units/">Counter display units</a> are sized for it.</p>
+<p>Retailers specify both in formats that rarely match each other, and <a href="/resources/retail-packaging-guide/">the retail packaging guide</a> translates between them.</p>`,
     },
     {
       h2: 'Corporate and promotional packaging',
-      html: `<p>Corporate gifting and employee kits are short runs on fixed dates, which suits digital printing — no plate cost at 100 units, and artwork can change until late. The structures that carry it are <a href="/product/cardboard-welcome-kit-boxes/">welcome kit boxes</a> and <a href="/product/cardboard-corporate-gift-packaging/">corporate gift packaging</a>, both usually with a fitted insert so the contents present in a fixed arrangement.</p>`,
+      html: `<p>Corporate gifting and employee kits are short runs on fixed dates, which suits digital printing — no plate cost at 100 units, and artwork that can change until late.</p>
+<p>For onboarding and employee kits, <a href="/product/cardboard-welcome-kit-boxes/">welcome kit boxes with fitted inserts</a> hold the contents in a fixed arrangement so every box opens the same way.</p>
+<p>Client gifting asks the same structure to look more expensive than it costs, which is what <a href="/product/cardboard-corporate-gift-packaging/">corporate gift packaging</a> is finished for.</p>`,
     },
     {
       h2: 'Distribution volume',
@@ -223,7 +231,8 @@ export const austin: LocationPage = {
   <li><strong>Keep the structure simple.</strong> A mailer with a tuck-top does most of what a rigid box does, ships flat, and costs a fraction as much.</li>
   <li><strong>Do not commit to a year yet.</strong> Volume pricing is real, but a pallet of superseded boxes after a rebrand wipes out the saving.</li>
 </ol>
-<p>See <a href="/product/cardboard-mailing-boxes/">mailing boxes</a> and <a href="/resources/ecommerce-packaging-guide/">the ecommerce packaging guide</a>.</p>`,
+<p>The mailer is the only part of the order the customer photographs, so it earns more attention than the shipper behind it. <a href="/product/cardboard-mailing-boxes/">Mailing boxes with a printed inner face</a> put the print where it is actually seen.</p>
+<p>Sizing, dimensional weight and the return journey all interact, and <a href="/resources/ecommerce-packaging-guide/">the ecommerce packaging guide</a> works through them together.</p>`,
     },
     {
       h2: 'Subscription boxes',
@@ -232,7 +241,9 @@ export const austin: LocationPage = {
     },
     {
       h2: 'Hardware and devices',
-      html: `<p>Austin's hardware companies need packaging that protects against shock rather than crush, and that presents well enough to be part of the product. A die-cut corrugated insert holding the device off every wall does the protection; a printed interior does the presentation. See <a href="/product/cardboard-computer-accessory-boxes/">device packaging</a> and <a href="/product/cardboard-box-inserts/">fitted inserts</a>.</p>`,
+      html: `<p>Austin's hardware companies need packaging that protects against shock rather than crush, and that presents well enough to be part of the product. A die-cut corrugated insert holding the device off every wall does the protection; a printed interior does the presentation.</p>
+<p><a href="/product/cardboard-computer-accessory-boxes/">Device packaging with a printed interior</a> handles both at once, which is why it costs less than treating them separately.</p>
+<p>Where the outer can stay plain, <a href="/product/cardboard-box-inserts/">fitted inserts cut to the device</a> carry the protection on their own.</p>`,
     },
     {
       h2: 'Food trucks and events',

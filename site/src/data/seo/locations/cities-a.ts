@@ -24,17 +24,23 @@ export const newYorkCity: LocationPage = {
   <li><strong>Stacking inside the bag.</strong> Boxes are stacked in an insulated bag and carried at an angle. A box that will not take the weight of two others crushes the order underneath it.</li>
   <li><strong>Grease.</strong> Untreated board absorbs fat within minutes, and a soft, stained box is what the customer actually sees.</li>
 </ol>
-<p>A water-based dispersion coating handles the grease while staying recyclable in most streams. <a href="/product/cardboard-takeout-box/">Takeout boxes</a>, <a href="/product/cardboard-burger-boxes/">burger boxes</a> and <a href="/product/cardboard-pizza-boxes/">pizza boxes</a> are specified for exactly this, and <a href="/resources/food-packaging-box-guide/">the food packaging guide</a> covers the barrier options.</p>`,
+<p>A water-based dispersion coating handles the grease while staying recyclable in most streams. For the heaviest items a greaseproof liner does better, and separates cleanly at the sorting stage.</p>
+<p>Nine stops into a route the failure is structural rather than cosmetic, which is why <a href="/product/cardboard-takeout-box/">takeout boxes with vented side walls</a> are specified for the steam before they are specified for the grease.</p>
+<p>Pizza is the extreme version of the same problem, carried flat and stacked while still releasing steam. <a href="/product/cardboard-pizza-boxes/">Pizza boxes with corner vents</a> are cut for it.</p>
+<p>Which barrier belongs on which product depends on fat content and dwell time, and <a href="/resources/food-packaging-box-guide/">the food packaging guide</a> compares them directly.</p>`,
     },
     {
       h2: 'Jewellery and small high-value goods',
-      html: `<p>The other end of the scale, and a genuinely different problem: very small boxes where the presentation is most of the value. A <a href="/product/cardboard-ring-boxes/">ring box</a> or a small <a href="/product/cardboard-boxes-for-jewellery/">jewellery box</a> is usually rigid rather than folded, with a foam or card insert that holds the piece without pressing on it.</p>
+      html: `<p>The other end of the scale is a genuinely different problem: very small boxes where the presentation is most of the value. These are usually rigid rather than folded, with a foam or card insert that holds the piece without pressing on it.</p>
+<p>Rings are the tightest case, where a millimetre of movement reads as cheapness, so <a href="/product/cardboard-ring-boxes/">ring boxes with a slotted pad</a> grip the band rather than surrounding it.</p>
+<p>For chains and larger pieces the insert has to stop tangling instead. <a href="/product/cardboard-boxes-for-jewellery/">Jewellery boxes with fitted inserts</a> are built around the piece they carry.</p>
 <p>Below roughly 1 × 1 × 3 inches the constraint stops being design and becomes the folding and gluing equipment, which is why very small formats are often rigid or sleeve constructions instead.</p>`,
     },
     {
       h2: 'Small runs from small spaces',
       html: `<p>A hundred boxes is a real order here. Studios and single-location restaurants order at that scale constantly, and digital printing makes it economic — no plate cost, and the artwork can change for the next run.</p>
-<p>Where storage is the constraint rather than the budget, scheduled call-off delivery gets you the volume price without the pallet. That is covered on our <a href="/locations/new-york/">New York state page</a> in more detail, and in <a href="/product-category/wholesale-cardboard-boxes/">wholesale ordering</a>.</p>`,
+<p>Where storage is the constraint rather than the budget, scheduled call-off delivery gets you the volume price without taking the pallet at once. That arrangement is set out in more detail on the <a href="/locations/new-york/">New York state page</a>.</p>
+<p>Exactly where the quantity breaks fall, and what changes above them, is covered on the <a href="/product-category/wholesale-cardboard-boxes/">wholesale cardboard boxes page</a>.</p>`,
     },
   ],
   faqHeading: 'New York City questions',
@@ -77,12 +83,14 @@ export const losAngeles: LocationPage = {
     {
       h2: 'Production, studio and promotional runs',
       html: `<p>Press kits, cast gifts, promotional send-outs — small quantities, fixed dates, and artwork that arrives late. Digital printing is the right process for all of it: no plate cost at 100 units, and the file can change until the last moment.</p>
-<p>The structures that do this work best are <a href="/product/cardboard-pr-kit-boxes/">PR kit boxes</a> with a fitted insert, and <a href="/product/cardboard-luxury-magnet-boxes/">magnetic closure boxes</a> where the opening is the point. Magnetic boxes ship assembled rather than flat, so allow for the freight volume in the timeline.</p>`,
+<p>The structure that does this work best is a <a href="/product/cardboard-pr-kit-boxes/">PR kit box with a fitted insert</a>, where the arrangement survives the courier and still reads as deliberate on camera.</p>
+<p>Where the opening itself is the point, <a href="/product/cardboard-luxury-magnet-boxes/">magnetic closure boxes</a> deliver it — but they ship assembled rather than flat, so allow for the freight volume in the timeline.</p>`,
     },
     {
       h2: 'Food service across a spread-out city',
       html: `<p>Los Angeles delivery routes are long rather than dense, which changes the packaging problem from handling to time. Food spends longer in the box, so steam management and grease resistance matter more than crush strength.</p>
-<p>Vents high on the side walls and a water-based dispersion coating cover most of it. See <a href="/product/cardboard-catering-trays/">catering trays</a> and <a href="/product/cardboard-meal-prep-boxes/">meal prep boxes</a>.</p>`,
+<p>Vents high on the side walls and a water-based dispersion coating cover most of it. <a href="/product/cardboard-catering-trays/">Catering trays with reinforced bases</a> carry the weight of a full service without flexing in the middle.</p>
+<p>Meal prep is the same food on a different schedule, sitting refrigerated for days rather than travelling hot for minutes. <a href="/product/cardboard-meal-prep-boxes/">Meal prep boxes</a> are specified for that dwell time instead.</p>`,
     },
   ],
   faqHeading: 'Los Angeles packaging questions',
@@ -124,7 +132,10 @@ ${specTable('Delivery box against shipping box', ['', 'Local delivery', 'Overnig
   ['<strong>Barrier</strong>', 'Grease resistance', 'Grease plus moisture, both directions'],
   ['<strong>Ventilation</strong>', 'Essential — steam escapes', 'Counterproductive — heat escapes'],
 ])}
-<p>The vent line is the one people get wrong. A vented takeaway box is exactly the wrong thing for a shipped frozen product. See <a href="/product/cardboard-insulated-cold-boxes/">insulated cold boxes</a> and <a href="/product/cardboard-frozen-food-boxes/">frozen food boxes</a>, and the <a href="/resources/food-packaging-box-guide/">food packaging guide</a> for barriers.</p>`,
+<p>The vent line is the one people get wrong. A vented takeaway box is exactly the wrong thing for a shipped frozen product, because the airflow that keeps hot food crisp is the airflow that lets a frozen load warm.</p>
+<p>For anything travelling with coolant, <a href="/product/cardboard-insulated-cold-boxes/">insulated cold boxes</a> hold temperature rather than releasing it.</p>
+<p>For retail freezer cases the demand is different again — a board that survives condensation cycle after cycle, which <a href="/product/cardboard-frozen-food-boxes/">frozen food boxes</a> are graded for.</p>
+<p>The barrier choice underneath all of it is compared in <a href="/resources/food-packaging-box-guide/">the food packaging guide</a>.</p>`,
     },
     {
       h2: 'Event, convention and trade show packaging',
@@ -169,7 +180,8 @@ export const houston: LocationPage = {
     {
       h2: 'Medical and laboratory shipping',
       html: `<p>Medical shipping is specified against a protocol. Temperature range, shock tolerance and documentation are given rather than chosen, and the packaging has to reproduce that specification identically every time.</p>
-<p>We hold approved dielines on file so a reorder matches what was validated. For temperature-controlled material, an <a href="/product/cardboard-insulated-cold-boxes/">insulated box</a> with route-sized coolant; for shock-sensitive instruments, an inner box suspended inside an outer with a cushioning gap. <a href="/product/cardboard-medical-device-packaging/">Medical device packaging</a> covers the range.</p>`,
+<p>We hold approved dielines on file so a reorder matches what was validated rather than what was convenient. For temperature-controlled material, an <a href="/product/cardboard-insulated-cold-boxes/">insulated box with route-sized coolant</a> is the specification.</p>
+<p>Shock-sensitive instruments need geometry instead of insulation: an inner box suspended inside an outer with a measured cushioning gap. <a href="/product/cardboard-medical-device-packaging/">Medical device packaging</a> is built to that arrangement.</p>`,
     },
     {
       h2: 'Energy sector components',
@@ -224,7 +236,8 @@ export const phoenix: LocationPage = {
   <li><strong>Tape failure.</strong> Pressure-sensitive tape loses adhesion in heat long before board loses strength. On heavier boxes, an H-pattern rather than a single centre strip is worth the extra second.</li>
   <li><strong>Cold chain in reverse.</strong> An insulated box designed to hold cold against a mild ambient will not hold it against 110°F. Coolant here has to be sized to the actual ambient, not to a national average.</li>
 </ol>
-<p>See <a href="/product/cardboard-insulated-cold-boxes/">insulated cold boxes</a> and <a href="/product/cardboard-takeout-box/">takeout boxes</a>.</p>`,
+<p>Heat is the variable that changes everything here. A box that sits in a vehicle at forty degrees needs its coolant sized for the ambient temperature rather than the journey length, which is how <a href="/product/cardboard-insulated-cold-boxes/">insulated cold boxes</a> are specified for this climate.</p>
+<p>Hot food faces the opposite failure, where condensation softens the board before the customer opens it. <a href="/product/cardboard-takeout-box/">Takeout boxes with vented lids</a> release it instead of trapping it.</p>`,
     },
     {
       h2: 'Ordering around a seasonal swing',
