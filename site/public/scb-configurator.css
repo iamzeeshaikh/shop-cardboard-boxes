@@ -7,15 +7,15 @@
 
 /* progress */
 .scb-cfg-progress { margin: 0 0 22px; }
-.scb-cfg-bar { height: 6px; border-radius: 4px; background: #e3eaf2; overflow: hidden; }
+.scb-cfg-bar { height: 6px; border-radius: 4px; background: #ece5d8; overflow: hidden; }
 .scb-cfg-bar span { display: block; height: 100%; width: 0; background: var(--scb-gold, #f4a62a); transition: width .28s ease; }
 .scb-cfg-steps { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0; padding: 0; list-style: none; font-size: 12px; }
-.scb-cfg-steps li { padding: 4px 10px; border-radius: 20px; background: #eef3f8; color: #6b7480; }
+.scb-cfg-steps li { padding: 4px 10px; border-radius: 20px; background: #f2ece1; color: #6f675c; }
 .scb-cfg-steps li[data-state="done"] { background: #dff0e4; color: #1d6b36; }
 .scb-cfg-steps li[data-state="current"] { background: var(--scb-blue, #0b3f74); color: #fff; font-weight: 600; }
 
 /* steps */
-.scb-cfg-step { border: 1px solid var(--scb-line, #dde4ec); border-radius: 10px; padding: 24px; background: #fff; }
+.scb-cfg-step { border: 1px solid var(--scb-line, #e4ddd1); border-radius: 10px; padding: 24px; background: #fff; }
 .scb-cfg-step + .scb-cfg-step { margin-top: 22px; }
 .scb-cfg[data-enhanced="true"] .scb-cfg-step { display: none; margin-top: 0; }
 .scb-cfg[data-enhanced="true"] .scb-cfg-step[data-active="true"] { display: block; }
@@ -27,10 +27,10 @@
 .scb-cfg-options { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 165px), 1fr)); margin: 0; padding: 0; list-style: none; }
 .scb-cfg-option { margin: 0; }
 .scb-cfg-option input { position: absolute; opacity: 0; width: 1px; height: 1px; }
-.scb-cfg-option label { display: block; height: 100%; cursor: pointer; border: 2px solid #d7e0ea; border-radius: 9px; padding: 14px; background: #fff; transition: border-color .15s, background .15s; }
-.scb-cfg-option label:hover { border-color: #a9bed3; }
+.scb-cfg-option label { display: block; height: 100%; cursor: pointer; border: 2px solid #e4dccd; border-radius: 9px; padding: 14px; background: #fff; transition: border-color .15s, background .15s; }
+.scb-cfg-option label:hover { border-color: #cbb98f; }
 .scb-cfg-option input:focus-visible + label { outline: 2px solid var(--scb-blue, #0b3f74); outline-offset: 2px; }
-.scb-cfg-option input:checked + label { border-color: var(--scb-blue, #0b3f74); background: #f2f7fc; }
+.scb-cfg-option input:checked + label { border-color: var(--scb-blue, #0b3f74); background: #fbf6ec; }
 .scb-cfg-option .scb-cfg-opt-name { display: block; font-weight: 700; font-size: 14.5px; color: var(--scb-ink, #23262b); margin-bottom: 4px; }
 .scb-cfg-option .scb-cfg-opt-note { display: block; font-size: 12.5px; color: #6b7480; line-height: 1.5; }
 .scb-cfg-option svg { display: block; width: 100%; height: 58px; margin-bottom: 10px; }
@@ -38,7 +38,7 @@
 /* fields */
 .scb-cfg-fields { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); }
 .scb-cfg-field label { display: block; font-size: 12.5px; font-weight: 600; margin-bottom: 5px; color: #3f4854; }
-.scb-cfg-field input, .scb-cfg-field select, .scb-cfg-field textarea { width: 100%; font: inherit; font-size: 16px; min-height: 46px; padding: 10px 11px; border: 1px solid #c8d2de; border-radius: 6px; background: #fff; }
+.scb-cfg-field input, .scb-cfg-field select, .scb-cfg-field textarea { width: 100%; font: inherit; font-size: 16px; min-height: 46px; padding: 10px 11px; border: 1px solid #d8cfbe; border-radius: 6px; background: #fff; }
 .scb-cfg-field textarea { min-height: 96px; resize: vertical; }
 .scb-cfg-field input:focus-visible, .scb-cfg-field select:focus-visible, .scb-cfg-field textarea:focus-visible { outline: 2px solid var(--scb-blue, #0b3f74); outline-offset: 1px; }
 .scb-cfg-field .scb-cfg-hint { display: block; font-size: 12px; color: #6b7480; margin-top: 5px; }
@@ -53,23 +53,23 @@
 .scb-cfg-next, .scb-cfg-submit { background: var(--scb-gold, #f4a62a); color: #21160a; }
 .scb-cfg-next:hover, .scb-cfg-submit:hover { background: #ffbc4d; }
 .scb-cfg-back { background: #fff; border-color: #c8d2de; color: #3f4854; }
-.scb-cfg-back:hover { background: #f2f6fa; }
+.scb-cfg-back:hover { background: #f7f2e8; }
 .scb-cfg[data-enhanced="true"] .scb-cfg-nav-static { display: none; }
 
 /* live summary */
-.scb-cfg-aside { position: sticky; top: 18px; border: 1px solid var(--scb-line, #dde4ec); border-radius: 10px; background: var(--scb-surface, #f7f9fc); padding: 20px; }
+.scb-cfg-aside { position: sticky; top: 18px; border: 1px solid var(--scb-line, #e4ddd1); border-radius: 10px; background: var(--scb-surface, #f7f9fc); padding: 20px; }
 .scb-cfg-aside h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 1.1px; color: #6b7480; margin: 0 0 14px; }
-.scb-cfg-preview { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; margin-bottom: 14px; }
+.scb-cfg-preview { background: #fff; border: 1px solid #e8e0d2; border-radius: 8px; padding: 10px; margin-bottom: 14px; }
 .scb-cfg-preview svg { display: block; width: 100%; height: auto; }
 .scb-cfg-preview-note { font-size: 11.5px; color: #7a8492; margin: 8px 2px 0; line-height: 1.5; }
 .scb-cfg-summary { list-style: none; margin: 0; padding: 0; font-size: 13.5px; }
-.scb-cfg-summary li { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-bottom: 1px solid #e5ebf2; }
+.scb-cfg-summary li { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-bottom: 1px solid #eae3d6; }
 .scb-cfg-summary li:last-child { border-bottom: 0; }
 .scb-cfg-summary dt, .scb-cfg-summary .k { color: #6b7480; }
 .scb-cfg-summary .v { font-weight: 600; color: var(--scb-ink, #23262b); text-align: right; }
 
 .scb-cfg-review { list-style: none; margin: 0 0 18px; padding: 0; font-size: 14.5px; }
-.scb-cfg-review li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid #e5ebf2; }
+.scb-cfg-review li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid #eae3d6; }
 .scb-cfg-review .k { color: #6b7480; }
 .scb-cfg-review .v { font-weight: 600; text-align: right; }
 

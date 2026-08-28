@@ -142,6 +142,7 @@ function shelfHtml(): string {
         { path: '/resources/how-to-choose-a-shipping-box/', label: 'Choosing a shipping box' },
         { path: '/resources/corrugated-box-strength-guide/', label: 'Board strength explained' },
         { path: '/design-your-box/', label: 'Design your box' },
+        { path: '/locations/', label: 'Where we ship' },
       ])}
     </section>
   </div>`;

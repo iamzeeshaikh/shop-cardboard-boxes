@@ -159,7 +159,7 @@
 
   /* ---------- step navigation ---------- */
 
-  function show(next) {
+  function show(next, moveFocus = true) {
     index = Math.max(0, Math.min(steps.length - 1, next));
     steps.forEach((step, position) => {
       step.dataset.active = position === index ? 'true' : 'false';
@@ -169,9 +169,11 @@
     });
     if (bar) bar.style.width = `${((index + 1) / steps.length) * 100}%`;
     renderSummaries();
-    const heading = steps[index].querySelector('h2');
-    if (heading) { heading.setAttribute('tabindex', '-1'); heading.focus({ preventScroll: true }); }
-    steps[index].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    if (moveFocus) {
+      const heading = steps[index].querySelector('h2');
+      if (heading) { heading.setAttribute('tabindex', '-1'); heading.focus({ preventScroll: true }); }
+      steps[index].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
   }
 
   root.addEventListener('click', (event) => {
@@ -207,5 +209,5 @@
     }
   }, true);
 
-  show(0);
+  show(0, false);
 })();

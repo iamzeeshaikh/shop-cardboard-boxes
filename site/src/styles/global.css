@@ -1,4 +1,6 @@
-:root { --scb-blue: #0b3f74; --scb-blue-dark: #082f57; --scb-gold: #f4a62a; --scb-text: #292929; --scb-width: 1200px; }
+/* Brand colours sampled from the live site: tan #dbaf5f, charcoal #292929,
+   gold accent #ffca27. */
+:root { --scb-blue: #292929; --scb-blue-dark: #1f1e1c; --scb-gold: #e8b74a; --scb-text: #292929; --scb-width: 1200px; }
 * { box-sizing: border-box; }
 html { overflow-x: hidden; scroll-behavior: smooth; }
 body { margin: 0; color: var(--scb-text); background: #fff; font-family: Poppins, Arial, sans-serif; overflow-x: hidden; }

@@ -1,24 +1,13 @@
 ---
 import recoveredFooter from '../data/footer.html?raw';
-import { CATEGORY_NAV } from '../data/seo/categories';
-import { RESOURCES } from '../data/seo/resources';
 
 /**
- * The recovered footer is rendered untouched — including the links to the refund,
- * terms and privacy pages, which are left exactly as they were. The block below is
- * appended after it so every collection, the guides hub, the locations hub and the
- * configurator have a site-wide crawl path.
+ * The recovered WordPress footer, rendered as it was. It already carries the company
+ * and box-category link columns, so nothing is appended here — a second block simply
+ * repeated them.
+ *
+ * The only change is alt text on the certification strip, which the export dropped.
  */
-const GUIDES = [
-  'cardboard-box-sizes-guide',
-  'corrugated-box-strength-guide',
-  'how-to-choose-a-shipping-box',
-  'custom-box-printing-methods',
-  'food-packaging-box-guide',
-  'reduce-packaging-and-shipping-costs',
-].map((slug) => RESOURCES.find((resource) => resource.slug === slug)).filter(Boolean);
-
-// The certification strip lost its alt text in the export.
 const footerHtml = recoveredFooter.replaceAll(
   'src="/wp-content/uploads/2024/10/certificate.png" alt=""',
   'src="/wp-content/uploads/2024/10/certificate.png" alt="Quality and secure-payment certification badges"',
@@ -26,33 +15,5 @@ const footerHtml = recoveredFooter.replaceAll(
 ---
 
 <Fragment set:html={footerHtml} />
-
-<section class="scb-footer-extra" aria-label="More from Shop Cardboard Boxes">
-  <div class="scb-footer-extra-inner">
-    <div>
-      <h2>Shop by collection</h2>
-      <ul>{CATEGORY_NAV.map((item) => <li><a href={item.path}>{item.label}</a></li>)}</ul>
-    </div>
-    <div>
-      <h2>Packaging guides</h2>
-      <ul>
-        {GUIDES.map((resource) => <li><a href={`/resources/${resource!.slug}/`}>{resource!.h1}</a></li>)}
-        <li><a href="/resources/">All 18 guides</a></li>
-      </ul>
-    </div>
-    <div>
-      <h2>Tools</h2>
-      <ul>
-        <li><a href="/design-your-box/">Design your box</a></li>
-        <li><a href="/products/">Every box we make</a></li>
-        <li><a href="/locations/">Where we ship</a></li>
-        <li><a href="/contact-us/">Talk to a specialist</a></li>
-      </ul>
-    </div>
-  </div>
-  <p class="scb-footer-note">
-    Shop Cardboard Boxes produces custom cardboard packaging to order and ships across the United States with delivery included. We do not operate regional warehouses, showrooms or collection points.
-  </p>
-</section>
 
 <script is:inline src="https://chat.zeeops.dev/widget.js?siteId=shopcardboardboxes"></script>

@@ -8,7 +8,9 @@ import { PAGE_INTROS } from '../../data/seo/page-intros';
 import { extractProductFaqs } from './extract';
 import { upgradeImages } from './images';
 import { repairContent } from './repairs';
-import { quoteForm, cta, linkRow } from './blocks';
+import { quoteForm, cta, linkRow, productCards } from './blocks';
+import { configurator } from './configurator';
+import searchIndex from '../../../public/product-search.json';
 import { breadcrumbHtml, breadcrumbJsonLd, faqHtml, faqJsonLd, esc, abs } from './util';
 import type { Crumb } from './util';
 
@@ -17,6 +19,31 @@ const SHOP: Crumb = { name: 'All cardboard boxes', path: '/products/' };
 
 interface ProductRecord { id: number; title: string; path: string; categories: { name: string; slug: string }[] }
 const productByPath = new Map((products as unknown as ProductRecord[]).map((product) => [product.path, product]));
+
+interface SearchRecord { id: number; title: string; path: string; image: string; imageAlt: string }
+const searchByPath = new Map((searchIndex as SearchRecord[]).map((record) => [record.path, record]));
+const thumb = (url: string): string => url.replace(/(\.[a-z]+)$/i, '-300x300$1');
+
+/** Product cards built from the real catalogue image, for the related-boxes row. */
+function cardsFor(paths: string[]) {
+  return paths
+    .map((path) => searchByPath.get(path))
+    .filter((record): record is SearchRecord => Boolean(record))
+    .map((record) => ({
+      path: record.path,
+      title: record.title,
+      image: thumb(record.image),
+      alt: record.imageAlt || `${record.title} shown as a product photograph`,
+    }));
+}
+
+/** Other products in the same collection, used when a page has no hand-picked set. */
+function siblingPaths(categorySlug: string, selfPath: string, limit = 4): string[] {
+  return (products as unknown as ProductRecord[])
+    .filter((product) => product.path !== selfPath && product.categories.some((category) => category.slug === categorySlug))
+    .slice(0, limit)
+    .map((product) => product.path);
+}
 
 const cache = new Map<string, Snapshot>();
 
@@ -46,11 +73,13 @@ function enhanceCategory(snapshot: Snapshot): Snapshot {
   let html = repairContent(snapshot.path, snapshot.contentHtml);
 
   // Breadcrumbs sit above the archive title so the visible hierarchy matches the schema.
-  const titleAnchor = html.indexOf('<div class="archive-title-wrapper');
-  const crumbBlock = `<div class="scb-wrap scb-crumbwrap">${breadcrumbHtml(crumbs)}</div>`;
-  html = titleAnchor >= 0
-    ? html.slice(0, titleAnchor) + crumbBlock + html.slice(titleAnchor)
-    : crumbBlock + html;
+  if (!/rishi-breadcrumbs/.test(html)) {
+    const titleAnchor = html.indexOf('<div class="archive-title-wrapper');
+    const crumbBlock = `<div class="scb-wrap scb-crumbwrap">${breadcrumbHtml(crumbs)}</div>`;
+    html = titleAnchor >= 0
+      ? html.slice(0, titleAnchor) + crumbBlock + html.slice(titleAnchor)
+      : crumbBlock + html;
+  }
 
   // Page 1 carries the commercial copy. Continuation pages get orientation only, so
   // the same 1,500 words are not repeated across four indexable URLs.
@@ -120,18 +149,44 @@ function enhanceProduct(snapshot: Snapshot): Snapshot {
   const extras = PRODUCT_EXTRAS[snapshot.path];
   const resourceLinks = extras?.resources ?? RESOURCE_LINKS_BY_CATEGORY[category?.slug ?? ''] ?? [];
 
-  let html = `<div class="scb-wrap scb-crumbwrap">${breadcrumbHtml(crumbs)}</div>${repairContent(snapshot.path, snapshot.contentHtml)}`;
+  let html = repairContent(snapshot.path, snapshot.contentHtml);
 
-  const relatedLinks = [
-    ...(category ? [{ path: `/product-category/${category.slug}/`, label: category.name }] : []),
-    ...(extras?.related ?? []),
+  // The recovered theme already renders a breadcrumb on every product page. Adding a
+  // second visible trail duplicated it, so only the markup is contributed here.
+  const hasThemeCrumbs = /rishi-breadcrumbs/.test(html);
+  if (!hasThemeCrumbs) html = `<div class="scb-wrap scb-crumbwrap">${breadcrumbHtml(crumbs)}</div>${html}`;
+
+  // Related boxes: hand-picked where the page earns it, otherwise the rest of its
+  // collection. Either way every product page gets a real card row with photography.
+  const relatedProductPaths = (extras?.related ?? [])
+    .map((link) => link.path)
+    .filter((path) => path.startsWith('/product/'));
+  const cards = cardsFor(relatedProductPaths.length ? relatedProductPaths : siblingPaths(category?.slug ?? '', snapshot.path));
+
+  const collectionLinks = [
+    ...(category ? [{ path: `/product-category/${category.slug}/`, label: `All ${category.name.toLowerCase()}` }] : []),
+    ...(extras?.related ?? []).filter((link) => !link.path.startsWith('/product/')),
+    { path: '/products/', label: 'Every box we make' },
   ];
 
-  html += `<div class="scb-append"><section class="scb-section">
-    <h2>Keep looking</h2>
-    ${extras?.note ? `<p>${extras.note}</p>` : `<p>${esc(product.title)} sits in our ${esc(category?.name ?? 'cardboard box')} collection. If this is not quite the right structure, these are the closest places to look next.</p>`}
-    ${relatedLinks.length ? linkRow(relatedLinks) : ''}
-    ${resourceLinks.length ? `<h3>Guides that help you specify this</h3><ul>${resourceLinks.map((link) => `<li><a href="${esc(link.path)}">${esc(link.label)}</a></li>`).join('')}</ul>` : ''}
+  const guideCards = resourceLinks.length
+    ? `<h3>Guides that help you specify this</h3><ul class="scb-cards scb-cards-guides">${resourceLinks
+        .map((link) => `<li class="scb-card"><span class="scb-card-meta">Packaging guide</span><h4><a href="${esc(link.path)}">${esc(link.label)}</a></h4></li>`)
+        .join('')}</ul>`
+    : '';
+
+  html += `<div class="scb-append"><section class="scb-section scb-tinted scb-related">
+    <h2>Related boxes</h2>
+    <p class="scb-lede">${extras?.note ? extras.note : `${esc(product.title)} sits in our ${esc(category?.name ?? 'cardboard box')} collection. If this is not quite the right structure, these are the closest places to look next.`}</p>
+    ${cards.length ? productCards(cards, 4) : ''}
+    ${collectionLinks.length ? linkRow(collectionLinks) : ''}
+    ${guideCards}
+  </section>
+  <section class="scb-section scb-cfg-section">
+    <span class="scb-eyebrow scb-eyebrow-dark">Build it your way</span>
+    <h2>Design this box to your own specification</h2>
+    <p class="scb-lede">Work through structure, size, board, printing and finish the way a packaging specialist would. It takes about two minutes and produces a brief precise enough to quote from — for ${esc(product.title.toLowerCase())} or anything close to it.</p>
+    ${configurator({ productName: product.title, productUrl: snapshot.path, prefix: 'pcfg' })}
   </section></div>`;
 
   const jsonLd = [...snapshot.jsonLd, breadcrumbJsonLd(crumbs)];
@@ -161,7 +216,8 @@ function enhanceGeneric(snapshot: Snapshot): Snapshot {
   const jsonLd = [...snapshot.jsonLd, ...(override?.extraJsonLd?.() ?? [])];
 
   if (intro) {
-    const header = `<div class="scb-intro scb-prepend"><div class="scb-intro-inner"><div>${breadcrumbHtml(intro.crumbs)}${
+    const trail = /rishi-breadcrumbs/.test(html) ? '' : breadcrumbHtml(intro.crumbs);
+    const header = `<div class="scb-intro scb-prepend"><div class="scb-intro-inner"><div>${trail}${
       intro.eyebrow ? `<span class="scb-eyebrow">${esc(intro.eyebrow)}</span>` : ''
     }${intro.h1 ? `<h1>${esc(intro.h1)}</h1>` : ''}${intro.lede ?? ''}</div><div></div></div></div>`;
     html = header + html + (intro.after ? `<div class="scb-append">${intro.after}</div>` : '');
