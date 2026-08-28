@@ -50,6 +50,23 @@ const body = formAfterFirst
   : sectionsHtml;
 
 const hasStatePage = location.kind === 'city' && location.stateSlug && LOCATIONS.some((entry) => entry.slug === location.stateSlug);
+/**
+ * Each location page reached the rest of the set only through the hub, which left
+ * forty pages holding a single inbound link each. Link the cluster instead: a city
+ * to the others in its state and then its region, a state to the cities we cover in
+ * it and then its neighbours. Navigation only — none of it claims a local presence.
+ */
+const others = LOCATIONS.filter((entry) => entry.slug !== location.slug);
+const sameState = others.filter((entry) => entry.kind === 'city' && entry.stateSlug === (location.kind === 'state' ? location.slug : location.stateSlug));
+const sameRegion = others.filter((entry) => entry.region === location.region && !sameState.includes(entry) && entry.kind === (location.kind === 'state' ? 'state' : 'city'));
+const nearbyLinks = [...sameState, ...sameRegion].slice(0, 6).map((entry) => ({ path: `/locations/${entry.slug}/`, label: entry.name }));
+const nearby = nearbyLinks.length
+  ? `<section class="scb-section scb-tinted">
+      <h2>Other places we ship to</h2>
+      ${linkRow([...nearbyLinks, { path: '/locations/', label: 'All 40 locations' }])}
+    </section>`
+  : '';
+
 const onward = `<section class="scb-section">
   <h2>${hasStatePage ? `Beyond ${esc(location.name)}` : `The rest of ${esc(location.name)}'s packaging questions`}</h2>
   <p>${hasStatePage
@@ -74,6 +91,7 @@ const contentHtml = `<div class="site-content">
   ${body}
   ${faqHtml(location.faqs, location.faqHeading)}
   ${onward}
+  ${nearby}
   ${location.layout === 'form-at-end' ? formBlock : ''}
   ${cta(location.cta.heading, esc(location.cta.body), [{ path: '/contact-us/', label: location.cta.label }, { path: '/design-your-box/', label: 'Configure a box', kind: 'ghost' }])}
 </div>`;
