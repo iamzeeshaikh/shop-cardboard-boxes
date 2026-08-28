@@ -344,6 +344,20 @@
 }
 .scb-home-cfg-more a { color: var(--scb-gold-ink); font-weight: 600; }
 
+/* ---------- footer guides column ---------- */
+/* The exported footer row is a fixed three-column grid, so a fourth widget dropped
+   to its own line outside the column rhythm. Let the row hold four. */
+.row-wrapper:has(#rishi-footer-widgets-three) {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  column-gap: 40px !important;
+}
+@media (max-width: 1199px) {
+  .row-wrapper:has(#rishi-footer-widgets-three) { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; row-gap: 40px !important; }
+}
+@media (max-width: 767px) {
+  .row-wrapper:has(#rishi-footer-widgets-three) { grid-template-columns: minmax(0, 1fr) !important; }
+}
+
 /* ---------- primary navigation typography ---------- */
 .site-header .scb-nav > li > a {
   font-size: 17px;
@@ -370,11 +384,17 @@
 .site-header .scb-nav > li:focus-within > a::before { transform: scaleX(1); }
 .site-header .scb-nav > li:hover > a,
 .site-header .scb-nav > li > a:focus-visible { color: var(--scb-gold-ink); }
-.site-header .scb-nav { gap: 24px; }
+.site-header .scb-nav { gap: 20px; row-gap: 4px; justify-content: flex-end; }
 
-@media (max-width: 1180px) {
+@media (max-width: 1359px) {
   .site-header .scb-nav > li > a { font-size: 15.5px; }
-  .site-header .scb-nav { gap: 17px; }
+  .site-header .scb-nav { gap: 15px; }
+}
+
+@media (max-width: 1199px) {
+  .site-header .scb-nav > li > a { font-size: 14.5px; padding-block: 3px !important; line-height: 1.5; height: auto !important; min-height: 0 !important; }
+  .site-header .scb-nav { column-gap: 11px; row-gap: 0; align-items: flex-start; }
+  .site-header .scb-nav > li { min-height: 0; height: auto; line-height: 1.5; }
 }
 
 /* ---------- mega menu ---------- */

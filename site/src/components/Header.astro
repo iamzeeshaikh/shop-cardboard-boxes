@@ -90,7 +90,7 @@ const FOOD_MEGA = megaPanel(
 const NAV: NavItem[] = [
   { label: 'All Boxes', href: '/products/', mega: ALL_BOXES_MEGA },
   {
-    label: 'Shipping & Bulk',
+    label: 'Shipping',
     href: '/product-category/cardboard-shipping-boxes/',
     children: [
       { label: 'Shipping & mailing boxes', href: '/product-category/cardboard-shipping-boxes/' },
@@ -108,7 +108,7 @@ const NAV: NavItem[] = [
       { label: 'Packaging for specific items', href: '/product-category/packaging-for-specific-items/' },
     ],
   },
-  { label: 'Food Packaging', href: '/product-category/food-related-cardboard-boxes/', mega: FOOD_MEGA },
+  { label: 'Food Boxes', href: '/product-category/food-related-cardboard-boxes/', mega: FOOD_MEGA },
   {
     label: 'Gift & Retail',
     href: '/product-category/cosmetic-and-gift-cardboard-boxes/',
@@ -118,6 +118,20 @@ const NAV: NavItem[] = [
     ],
   },
   { label: 'Guides', href: '/resources/' },
+  {
+    label: 'Locations',
+    href: '/locations/',
+    children: [
+      { label: 'California', href: '/locations/california/' },
+      { label: 'Texas', href: '/locations/texas/' },
+      { label: 'Florida', href: '/locations/florida/' },
+      { label: 'New York', href: '/locations/new-york/' },
+      { label: 'Los Angeles', href: '/locations/los-angeles/' },
+      { label: 'Chicago', href: '/locations/chicago/' },
+      { label: 'Houston', href: '/locations/houston/' },
+      { label: 'All 40 locations', href: '/locations/' },
+    ],
+  },
   { label: 'Design Your Box', href: '/design-your-box/' },
 ];
 
