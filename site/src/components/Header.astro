@@ -1,6 +1,34 @@
 ---
 import recoveredHeader from '../data/header.html?raw';
 import { esc } from '../lib/seo/util';
+import searchIndex from '../../public/product-search.json';
+import webpMap from '../data/webp-map.json';
+
+interface SearchRecord { id: number; title: string; path: string; image: string; imageAlt: string }
+const byPath = new Map((searchIndex as SearchRecord[]).map((record) => [record.path, record]));
+const WEBP: Record<string, string> = webpMap;
+
+/**
+ * Thumbnails for the mega menu. The 150px rendition is around 2 KB as WebP, and the
+ * panel is hidden until hover, so the images are lazy and the whole strip costs less
+ * than a single product photo.
+ */
+function megaCard(path: string): string {
+  const record = byPath.get(path);
+  if (!record) return '';
+  const thumb = record.image.replace(/(\.[a-z]+)$/i, '-150x150$1');
+  const webp = WEBP[thumb];
+  const img = `<img src="${esc(thumb)}" alt="" width="150" height="150" loading="lazy" decoding="async" />`;
+  const picture = webp ? `<picture><source type="image/webp" srcset="${esc(webp)}" />${img}</picture>` : img;
+  return `<li><a href="${esc(record.path)}">${picture}<span>${esc(record.title)}</span></a></li>`;
+}
+
+const megaPanel = (products: string[], links: { label: string; href: string }[], footerLabel: string, footerHref: string) => `
+  <div class="scb-mega">
+    <ul class="scb-mega-products">${products.map(megaCard).join('')}</ul>
+    ${links.length ? `<ul class="scb-mega-links">${links.map((l) => `<li><a href="${esc(l.href)}">${esc(l.label)}</a></li>`).join('')}</ul>` : ''}
+    <a class="scb-mega-all" href="${esc(footerHref)}">${esc(footerLabel)}</a>
+  </div>`;
 
 /**
  * The recovered WordPress header carried a flat six-item menu of product categories
@@ -9,10 +37,58 @@ import { esc } from '../lib/seo/util';
  * the main menu list are replaced, with a two-level structure that keeps every hub
  * within one click and stays a plain crawlable list of anchors.
  */
-interface NavItem { label: string; href: string; children?: { label: string; href: string }[] }
+interface NavItem { label: string; href: string; children?: { label: string; href: string }[]; mega?: string }
+
+const ALL_BOXES_MEGA = megaPanel(
+  [
+    '/product/round-cardboard-boxes/',
+    '/product/cardboard-shoe-boxes/',
+    '/product/corrugated-cardboard-boxes/',
+    '/product/cardboard-boxes-with-lid/',
+    '/product/large-cardboard-boxes/',
+    '/product/custom-cardboard-shipping-boxes/',
+    '/product/cardboard-box-inserts/',
+    '/product/colored-cardboard-boxes/',
+  ],
+  [
+    { label: 'Shipping & mailing', href: '/product-category/cardboard-shipping-boxes/' },
+    { label: 'By material strength', href: '/product-category/cardboard-boxes-by-material-strength/' },
+    { label: 'By size & shape', href: '/product-category/cardboard-boxes-by-size-and-shape/' },
+    { label: 'By functionality', href: '/product-category/cardboard-boxes-by-functionality/' },
+    { label: 'Cosmetic & gift', href: '/product-category/cosmetic-and-gift-cardboard-boxes/' },
+    { label: 'Retail & display', href: '/product-category/retail-and-display-packaging/' },
+    { label: 'For specific uses', href: '/product-category/cardboard-boxes-for-specific-uses/' },
+    { label: 'Wholesale & bulk', href: '/product-category/wholesale-cardboard-boxes/' },
+  ],
+  'Browse all 186 box styles',
+  '/products/',
+);
+
+const FOOD_MEGA = megaPanel(
+  [
+    '/product/cardboard-pizza-boxes/',
+    '/product/cardboard-bakery-boxes/',
+    '/product/cardboard-burger-boxes/',
+    '/product/cardboard-takeout-box/',
+    '/product/lunch-cardboard-boxes/',
+    '/product/cardboard-muffin-boxes/',
+    '/product/cardboard-vegetable-packaging-boxes/',
+    '/product/cardboard-insulated-cold-boxes/',
+  ],
+  [
+    { label: 'Bakery & pastry', href: '/product/cardboard-pastry-boxes/' },
+    { label: 'Takeaway & delivery', href: '/product/cardboard-takeout-box/' },
+    { label: 'Catering & events', href: '/product/cardboard-catering-trays/' },
+    { label: 'Produce & fresh', href: '/product/cardboard-fruit-packaging-boxes/' },
+    { label: 'Frozen & cold chain', href: '/product/cardboard-frozen-food-boxes/' },
+    { label: 'Coffee, tea & grocery', href: '/product/cardboard-coffee-packaging-boxes/' },
+  ],
+  'All food packaging boxes',
+  '/product-category/food-related-cardboard-boxes/',
+);
 
 const NAV: NavItem[] = [
-  { label: 'All Boxes', href: '/products/' },
+  { label: 'All Boxes', href: '/products/', mega: ALL_BOXES_MEGA },
   {
     label: 'Shipping & Bulk',
     href: '/product-category/cardboard-shipping-boxes/',
@@ -32,7 +108,7 @@ const NAV: NavItem[] = [
       { label: 'Packaging for specific items', href: '/product-category/packaging-for-specific-items/' },
     ],
   },
-  { label: 'Food Packaging', href: '/product-category/food-related-cardboard-boxes/' },
+  { label: 'Food Packaging', href: '/product-category/food-related-cardboard-boxes/', mega: FOOD_MEGA },
   {
     label: 'Gift & Retail',
     href: '/product-category/cosmetic-and-gift-cardboard-boxes/',
@@ -46,10 +122,13 @@ const NAV: NavItem[] = [
 ];
 
 const menuHtml = NAV.map((item, index) => {
-  const submenu = item.children?.length
-    ? `<ul class="sub-menu scb-subnav">${item.children.map((child) => `<li class="menu-item"><a href="${esc(child.href)}">${esc(child.label)}</a></li>`).join('')}</ul>`
-    : '';
-  const classes = `menu-item menu-item-type-taxonomy menu-item-object-product_cat${item.children?.length ? ' menu-item-has-children scb-has-children' : ''}`;
+  const submenu = item.mega
+    ? item.mega
+    : item.children?.length
+      ? `<ul class="sub-menu scb-subnav">${item.children.map((child) => `<li class="menu-item"><a href="${esc(child.href)}">${esc(child.label)}</a></li>`).join('')}</ul>`
+      : '';
+  const hasPanel = Boolean(item.mega || item.children?.length);
+  const classes = `menu-item menu-item-type-taxonomy menu-item-object-product_cat${hasPanel ? ' menu-item-has-children scb-has-children' : ''}${item.mega ? ' scb-has-mega' : ''}`;
   return `<li id="scb-nav-${index}" class="${classes}"><a href="${esc(item.href)}">${esc(item.label)}</a>${submenu}</li>`;
 }).join('');
 

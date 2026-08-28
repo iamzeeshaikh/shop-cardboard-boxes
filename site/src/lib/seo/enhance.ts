@@ -6,7 +6,7 @@ import { META_OVERRIDES } from '../../data/seo/meta-overrides';
 import { PRODUCT_EXTRAS, RESOURCE_LINKS_BY_CATEGORY } from '../../data/seo/product-extras';
 import { PAGE_INTROS } from '../../data/seo/page-intros';
 import { extractProductFaqs } from './extract';
-import { upgradeImages } from './images';
+import { upgradeImages, webpFor } from './images';
 import { repairContent } from './repairs';
 import { quoteForm, cta, linkRow, productCards } from './blocks';
 import { configurator } from './configurator';
@@ -214,11 +214,14 @@ function enhanceProduct(snapshot: Snapshot): Snapshot {
   // The first product photo is the largest contentful paint on these pages.
   const heroMatch = /<img\b[^>]*\ssrc="(\/wp-content\/uploads\/[^"]+)"/.exec(snapshot.contentHtml);
 
+  // Preload whichever file the <picture> will actually resolve to.
+  const hero = heroMatch?.[1];
   return {
     ...snapshot,
     title: override?.title ?? snapshot.title,
     description: override?.description ?? snapshot.description,
-    contentHtml: upgradeImages(html, { lcpSrc: heroMatch?.[1] }),
+    contentHtml: upgradeImages(html, { lcpSrc: hero }),
+    lcpImage: hero ? (webpFor(hero) ?? hero) : undefined,
     jsonLd,
   };
 }

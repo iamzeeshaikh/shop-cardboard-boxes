@@ -13,6 +13,8 @@ export interface Snapshot {
   stylesHtml: string;
   jsonLd: string[];
   contentHtml: string;
+  /** Hero image, preloaded so it starts downloading before the parser reaches it. */
+  lcpImage?: string;
 }
 
 const fileByPath = new Map(routeIndex.map((route) => [route.path, route.file]));

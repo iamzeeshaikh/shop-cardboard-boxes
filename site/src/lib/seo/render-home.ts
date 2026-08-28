@@ -164,6 +164,11 @@ export function renderHome(): Snapshot {
 
   // The hero image is the largest contentful paint on the homepage.
   const hero = /<img\b[^>]*\ssrc="(\/wp-content\/uploads\/[^"]+)"/.exec(html);
-  cached = { ...enhanced, contentHtml: upgradeImages(html, { lcpSrc: hero?.[1] }) };
+  const heroSrc = hero?.[1];
+  cached = {
+    ...enhanced,
+    contentHtml: upgradeImages(html, { lcpSrc: heroSrc }),
+    lcpImage: heroSrc ? (webpFor(heroSrc) ?? heroSrc) : undefined,
+  };
   return cached;
 }

@@ -3,7 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import type { Snapshot } from '../lib/snapshots';
-import { hoistChromeCss } from '../lib/seo/chrome';
+import { hoistChromeCss, bundleChromeCss } from '../lib/seo/chrome';
 import products from '../data/products.json';
 
 interface Props { snapshot: Snapshot; status?: number; }
@@ -12,7 +12,7 @@ const productionHost = Astro.url.hostname === 'shopcardboardboxes.com';
 // 133 KB of identical inline theme CSS shipped in the HTML of all 264 pages.
 // It is served from one cached stylesheet instead; the link sits in the exact
 // position the blocks occupied, so the cascade is unchanged.
-const stylesHtml = hoistChromeCss(snapshot.stylesHtml);
+const stylesHtml = bundleChromeCss(hoistChromeCss(snapshot.stylesHtml), snapshot.path);
 // The box configurator is rendered on the tool page and on every product page.
 const needsConfigurator = snapshot.contentHtml.includes('scb-cfg-grid');
 // WooCommerce's gallery relies on jQuery and FlexSlider, neither of which runs here.
@@ -56,6 +56,11 @@ Astro.response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geol
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The chat widget is a separate origin; opening the connection early costs
+         nothing and removes a round trip from the critical path. -->
+    <link rel="preconnect" href="https://chat.zeeops.dev" crossorigin />
+    <link rel="dns-prefetch" href="https://chat.zeeops.dev" />
+    {snapshot.lcpImage && <link rel="preload" as="image" href={snapshot.lcpImage} type={snapshot.lcpImage.endsWith('.webp') ? 'image/webp' : undefined} fetchpriority="high" />}
     <title>{snapshot.title || 'Shop Cardboard Boxes'}</title>
     {snapshot.description && <meta name="description" content={snapshot.description} />}
     <link rel="canonical" href={snapshot.canonical || `https://shopcardboardboxes.com${snapshot.path}`} />
