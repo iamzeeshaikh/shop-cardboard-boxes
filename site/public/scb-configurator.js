@@ -26,12 +26,16 @@
 
   /* ---------- reading the current configuration ---------- */
 
-  const labelFor = (field) => {
-    if (field.type === 'radio') {
-      const checked = form.querySelector(`input[name="${field.name}"]:checked`);
-      return checked ? checked.dataset.label || checked.value : '';
-    }
-    return field.value.trim();
+  // form.elements[name] hands back a RadioNodeList for a radio group, whose .value is
+  // the checked radio's value — the machine token, not the wording the customer read.
+  // Ask for the checked input directly so the summary and the emailed configuration
+  // both say "Shipping carton" rather than "rsc".
+  const labelFor = (name) => {
+    const field = form.elements[name];
+    if (!field) return '';
+    const checked = form.querySelector(`input[name="${name}"]:checked`);
+    if (checked) return checked.dataset.label || checked.value;
+    return typeof field.value === 'string' && !(field instanceof RadioNodeList) ? field.value.trim() : '';
   };
 
   const READOUT = [
@@ -59,7 +63,7 @@
   function readConfig() {
     const rows = [];
     for (const item of READOUT) {
-      const value = item.compute ? item.compute() : labelFor(form.elements[item.name] || {});
+      const value = item.compute ? item.compute() : labelFor(item.name);
       if (value) rows.push([item.label, value]);
     }
     return rows;

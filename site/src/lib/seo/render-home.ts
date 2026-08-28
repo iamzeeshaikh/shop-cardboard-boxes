@@ -6,6 +6,7 @@ import { productCards, linkRow } from './blocks';
 import { upgradeImages, webpFor } from './images';
 import { esc } from './util';
 import { CATEGORY_NAV } from '../../data/seo/categories';
+import { configurator } from './configurator';
 
 interface SearchRecord { id: number; title: string; path: string; image: string; imageAlt: string }
 const bySlug = new Map((searchIndex as SearchRecord[]).map((record) => [record.path, record]));
@@ -133,6 +134,12 @@ function shelfHtml(): string {
       ${linkRow(CATEGORY_NAV)}
     </section>
     ${shelves}
+    <section class="scb-section scb-home-cfg">
+      <h2>Design your box</h2>
+      <p class="scb-lede">Four steps to a specification we can price: pick the style and size, choose the board, say how you want it printed, and tell us where to send the quote. Nothing here is billed and no card is needed.</p>
+      ${configurator({ prefix: 'hcfg', compact: true })}
+      <p class="scb-home-cfg-more">Need to specify closures, inserts, finishes and artwork in full? The <a href="/design-your-box/">complete box builder</a> walks through all eleven steps.</p>
+    </section>
     <section class="scb-section scb-tinted">
       <h2>Work out the specification first</h2>
       <p>Most packaging problems are settled before anyone looks at a product page — the right size, the right board and the right closure. These guides cover the decisions that come up most.</p>

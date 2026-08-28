@@ -84,7 +84,7 @@ const group = (name: string, items: Option[], prefix: string) =>
 const nav = (back: boolean, next: boolean) =>
   `<div class="scb-cfg-nav">${back ? '<button type="button" class="scb-cfg-back">Back</button>' : ''}${next ? '<button type="button" class="scb-cfg-next">Continue</button>' : ''}</div>`;
 
-const sub = (text: string) => `<h3 class="scb-cfg-sub">${esc(text)}</h3>`;
+const sub = (text: string, level = 3) => `<h${level} class="scb-cfg-sub">${esc(text)}</h${level}>`;
 
 /* ---- field groups shared by both layouts ---- */
 const dimensionFields = (p: string) => `<div class="scb-cfg-fields">
@@ -134,37 +134,37 @@ export function configurator({ productName = '', productUrl = '', prefix = 'cfg'
   const steps = compact ? [
     `<section class="scb-cfg-step" data-active="true">
       <span class="scb-cfg-stepno">Step 1 of 4</span>
-      <h2>Box style and size</h2>
+      <h3>Box style and size</h3>
       <p>Pick the closest structure, then give us the internal dimensions — the space your product actually has.</p>
       ${group('box_style', STYLES, p)}
-      ${sub('Dimensions')}
+      ${sub('Dimensions', 4)}
       ${dimensionFields(p)}
       ${nav(false, true)}
     </section>`,
     `<section class="scb-cfg-step">
       <span class="scb-cfg-stepno">Step 2 of 4</span>
-      <h2>Material, board and quantity</h2>
+      <h3>Material, board and quantity</h3>
       <p>Board grade follows from weight and stacking. If you are unsure, choose "recommend one for me" and tell us the weight at the last step.</p>
-      ${sub('Material')}${group('material', MATERIALS, p)}
-      ${sub('Board strength')}${group('board_strength', BOARDS, p)}
-      ${sub('Quantity')}${group('quantity', QUANTITIES, p)}
+      ${sub('Material', 4)}${group('material', MATERIALS, p)}
+      ${sub('Board strength', 4)}${group('board_strength', BOARDS, p)}
+      ${sub('Quantity', 4)}${group('quantity', QUANTITIES, p)}
       ${quantityField(p)}
       ${nav(true, true)}
     </section>`,
     `<section class="scb-cfg-step">
       <span class="scb-cfg-stepno">Step 3 of 4</span>
-      <h2>Printing, finish and artwork</h2>
+      <h3>Printing, finish and artwork</h3>
       <p>Below about 500 units digital is nearly always cheapest. Dieline preparation and artwork setup are included either way.</p>
-      ${sub('Printing')}${group('printing', PRINTING, p)}
-      ${sub('Finish')}${group('finish', FINISHES, p)}
+      ${sub('Printing', 4)}${group('printing', PRINTING, p)}
+      ${sub('Finish', 4)}${group('finish', FINISHES, p)}
       ${colourField(p)}
-      ${sub('Artwork')}${group('artwork_status', ARTWORK, p)}
+      ${sub('Artwork', 4)}${group('artwork_status', ARTWORK, p)}
       ${artworkField(p)}
       ${nav(true, true)}
     </section>`,
     `<section class="scb-cfg-step">
       <span class="scb-cfg-stepno">Step 4 of 4</span>
-      <h2>Where should we send the quote?</h2>
+      <h3>Where should we send the quote?</h3>
       <p>A packaging specialist replies with pricing, board options and a lead time — usually within one working day.</p>
       ${contactFields(p)}
       ${notesField(p)}

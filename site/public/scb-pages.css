@@ -333,6 +333,17 @@
 .scb-gallery-thumbs button[aria-current="true"] { border-color: var(--scb-gold); }
 .scb-gallery-thumbs button:focus-visible { outline: 3px solid var(--scb-gold); outline-offset: 2px; }
 
+/* ---------- homepage box builder ---------- */
+.scb-home-cfg { background: var(--scb-blue-tint); }
+.scb-home-cfg .scb-cfg { margin-top: 22px; }
+.scb-home-cfg .scb-cfg-grid { background: #fff; }
+.scb-home-cfg-more {
+  margin-top: 18px;
+  font-size: 15px;
+  color: var(--scb-muted);
+}
+.scb-home-cfg-more a { color: var(--scb-gold-ink); font-weight: 600; }
+
 /* ---------- primary navigation typography ---------- */
 .site-header .scb-nav > li > a {
   font-size: 15px;
