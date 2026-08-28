@@ -70,6 +70,34 @@ export const META_OVERRIDES: Record<string, MetaOverride> = {
   },
 
   // ---- Priority product pages. Ordered by impressions. ----
+  '/product/cardboard-sandwich-boxes/': {
+    title: 'Cardboard Sandwich Boxes | Food-Grade, Custom Printed',
+    description: 'Food-grade sandwich boxes with grease-resistant board, sized to your wrap or baguette. Window and lid options, printed with your branding, from 100 units.',
+  },
+  '/product/cardboard-photo-frames-packaging/': {
+    title: 'Cardboard Photo Frame Packaging | Corner Protection, Custom Sizes',
+    description: 'Packaging built around the frame: corner protection and an insert that holds it still, so glass arrives intact. Made to your frame size from 100 units.',
+  },
+  '/product/cardboard-gift-hamper-boxes/': {
+    title: 'Cardboard Gift Hamper Boxes | Custom Sizes, Wholesale',
+    description: 'Deep hamper boxes with lift-off lids, sized to your basket and printed inside and out. Inserts and window options available. Custom made from 100 units.',
+  },
+  '/product/cardboard-document-mailers/': {
+    title: 'Cardboard Document Mailers | Flat, Rigid, Custom Sizes',
+    description: 'Rigid mailers that keep certificates, prints and contracts flat in transit, with corner protection and inserts. Made to your document size from 100 units.',
+  },
+  '/product/cardboard-poster-shipping-tubes/': {
+    title: 'Cardboard Poster Shipping Tubes | Any Length, Wholesale',
+    description: 'Rigid tubes with end caps for posters, prints and drawings. Any length and internal diameter, printed or plain, custom made from 100 units.',
+  },
+  '/product/cardboard-bulk-shipping-trays/': {
+    title: 'Cardboard Bulk Shipping Trays | Stackable, Pallet-Ready',
+    description: 'Open trays that stack on a pallet without crushing the layer beneath. Board grade chosen for your gross weight and sized to your pallet footprint.',
+  },
+  '/product/cardboard-biscuit-packaging-boxes/': {
+    title: 'Cardboard Biscuit Packaging Boxes | Custom Printed, Wholesale',
+    description: 'Biscuit boxes sized to your count per pack, with window and lid options and corner protection for stacking. Printed with your branding from 100 units.',
+  },
   '/product/round-cardboard-boxes/': {
     title: 'Round Cardboard Boxes With Lids | Custom Sizes, Wholesale',
     description: 'Round cardboard boxes in every diameter, with lift-off lids and printing inside and out. Extra large sizes available. Custom made from 100 units.',
