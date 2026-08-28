@@ -9,7 +9,11 @@
     window.dataLayer.push(record);
     window.dispatchEvent(new CustomEvent('scb:tracking', { detail: record }));
   };
-  const getCart = () => { try { return JSON.parse(localStorage.getItem(CART_KEY) || '[]'); } catch { return []; } };
+  // Boxes are made to order in runs, not sold as singles: 100 is the smallest
+  // quantity the factory will price, so the cart counts in hundreds throughout.
+  const MIN_QTY = 100;
+  const roundQty = (value) => { const n = Math.round(Number(value) / MIN_QTY) * MIN_QTY; return Number.isFinite(n) && n >= MIN_QTY ? n : MIN_QTY; };
+  const getCart = () => { try { const raw = JSON.parse(localStorage.getItem(CART_KEY) || '[]'); return Array.isArray(raw) ? raw.map((item) => ({ ...item, quantity: roundQty(item.quantity) })) : []; } catch { return []; } };
   const setCart = (cart) => { localStorage.setItem(CART_KEY, JSON.stringify(cart)); document.cookie = `scb_cart_present=${cart.length ? '1' : '0'}; Path=/; SameSite=Lax`; emit('cart_updated', { item_count: cart.reduce((sum, item) => sum + item.quantity, 0) }); };
   let catalogPromise;
   const catalog = () => catalogPromise ||= fetch('/product-search.json').then((response) => response.json());
@@ -57,12 +61,12 @@
     const product = products.find((item) => item.id === id);
     const cart = getCart();
     const existing = cart.find((item) => item.id === id);
-    if (existing) existing.quantity += 1; else cart.push({ id, quantity: 1 });
+    if (existing) existing.quantity += MIN_QTY; else cart.push({ id, quantity: MIN_QTY });
     setCart(cart);
     emit('add_to_cart', { item_id: id, item_name: product?.title || '', page: location.href });
     const notice = document.createElement('div');
     notice.className = 'scb-local-notice';
-    notice.innerHTML = `${escapeHtml(product?.title || 'Product')} has been added to your cart. <a href="/cart/"><strong>View cart</strong></a>`;
+    notice.innerHTML = `${MIN_QTY} × ${escapeHtml(product?.title || 'Product')} added to your cart — 100 is the minimum run. <a href="/cart/"><strong>View cart</strong></a>`;
     addButton.closest('.product, .summary, li')?.prepend(notice) || addButton.parentElement?.prepend(notice);
   });
 
@@ -148,8 +152,8 @@
     const cart = getCart();
     const rows = cart.map((item) => ({ ...item, product: products.find((product) => product.id === item.id) })).filter((item) => item.product);
     const total = rows.reduce((sum, item) => sum + Number(item.product.price || 0) * item.quantity, 0);
-    mount.innerHTML = `<div class="scb-cart-app"><h1>Cart</h1>${rows.length ? `<table class="scb-cart-table"><thead><tr><th>Product</th><th>Name</th><th>Price</th><th>Quantity</th><th>Total</th><th></th></tr></thead><tbody>${rows.map((item) => `<tr><td><img src="${escapeHtml(item.product.image)}" alt="${escapeHtml(item.product.imageAlt)}"></td><td><a href="${escapeHtml(item.product.path)}">${escapeHtml(item.product.title)}</a></td><td>${money(item.product.price)}</td><td><input class="scb-cart-qty" data-id="${item.id}" type="number" min="1" value="${item.quantity}"></td><td>${money(Number(item.product.price || 0) * item.quantity)}</td><td><button class="scb-cart-remove" data-id="${item.id}" type="button">Remove</button></td></tr>`).join('')}</tbody></table><p><strong>Subtotal: ${money(total)}</strong></p><a class="scb-button" href="/checkout/">Proceed to checkout</a>` : '<h2>Your cart is currently empty!</h2><p><a class="scb-button" href="/products/">Return to shop</a></p>'}</div>`;
-    mount.querySelectorAll('.scb-cart-qty').forEach((input) => input.addEventListener('change', () => { const next = getCart(); const item = next.find((entry) => entry.id === Number(input.dataset.id)); if (item) item.quantity = Math.max(1, Number(input.value || 1)); setCart(next); renderCart(); }));
+    mount.innerHTML = `<div class="scb-cart-app"><h1>Cart</h1>${rows.length ? `<table class="scb-cart-table"><thead><tr><th>Product</th><th>Name</th><th>Price</th><th>Quantity</th><th>Total</th><th></th></tr></thead><tbody>${rows.map((item) => `<tr><td><img src="${escapeHtml(item.product.image)}" alt="${escapeHtml(item.product.imageAlt)}"></td><td><a href="${escapeHtml(item.product.path)}">${escapeHtml(item.product.title)}</a></td><td>${money(item.product.price)}</td><td><input class="scb-cart-qty" data-id="${item.id}" type="number" min="${MIN_QTY}" step="${MIN_QTY}" value="${item.quantity}"></td><td>${money(Number(item.product.price || 0) * item.quantity)}</td><td><button class="scb-cart-remove" data-id="${item.id}" type="button">Remove</button></td></tr>`).join('')}</tbody></table><p><strong>Subtotal: ${money(total)}</strong></p><a class="scb-button" href="/checkout/">Proceed to checkout</a>` : '<h2>Your cart is currently empty!</h2><p><a class="scb-button" href="/products/">Return to shop</a></p>'}</div>`;
+    mount.querySelectorAll('.scb-cart-qty').forEach((input) => input.addEventListener('change', () => { const next = getCart(); const item = next.find((entry) => entry.id === Number(input.dataset.id)); if (item) item.quantity = roundQty(input.value); setCart(next); renderCart(); }));
     mount.querySelectorAll('.scb-cart-remove').forEach((button) => button.addEventListener('click', () => { setCart(getCart().filter((item) => item.id !== Number(button.dataset.id))); renderCart(); }));
     emit('view_cart', { value: total, currency: 'USD' });
   }
