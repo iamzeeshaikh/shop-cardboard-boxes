@@ -74,9 +74,29 @@ export const STEP_NAMES = ['Style', 'Size', 'Material', 'Board', 'Quantity', 'Pr
 /** Four grouped steps for the copy that sits inside a product page. */
 export const COMPACT_STEP_NAMES = ['Style & size', 'Specification', 'Print & artwork', 'Your details'];
 
+/**
+ * A small line drawing per box style. The words alone made six near-identical
+ * cards; the shape is what a buyer actually recognises. Drawn on one isometric
+ * grid so the six read as a set, and in board tones rather than the blue-grey
+ * the sketch used to borrow from nothing on this site.
+ */
+const STYLE_FIGURES: Record<string, string> = {
+  rsc: `<polygon points="8,24 44,24 56,14 20,14" class="f-top"/><polygon points="8,24 44,24 44,46 8,46" class="f-front"/><polygon points="44,24 56,14 56,36 44,46" class="f-side"/><line x1="14" y1="19" x2="50" y2="19" class="f-seam"/>`,
+  mailer: `<polygon points="20,20 56,20 60,6 24,6" class="f-lid"/><polygon points="8,30 44,30 56,20 20,20" class="f-top"/><polygon points="8,30 44,30 44,46 8,46" class="f-front"/><polygon points="44,30 56,20 56,36 44,46" class="f-side"/>`,
+  tuck: `<polygon points="16,16 40,16 50,9 26,9" class="f-top"/><polygon points="16,16 40,16 40,50 16,50" class="f-front"/><polygon points="40,16 50,9 50,43 40,50" class="f-side"/><path d="M22 16 v5 a6 4 0 0 0 12 0 v-5" class="f-seam"/>`,
+  'lid-base': `<polygon points="8,15 44,15 56,6 20,6" class="f-lid"/><polygon points="8,15 44,15 44,20 8,20" class="f-front"/><polygon points="44,15 56,6 56,11 44,20" class="f-side"/><polygon points="11,32 41,32 52,24 22,24" class="f-top"/><polygon points="11,32 41,32 41,50 11,50" class="f-front"/><polygon points="41,32 52,24 52,42 41,50" class="f-side"/><polygon points="14,31 38,31 47,25 23,25" class="f-seam"/>`,
+  rigid: `<polygon points="8,20 48,20 60,10 20,10" class="f-top"/><polygon points="8,20 48,20 48,29 8,29" class="f-front"/><polygon points="48,20 60,10 60,19 48,29" class="f-side"/><polygon points="10,29 46,29 46,48 10,48" class="f-front"/><polygon points="46,29 58,19 58,38 46,48" class="f-side"/>`,
+  round: `<path d="M14 26 v18 a20 8 0 0 0 40 0 v-18" class="f-front"/><ellipse cx="34" cy="26" rx="20" ry="8" class="f-side"/><ellipse cx="34" cy="19" rx="21" ry="8" class="f-top"/>`,
+};
+
+const figure = (value: string): string => {
+  const shape = STYLE_FIGURES[value];
+  return shape ? `<svg class="scb-cfg-fig" viewBox="0 0 68 56" aria-hidden="true" focusable="false">${shape}</svg>` : '';
+};
+
 /** Unique ids keep two configurators on one page from sharing label targets. */
 const options = (name: string, items: Option[], prefix: string) =>
-  `<ul class="scb-cfg-options">${items.map((item, index) => `<li class="scb-cfg-option"><input type="radio" id="${prefix}-${esc(name)}-${index}" name="${esc(name)}" value="${esc(item.value)}" data-label="${esc(item.name)}" /><label for="${prefix}-${esc(name)}-${index}"><span class="scb-cfg-opt-name">${esc(item.name)}</span><span class="scb-cfg-opt-note">${esc(item.note)}</span></label></li>`).join('')}</ul>`;
+  `<ul class="scb-cfg-options">${items.map((item, index) => `<li class="scb-cfg-option"><input type="radio" id="${prefix}-${esc(name)}-${index}" name="${esc(name)}" value="${esc(item.value)}" data-label="${esc(item.name)}" /><label for="${prefix}-${esc(name)}-${index}">${figure(item.value)}<span class="scb-cfg-opt-name">${esc(item.name)}</span><span class="scb-cfg-opt-note">${esc(item.note)}</span></label></li>`).join('')}</ul>`;
 
 const group = (name: string, items: Option[], prefix: string) =>
   `<div data-require-group="${esc(name)}">${options(name, items, prefix)}<span class="scb-cfg-error" role="alert"></span></div>`;

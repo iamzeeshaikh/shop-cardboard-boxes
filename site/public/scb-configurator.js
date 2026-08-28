@@ -90,11 +90,11 @@
     const round = style === 'round';
 
     const body = round
-      ? `<ellipse cx="110" cy="${oy - h}" rx="${l / 2}" ry="${w / 2}" fill="#f0f4f9" stroke="#94a3b5" stroke-width="1.6"/>
-         <path d="M${110 - l / 2} ${oy - h} v${h} a${l / 2} ${w / 2} 0 0 0 ${l} 0 v-${h}" fill="#dbe5ef" stroke="#94a3b5" stroke-width="1.6"/>`
-      : `<polygon points="${ox},${oy - h} ${ox + l},${oy - h} ${ox + l + w},${oy - h - w} ${ox + w},${oy - h - w}" fill="#f0f4f9" stroke="#94a3b5" stroke-width="1.6"/>
-         <polygon points="${ox},${oy - h} ${ox + l},${oy - h} ${ox + l},${oy} ${ox},${oy}" fill="#dbe5ef" stroke="#94a3b5" stroke-width="1.6"/>
-         <polygon points="${ox + l},${oy - h} ${ox + l + w},${oy - h - w} ${ox + l + w},${oy - w} ${ox + l},${oy}" fill="#c8d6e4" stroke="#94a3b5" stroke-width="1.6"/>`;
+      ? `<ellipse cx="110" cy="${oy - h}" rx="${l / 2}" ry="${w / 2}" fill="#f7ecd9" stroke="#a8853f" stroke-width="1.6"/>
+         <path d="M${110 - l / 2} ${oy - h} v${h} a${l / 2} ${w / 2} 0 0 0 ${l} 0 v-${h}" fill="#ecd9b7" stroke="#a8853f" stroke-width="1.6"/>`
+      : `<polygon points="${ox},${oy - h} ${ox + l},${oy - h} ${ox + l + w},${oy - h - w} ${ox + w},${oy - h - w}" fill="#f7ecd9" stroke="#a8853f" stroke-width="1.6"/>
+         <polygon points="${ox},${oy - h} ${ox + l},${oy - h} ${ox + l},${oy} ${ox},${oy}" fill="#ecd9b7" stroke="#a8853f" stroke-width="1.6"/>
+         <polygon points="${ox + l},${oy - h} ${ox + l + w},${oy - h - w} ${ox + l + w},${oy - w} ${ox + l},${oy}" fill="#dcc294" stroke="#a8853f" stroke-width="1.6"/>`;
 
     previewMount.innerHTML = `<svg viewBox="0 0 220 170" role="img" aria-label="Proportional sketch of the box being configured">
       <title>Proportional sketch</title>${body}</svg>

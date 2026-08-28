@@ -34,6 +34,22 @@
 .scb-cfg-option .scb-cfg-opt-name { display: block; font-weight: 700; font-size: 14.5px; color: var(--scb-ink, #23262b); margin-bottom: 4px; }
 .scb-cfg-option .scb-cfg-opt-note { display: block; font-size: 12.5px; color: #6b7480; line-height: 1.5; }
 .scb-cfg-option svg { display: block; width: 100%; height: 58px; margin-bottom: 10px; }
+.scb-cfg-fig { overflow: visible; }
+.scb-cfg-fig polygon, .scb-cfg-fig path, .scb-cfg-fig ellipse {
+  stroke: #a8853f;
+  stroke-width: 1.6;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.scb-cfg-fig .f-top, .scb-cfg-fig .f-lid { fill: #f7ecd9; }
+.scb-cfg-fig .f-front { fill: #ecd9b7; }
+.scb-cfg-fig .f-side { fill: #dcc294; }
+.scb-cfg-fig .f-seam { fill: none; stroke: #8d6c33; stroke-width: 1.4; }
+.scb-cfg-option input:checked + label .scb-cfg-fig .f-top,
+.scb-cfg-option input:checked + label .scb-cfg-fig .f-lid { fill: #fdf5e7; }
+.scb-cfg-option input:checked + label .scb-cfg-fig polygon,
+.scb-cfg-option input:checked + label .scb-cfg-fig path,
+.scb-cfg-option input:checked + label .scb-cfg-fig ellipse { stroke: #8d6c33; }
 
 /* fields */
 .scb-cfg-fields { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); }

@@ -346,7 +346,7 @@
 
 /* ---------- primary navigation typography ---------- */
 .site-header .scb-nav > li > a {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
   letter-spacing: -0.005em;
   color: var(--scb-ink);
@@ -370,11 +370,11 @@
 .site-header .scb-nav > li:focus-within > a::before { transform: scaleX(1); }
 .site-header .scb-nav > li:hover > a,
 .site-header .scb-nav > li > a:focus-visible { color: var(--scb-gold-ink); }
-.site-header .scb-nav { gap: 22px; }
+.site-header .scb-nav { gap: 24px; }
 
 @media (max-width: 1180px) {
-  .site-header .scb-nav > li > a { font-size: 14px; }
-  .site-header .scb-nav { gap: 16px; }
+  .site-header .scb-nav > li > a { font-size: 15.5px; }
+  .site-header .scb-nav { gap: 17px; }
 }
 
 /* ---------- mega menu ---------- */
