@@ -41,6 +41,11 @@ export const seattle: LocationPage = {
     { q: 'Kraft or white board for coffee packaging?', a: 'Kraft for the unbleached look many roasters want, at the cost of muted print colour. Coated white board where the artwork needs accurate colour. It is a brand decision more than a technical one.' },
     { q: 'Does the degassing valve affect the carton?', a: 'Only in that the carton must not press against it. The valve sits in the bag; the carton needs enough internal clearance that the valve is not compressed.' },
     { q: 'What decides how long a chilled box stays cold?', a: 'Coolant mass and outside temperature, far more than the board. That is why we size the coolant against your actual route rather than quoting a headline number of hours that assumes ideal conditions.' },
+    { q: 'Does board weaken in damp air even when it never gets wet?', a: 'Yes. Corrugated takes up moisture from the air itself and reaches equilibrium with it, and at Pacific Northwest humidity that costs roughly a third of the dry stacking strength. Nothing looks wet, and the box is measurably weaker.' },
+    { q: 'What is the cheapest way to protect stored stock from damp?', a: 'Keeping the pallet off the floor and wrapped. Concrete wicks moisture upward and the bottom layer takes the worst of it. A pallet and a wrap cost almost nothing against re-ordering a damaged bottom layer.' },
+    { q: 'Does a degassing valve change the carton specification?', a: 'No — the valve sits in the bag, not the box. What the carton must do is avoid pressing on the valve, which means allowing a little clearance rather than fitting the bag tightly. A carton built to a flat bag dimension usually gets this wrong.' },
+    { q: 'Kraft or coated white for a coffee retail carton?', a: 'Kraft if the unbleached look is part of the brand and the print is one or two colours. Coated white if the design depends on accurate colour or photography. The board decides the ceiling on print quality more than the press does.' },
+    { q: 'What actually decides how long a chilled box stays cold?', a: 'The coolant mass and the ambient temperature. The box slows heat transfer; the coolant absorbs what gets through. Sizing coolant to the box volume rather than to the journey is the most common error in cold-chain specification.' },
   ],
   shop: [
     { path: '/product/cardboard-coffee-packaging-boxes/', label: 'Coffee packaging' },
@@ -93,6 +98,11 @@ export const denver: LocationPage = {
     { q: 'Should I specify heavier board for altitude?', a: 'No. Corrugated is not a sealed system and equalises freely. Altitude affects sealed pouches inside the box, not the box itself.' },
     { q: 'What matters most in catering packaging?', a: 'Assembly speed and a lid that takes stacking weight without deflecting into the food. At a few hundred boxes per event, seconds per box are real money.' },
     { q: 'Can you deliver to mountain addresses?', a: 'We ship nationwide. Remote mountain addresses can take longer on the final leg, so tell us the destination at quote stage if a date matters.' },
+    { q: 'What does mountain freight do to a box that flat freight does not?', a: 'It shakes it. Long grades and switchbacks apply sustained vibration rather than single impacts, which works contents loose and abrades anything that can move. The fix is an insert that stops movement rather than a heavier outer.' },
+    { q: 'Does specifying heavier board help at altitude?', a: 'Rarely. Altitude does not weaken corrugated, and the extra grade is usually paying for a problem that is not there. Where a sealed bag is inside the carton, allowing clearance for it to expand is the change worth making.' },
+    { q: 'How should a box be specified for a vehicle that freezes overnight?', a: 'For the cycle rather than the low temperature. Steady cold is harmless; the damage comes from condensation forming each time the load warms. A coated board handles that better than a heavier uncoated one.' },
+    { q: 'Can you deliver to a mountain town or resort address?', a: 'Yes, with additional transit days and occasional weather delays in winter. Give us the delivery address at quote stage so the freight is priced to it rather than adjusted later.' },
+    { q: 'What matters most in catering packaging for an event?', a: 'Assembly speed before service, and a lid that takes stacking weight in a transport rack. Both are decided by the structure rather than the board, and a crash-lock base is usually the single biggest saving in staff time.' },
   ],
   shop: [
     { path: '/product/cardboard-catering-trays/', label: 'Catering trays' },
@@ -147,6 +157,11 @@ ${specTable('Moving box sizes that actually get used', ['Size', 'Internal', 'Hol
     { q: 'Can I get the volume price without storing a year of boxes?', a: 'Yes. Commit to the annual quantity and take delivery on a call-off schedule — heavy before the peak, light after it. The stock stays with us until you need it.' },
     { q: 'What coating does a small food producer need?', a: 'For dry goods, none — uncoated food-grade board stays fully recyclable. For greasy items, a water-based dispersion coating. For wet items, PE, with the recyclability cost that carries.' },
     { q: 'Is 100 boxes really enough to order?', a: 'Yes. Digital printing carries no plate cost at that quantity, so a hundred-unit run is economic. It is a common first order.' },
+    { q: 'When should moving-season stock be ordered for a September peak?', a: 'Order by early summer and take delivery in two drops — a heavy one before the peak and a lighter one after. Production is 8–10 business days, but the constraint is usually storage rather than lead time.' },
+    { q: 'Which moving box sizes are actually worth stocking?', a: 'Three sizes cover most of a move: a small heavy-goods box for books, a medium general box, and a large light-goods box. Adding a fourth rarely earns its place, and it splits the order into runs too small to price well.' },
+    { q: 'What makes a moving box different from a shipping box?', a: 'It is lifted repeatedly by people rather than machines, so the base and the hand holes matter more than the panel strength. A reinforced base and holes placed high on the side walls handle that.' },
+    { q: 'What coating does a small food producer actually need?', a: 'Usually a water-based dispersion coating, which handles grease and moisture and stays recyclable. Wax and laminates solve a more extreme problem than most small producers have, and they take the box out of the paper stream.' },
+    { q: 'Is 100 boxes genuinely enough for a first order?', a: 'Yes — it is the minimum for exactly that reason. The unit price is higher than at volume, but the total is small enough to treat as a test rather than a commitment.' },
   ],
   shop: [
     { path: '/product/cardboard-storage-boxes/', label: 'Storage boxes' },
@@ -200,6 +215,11 @@ export const nashville: LocationPage = {
     { q: 'What gift packaging survives a suitcase?', a: 'A folding carton with a fitted insert — it protects without bulk and tolerates compression. Rigid boxes present better but weigh more and cannot be flattened.' },
     { q: 'What packaging suits a bottle gift?', a: 'A box with a fitted insert that holds the neck and base separately, so the bottle cannot move. A rigid outer adds presentation if the box is part of the gift.' },
     { q: 'Is there a Nashville pickup point?', a: 'No. We produce to order and ship to you, with delivery included anywhere in the United States.' },
+    { q: 'How do healthcare cartons differ from retail ones in production?', a: 'In tolerance rather than appearance. A retail carton has to look right; a healthcare carton has to be identical to the one that was approved, which means a stored dieline, a fixed colour standard, and no substitution of an equivalent board.' },
+    { q: 'Can packaging be produced against a fixed release or tour date?', a: 'Yes, working back through transit and 8–10 business days of production from artwork approval. Send dimensions early so the dieline can be cut while the artwork is still moving, which is where most schedules lose time.' },
+    { q: 'What gift packaging actually survives a suitcase?', a: 'A rigid box, or a folding carton with a fitted insert that holds its shape under compression. Sleeves and light cartons crease, and the crease is the first thing a recipient sees.' },
+    { q: 'What suits a single-bottle gift specifically?', a: 'A fitted insert that holds the neck and base separately inside a rigid outer. The bottle should not touch the wall at any point — a bottle that can rock inside a box either breaks or arrives with a scuffed label.' },
+    { q: 'Does a printed inner face cost much on a gift box?', a: 'Little, because it prints in the same pass. On a gift box it does more work than the outer does, since the outer is seen once and the inside is what is looked at while the contents come out.' },
   ],
   shop: [
     { path: '/product/cardboard-medical-device-packaging/', label: 'Medical device packaging' },
@@ -240,7 +260,7 @@ export const atlanta: LocationPage = {
       h2: 'Production and studio packaging',
       html: `<p>Film and production work brings a steady stream of short-run, fixed-date packaging: press kits, cast gifts, wrap boxes. Digital printing handles all of it at 100 units with no plate cost and artwork that can change late.</p>
 <p>A <a href="/product/cardboard-pr-kit-boxes/">PR kit box with a fitted insert</a> is the usual structure, holding the arrangement through the courier so it still reads as deliberate when it is filmed.</p>
-<p>Where the opening itself is the point, <a href="/product/cardboard-luxury-magnet-boxes/">magnetic closure boxes</a> deliver it — but they ship assembled rather than flat, so allow for the freight volume in the timeline.</p>`,
+<p>Where the unboxing is filmed rather than merely opened, the closure carries the moment. <a href="/product/cardboard-luxury-magnet-boxes/">Magnetic closure boxes</a> hold that pause before the lid lifts — at the cost of shipping assembled, which shows up on the freight rather than the unit price.</p>`,
     },
   ],
   faqHeading: 'Atlanta packaging questions',
@@ -250,6 +270,11 @@ export const atlanta: LocationPage = {
     { q: 'How do I size a divider grid for bottles or cans?', a: 'Container diameter plus two to three millimetres per cell, then add the divider wall thickness — around 3 mm each — into the internal box dimensions. Omitting the walls is the usual reason a grid does not fit.' },
     { q: 'Can you produce packaging on a production deadline?', a: 'Production runs 8–10 business days from artwork approval. Digital printing removes the plate stage, so a short run moves as fast as the artwork does.' },
     { q: 'Do magnetic boxes ship flat?', a: 'No. The rigid frame cannot fold, so they arrive assembled. Allow for more inbound freight volume and a slightly longer delivery leg in the schedule.' },
+    { q: 'How much does one air freight band cost over a year?', a: 'Multiply the band difference by your annual shipment count — it is usually a larger number than the cost of a new dieline. That is why box dimensions are worth revisiting whenever carrier rates change.' },
+    { q: 'Does re-measuring boxes pay off when carrier rates change?', a: 'Usually, because band thresholds move and a size that sat just inside one can end up just outside it. A quick re-run of your shipment dimensions against the new table shows whether anything crossed. It costs nothing to check and occasionally saves a great deal.' },
+    { q: 'Can a production run be scheduled around a fixed shoot date?', a: 'Yes. Production is 8–10 business days from approval, and rigid boxes take longer because they ship assembled. Tell us the date at quote stage and the run is scheduled rather than expedited, which costs less.' },
+    { q: 'What lead time do rigid magnetic boxes need over folding cartons?', a: 'Longer, because they are assembled before despatch rather than after. They also take more freight volume for the same box count, so both the schedule and the delivery cost need allowing for.' },
+    { q: 'Does a printed insert cost much more than a plain one?', a: 'Very little, because it prints in the same pass as anything else on the sheet. On a kit or a gift box the insert is directly in view when the lid comes off, which makes it a better place to spend than the outer surface.' },
   ],
   shop: [
     { path: '/product/custom-size-cardboard-boxes/', label: 'Custom size boxes' },

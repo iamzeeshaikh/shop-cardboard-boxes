@@ -25,7 +25,13 @@ const SETS = {
 const strip = (html) => html
   .replace(/<script[\s\S]*?<\/script>/gi, ' ')
   .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-  .replace(/<svg[\s\S]*?<\/svg>/gi, ' ');
+  .replace(/<svg[\s\S]*?<\/svg>/gi, ' ')
+  // Shared widgets are chrome, not content. The box builder alone contributes ~640
+  // identical words to every page that carries it, which would otherwise read as
+  // duplication between pages whose prose is entirely distinct. The widget nests its
+  // own <section> elements, so match forward to the next sibling section instead.
+  .replace(/<section class="scb-section scb-cfg-section">[\s\S]*?(?=<section class="scb-section|<div class="scb-cta|$)/gi, ' ')
+  .replace(/<ul class="scb-navcards">[\s\S]*?<\/ul>/gi, ' ');
 
 // Only the authored body, so shared header/footer chrome is not counted as duplication.
 const mainOf = (html) => {
