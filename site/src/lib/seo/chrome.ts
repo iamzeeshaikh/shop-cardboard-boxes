@@ -1,9 +1,10 @@
 import chromeCss from '../../data/chrome-css.json';
 import cssBundles from '../../data/css-bundles.json';
 import { getSnapshot } from '../snapshots';
+import { assetUrl } from './asset';
 import type { Snapshot } from '../snapshots';
 
-const HOISTED = `<link rel="stylesheet" href="/scb-chrome.css" />`;
+const HOISTED = `<link rel="stylesheet" href="${assetUrl('/scb-chrome.css')}" />`;
 
 /**
  * Replace the twelve repeated inline theme <style> blocks with the cached stylesheet
