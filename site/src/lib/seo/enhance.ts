@@ -175,18 +175,36 @@ function enhanceProduct(snapshot: Snapshot): Snapshot {
         .join('')}</ul>`
     : '';
 
+  // The configurator belongs immediately after the description, specification and
+  // FAQ tabs — that is where a reader has finished reading and starts specifying.
+  const cfgBlock = `<section class="scb-section scb-cfg-section">
+    <span class="scb-eyebrow scb-eyebrow-dark">Build it your way</span>
+    <h2>Design this box to your own specification</h2>
+    <p class="scb-lede">Four short steps — structure and size, board, printing, and where to send the quote. It produces a brief precise enough to price ${esc(product.title.toLowerCase())} or anything close to it.</p>
+    ${configurator({ productName: product.title, productUrl: snapshot.path, prefix: 'pcfg', compact: true })}
+  </section>`;
+
+  const tabsAnchor = html.indexOf('woocommerce-tabs');
+  if (tabsAnchor >= 0) {
+    const openTag = html.lastIndexOf('<div', tabsAnchor);
+    let depth = 0;
+    let closeAt = -1;
+    const tag = /<(\/?)div\b/g;
+    tag.lastIndex = openTag;
+    let match: RegExpExecArray | null;
+    while ((match = tag.exec(html))) {
+      depth += match[1] ? -1 : 1;
+      if (depth === 0) { closeAt = html.indexOf('>', match.index) + 1; break; }
+    }
+    if (closeAt > 0) html = html.slice(0, closeAt) + cfgBlock + html.slice(closeAt);
+  }
+
   html += `<div class="scb-append"><section class="scb-section scb-tinted scb-related">
     <h2>Related boxes</h2>
     <p class="scb-lede">${extras?.note ? extras.note : `${esc(product.title)} sits in our ${esc(category?.name ?? 'cardboard box')} collection. If this is not quite the right structure, these are the closest places to look next.`}</p>
     ${cards.length ? productCards(cards, 4) : ''}
     ${collectionLinks.length ? linkRow(collectionLinks) : ''}
     ${guideCards}
-  </section>
-  <section class="scb-section scb-cfg-section">
-    <span class="scb-eyebrow scb-eyebrow-dark">Build it your way</span>
-    <h2>Design this box to your own specification</h2>
-    <p class="scb-lede">Work through structure, size, board, printing and finish the way a packaging specialist would. It takes about two minutes and produces a brief precise enough to quote from — for ${esc(product.title.toLowerCase())} or anything close to it.</p>
-    ${configurator({ productName: product.title, productUrl: snapshot.path, prefix: 'pcfg' })}
   </section></div>`;
 
   const jsonLd = [...snapshot.jsonLd, breadcrumbJsonLd(crumbs)];

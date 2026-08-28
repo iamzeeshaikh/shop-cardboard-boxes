@@ -14,7 +14,9 @@ const productionHost = Astro.url.hostname === 'shopcardboardboxes.com';
 // position the blocks occupied, so the cascade is unchanged.
 const stylesHtml = hoistChromeCss(snapshot.stylesHtml);
 // The box configurator is rendered on the tool page and on every product page.
-const needsConfigurator = snapshot.contentHtml.includes('class="scb-cfg"');
+const needsConfigurator = snapshot.contentHtml.includes('scb-cfg-grid');
+// WooCommerce's gallery relies on jQuery and FlexSlider, neither of which runs here.
+const needsGallery = snapshot.contentHtml.includes('woocommerce-product-gallery__wrapper');
 const previewRobots = productionHost ? snapshot.robots : 'noindex, nofollow';
 const trackingEnabled = productionHost && import.meta.env.PUBLIC_ENABLE_PRODUCTION_TRACKING === 'true';
 const productPrice = products.find((product) => product.path === snapshot.path)?.price;
@@ -88,5 +90,6 @@ Astro.response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geol
     <a class="scb-whatsapp" href={`https://wa.me/15033580443?text=${encodeURIComponent(`Hi Shop Cardboard Boxes! I need more info about ${snapshot.title} ${snapshot.canonical}`)}`} aria-label="Open Chat"></a>
     <script is:inline src="/scripts/site.js" defer></script>
     {needsConfigurator && <script is:inline src="/scb-configurator.js" defer></script>}
+    {needsGallery && <script is:inline src="/scb-gallery.js" defer></script>}
   </body>
 </html>

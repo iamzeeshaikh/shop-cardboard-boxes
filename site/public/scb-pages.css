@@ -209,8 +209,8 @@
   position: absolute;
   inset: -16px 0 100% 0;
 }
-.scb-nav > li:hover > .scb-subnav,
-.scb-nav > li:focus-within > .scb-subnav {
+.site-header .scb-nav .scb-has-children:hover > .scb-subnav,
+.site-header .scb-nav .scb-has-children:focus-within > .scb-subnav {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -304,6 +304,34 @@
   border-color: #e2d3ae;
 }
 .scb-cfg-section .scb-cfg { padding: 26px 0 0; max-width: none; }
+
+/* ---------- configurator sub-headings in the compact layout ---------- */
+.scb-cfg-sub {
+  margin: 26px 0 10px;
+  font-size: 12.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #7d746a;
+}
+.scb-cfg-compact .scb-cfg-step > p { margin-bottom: 6px; }
+
+/* ---------- product gallery ---------- */
+.scb-gallery-main { position: relative; display: block; }
+.scb-gallery-main img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.scb-gallery-thumbs {
+  display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 0; padding: 0; list-style: none;
+}
+.scb-gallery-thumbs li { margin: 0; }
+.scb-gallery-thumbs button {
+  display: block; padding: 0; border: 2px solid #e4dccd; border-radius: 6px;
+  background: #fff; cursor: pointer; overflow: hidden; line-height: 0;
+  transition: border-color .14s ease;
+}
+.scb-gallery-thumbs img { display: block; width: 74px; height: 74px; object-fit: cover; }
+.scb-gallery-thumbs button:hover { border-color: #cbb98f; }
+.scb-gallery-thumbs button[aria-current="true"] { border-color: var(--scb-gold); }
+.scb-gallery-thumbs button:focus-visible { outline: 3px solid var(--scb-gold); outline-offset: 2px; }
 
 /* ---------- footer additions ---------- */
 .scb-footer-extra { background: #1f1e1c; color: rgba(255,255,255,.82); padding: 34px 20px 30px; }

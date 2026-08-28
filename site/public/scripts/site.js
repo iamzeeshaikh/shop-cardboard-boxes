@@ -18,6 +18,18 @@
 
   document.querySelectorAll('.elementor-invisible').forEach((element) => element.classList.remove('elementor-invisible'));
 
+  // The header sticks; past the fold the announcement bar collapses so only the
+  // navigation follows the reader down.
+  let scrolledState = false;
+  const trackScroll = () => {
+    const scrolled = window.scrollY > 140;
+    if (scrolled === scrolledState) return;
+    scrolledState = scrolled;
+    document.body.classList.toggle('scb-scrolled', scrolled);
+  };
+  addEventListener('scroll', trackScroll, { passive: true });
+  trackScroll();
+
   const mobileMenu = document.querySelector('#scb-mobile-menu');
   const mobileToggle = document.querySelector('.scb-mobile-toggle, .rishi_header_trigger');
   const closeMobile = () => { if (!mobileMenu) return; mobileMenu.hidden = true; mobileToggle?.setAttribute('aria-expanded', 'false'); };

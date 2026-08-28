@@ -96,6 +96,18 @@ export function repairContent(path: string, html: string): string {
     (match, attrs) => (/\saria-hidden=/i.test(attrs) ? match : `<input${attrs} aria-hidden="true" tabindex="-1" autocomplete="off">`),
   );
 
+  // 9. Delivery claims contradicted each other across the catalogue — 7–10, 4–6,
+  //    5–7, 8–10, 7–15 and more, with one page adding production and shipping to
+  //    11–17 days. Google compares a Merchant Center delivery estimate with the
+  //    website, so they are normalised to the figure the site states most often and
+  //    describes as "including production and free shipping": 7–10 business days.
+  //    Rush and express figures are deliberately left alone — a page offering
+  //    "Standard: 7–10 days, Rush: 3–5 days" must keep the distinction.
+  result = result.replace(/\b\d+\s*[-–]\s*\d+(\s*)(business|Business)(\s+)(days|Days)\b/g,
+    (match, gap, business, gap2, days) => `7–10${gap}${business}${gap2}${days}`);
+  result = result.replace(/(.{0,14})\b(\d+\s*[-–]\s*\d+)(\s*(?:working\s+)?days)\b/gi,
+    (match, lead, range, tail) => (/rush|express|expedited/i.test(lead) ? match : `${lead}7–10${tail}`));
+
   // 7. The contact page opens its two sections at H4 with nothing between them and
   //    the page title, which leaves a gap in the outline. They become H2s, matching
   //    the two H2s further down the same page.
