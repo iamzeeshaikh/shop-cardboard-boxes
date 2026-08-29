@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "check": "astro check",
-    "build": "node ../tools/build-chrome-css.mjs && node ../tools/build-css-bundles.mjs && node ../tools/build-asset-versions.mjs && astro build && node ../tools/copy-runtime-data.mjs",
+    "build": "node ../tools/build-lastmod.mjs && node ../tools/build-chrome-css.mjs && node ../tools/build-css-bundles.mjs && node ../tools/build-asset-versions.mjs && astro build && node ../tools/copy-runtime-data.mjs",
     "preview": "astro preview",
     "start": "node dist/server/entry.mjs",
     "test:production-integrations": "node ../tools/test-production-integrations.mjs",

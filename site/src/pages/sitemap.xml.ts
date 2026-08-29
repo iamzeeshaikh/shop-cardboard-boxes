@@ -6,8 +6,16 @@ import { NEW_CATEGORIES } from '../data/seo/categories';
 import { RESOURCES } from '../data/seo/resources';
 import { LOCATIONS } from '../data/seo/locations';
 import { SEO_REDIRECTS } from '../data/seo/redirects';
+import lastmod from '../data/lastmod.json';
 
 export const prerender = true;
+
+/**
+ * Paginated listing pages are self-canonical and reachable from the listing they
+ * belong to, so a crawler finds them without being pointed at them. Listing them
+ * here spends crawl budget on twelve pages of the same grid.
+ */
+const isListingPagination = (path: string) => /\/page\/\d+\/$/.test(path);
 
 const excludedUtilityPaths = new Set([
   '/cart/',
@@ -29,6 +37,7 @@ const escapeXml = (value: string) => value
 export const GET: APIRoute = () => {
   const fromSnapshots = routeIndex.flatMap((route) => {
     if (excludedUtilityPaths.has(route.path)) return [];
+    if (isListingPagination(route.path)) return [];
     // Anything that now redirects must not be advertised as a canonical URL.
     if (SEO_REDIRECTS.has(route.path)) return [];
     const snapshot = JSON.parse(readFileSync(resolve(process.cwd(), 'src/data/snapshots', route.file), 'utf8')) as {
@@ -59,7 +68,12 @@ export const GET: APIRoute = () => {
   const body = [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-    ...[...new Set([...fromSnapshots, ...authored])].sort().map((url) => `  <url><loc>${escapeXml(url)}</loc></url>`),
+    ...[...new Set([...fromSnapshots, ...authored])].sort().map((url) => {
+      const path = url.replace('https://shopcardboardboxes.com', '');
+      const date = (lastmod as Record<string, string>)[path];
+      // Omitted rather than guessed: a date we cannot source is worse than none.
+      return `  <url><loc>${escapeXml(url)}</loc>${date ? `<lastmod>${date}</lastmod>` : ''}</url>`;
+    }),
     '</urlset>',
     '',
   ].join('\n');
