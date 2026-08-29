@@ -28,8 +28,20 @@ const dateOf = (relPath) => {
   } catch { return ''; }
 };
 
-if (!dateOf('site/package.json')) {
-  console.log('build-lastmod: no git history available, keeping the committed dates');
+/**
+ * A shallow clone answers `git log` for every path with the one commit it has, which
+ * would stamp the whole sitemap with the deploy date — the exact uniform lastmod this
+ * script exists to avoid. The deploy host clones shallowly, so refuse there and let
+ * the dates committed from a full checkout stand.
+ */
+const isShallow = () => {
+  try {
+    return execFileSync('git', ['rev-parse', '--is-shallow-repository'], { cwd: root, encoding: 'utf8' }).trim() === 'true';
+  } catch { return true; }
+};
+
+if (!dateOf('site/package.json') || isShallow()) {
+  console.log('build-lastmod: no usable git history here, keeping the committed dates');
   process.exit(0);
 }
 
